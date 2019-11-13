@@ -1,9 +1,13 @@
 .nav {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: center;
-    color: #111111;
-    background: white;
+    background-color: $white;
+}
+.nav__list {
+    list-style: none;
+}
+.nav__link {
+    font-size: $font-size-menu;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-header;
+    text-align: $text-align-center;
+    color: $black-one;
 }
