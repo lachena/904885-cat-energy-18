@@ -1,4 +1,5 @@
 .advantages {
+    padding: 0 20px;
     background: $white;
 }
 .advantages__header,
@@ -12,6 +13,8 @@
     color: $black-one;
 }
 .advantages__list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 .advantages__description {

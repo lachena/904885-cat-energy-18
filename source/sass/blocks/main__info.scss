@@ -1,4 +1,6 @@
 .info {
+    padding: 29px 37px 0 37px;
+    margin-bottom: 22px;
     background-color: $white-three;
 }
 .info__header,
@@ -15,9 +17,14 @@
 .info__intro {
     font-size: $font-size-main;
     line-height: $line-height-header;
+    text-transform: $text-transform-upper;
 }
 .info__button {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 14px 74px 11px 71px;
     font-size: $font-size-main;
     line-height: $line-height-main;
     background-color: $leaf;
+    text-transform: $text-transform-upper;
 }

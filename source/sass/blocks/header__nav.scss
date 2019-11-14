@@ -1,7 +1,10 @@
 .nav {
+    padding: 0 20px;
     background-color: $white;
 }
 .nav__list {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 .nav__link {
@@ -10,4 +13,5 @@
     line-height: $line-height-header;
     text-align: $text-align-center;
     color: $black-one;
+    text-transform: $text-transform-upper;
 }
