@@ -1,3 +1,31 @@
 .programms {
-    background: $leaf;
+    background: $white;
+}
+.programms__list {
+    list-style: none;
+}
+.programms__item {
+    background-color: $white-two;
+}
+.programms__title,
+.programms__description,
+.programms__link {
+    font-weight: $font-weight-regular;
+    text-align: $text-align-left;
+}
+.programms__title {
+    font-size: $font-size-topic;
+    line-height: $line-height-topic;
+    color: $black-one;
+}
+.programms__description {
+    font-family: $font-family-secondary;
+    font-size: $font-size-main;
+    line-height: $line-height-main;
+    color: $greyish-brown;
+}
+.programms__link {
+    font-size: $font-size-link;
+    line-height: $line-height-header;
+    color: $black-one;
 }
