@@ -20,7 +20,7 @@
     text-transform: $text-transform-upper;
 }
 .info__button {
-    display: inline-block;
+    display: $display-block-button;
     vertical-align: middle;
     padding: 14px 74px 11px 71px;
     font-size: $font-size-main;
