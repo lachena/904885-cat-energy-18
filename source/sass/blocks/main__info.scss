@@ -1,17 +1,23 @@
 .info {
-    background-color: $leaf;
+    background-color: $white-three;
 }
-.info__header {
-    font-family: Oswald;
-    font-size: 36px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: center;
+.info__header,
+.info__intro,
+.info__button {
+    font-weight: $font-weight-regular;
+    text-align: $text-align-center;
     color: $white;
 }
+.info__header {
+    font-size: $font-size-header;
+    line-height: $line-height-header;
+}
 .info__intro {
-    font-size: 50px;
+    font-size: $font-size-main;
+    line-height: $line-height-header;
+}
+.info__button {
+    font-size: $font-size-main;
+    line-height: $line-height-main;
+    background-color: $leaf;
 }
