@@ -1,0 +1,14 @@
+.footer {
+    background: $white-two;
+}
+.social__list {
+    list-style: none;
+}
+.copyright__link {
+    font-family: $font-family-secondary;
+    font-size: $font-size-link;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-header;
+    text-align: $text-align-left;
+    color: $greyish-brown;
+}
