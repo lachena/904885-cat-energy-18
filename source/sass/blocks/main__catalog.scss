@@ -1,14 +1,20 @@
 .catalog {
-  padding: $padding-base;
-  background: $white-three;
+  margin-bottom: 25px;
+  background: $white;
 }
 
 .catalog__header {
+  padding: $padding-base;
   font-size: $font-size-header;
   font-weight: $font-weight-regular;
   line-height: $line-height-header-two;
   text-align: $text-align-left;
   color: $black-one;
+}
+
+.catalog__item {
+  padding: 20px 25px;
+  border: $border-catalog-item;
 }
 
 .catalog__title {
@@ -47,6 +53,7 @@
   line-height: $line-height-catalog-title;
   text-align: $text-align-center;
   color: $black-one;
+  text-transform: $text-transform-upper;
 }
 
 .catalog__more-info {
@@ -66,4 +73,5 @@
   text-align: $text-align-center;
   color: $greyish-brown;
   background: $white-two;
+  text-transform: $text-transform-upper;
 }
