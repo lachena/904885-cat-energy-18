@@ -1,25 +1,29 @@
 .advantages {
-    padding: $padding-base;
-    background: $white;
+  padding: $padding-base;
+  background: $white;
 }
+
 .advantages__header,
 .advantages__description {
-    font-weight: $font-weight-regular;
-    text-align: $text-align-left;
+  font-weight: $font-weight-regular;
+  text-align: $text-align-left;
 }
+
 .advantages__header {
-    font-size: $font-size-header;
-    line-height: $line-height-header-two;
-    color: $black-one;
+  font-size: $font-size-header;
+  line-height: $line-height-header-two;
+  color: $black-one;
 }
+
 .advantages__list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
+
 .advantages__description {
-    font-family: $font-family-secondary;
-    font-size: $font-size-main;
-    line-height: $line-height-main;
-    color: $greyish-brown;
+  font-family: $font-family-secondary;
+  font-size: $font-size-main;
+  line-height: $line-height-main;
+  color: $greyish-brown;
 }

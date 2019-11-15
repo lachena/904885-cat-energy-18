@@ -1,30 +1,34 @@
 .info {
-    padding: 29px 37px 0 37px;
-    margin-bottom: 22px;
-    background-color: $white-three;
+  padding: 29px 37px 0 37px;
+  margin-bottom: 22px;
+  background-color: $white-three;
 }
+
 .info__header,
 .info__intro,
 .info__button {
-    font-weight: $font-weight-regular;
-    text-align: $text-align-center;
-    color: $white;
+  font-weight: $font-weight-regular;
+  text-align: $text-align-center;
+  color: $white;
 }
+
 .info__header {
-    font-size: $font-size-header;
-    line-height: $line-height-header;
+  font-size: $font-size-header;
+  line-height: $line-height-header;
 }
+
 .info__intro {
-    font-size: $font-size-main;
-    line-height: $line-height-header;
-    text-transform: $text-transform-upper;
+  font-size: $font-size-main;
+  line-height: $line-height-header;
+  text-transform: $text-transform-upper;
 }
+
 .info__button {
-    display: $display-block-button;
-    vertical-align: middle;
-    padding: 14px 74px 11px 71px;
-    font-size: $font-size-main;
-    line-height: $line-height-main;
-    background-color: $leaf;
-    text-transform: $text-transform-upper;
+  display: $display-block-button;
+  vertical-align: middle;
+  padding: 14px 74px 11px 71px;
+  font-size: $font-size-main;
+  line-height: $line-height-main;
+  background-color: $leaf;
+  text-transform: $text-transform-upper;
 }

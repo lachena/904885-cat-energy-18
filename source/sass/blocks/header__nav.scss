@@ -1,17 +1,19 @@
 .nav {
-    padding: $padding-base;
-    background-color: $white;
+  padding: $padding-base;
+  background-color: $white;
 }
+
 .nav__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+
 .nav__link {
-    font-size: $font-size-menu;
-    font-weight: $font-weight-medium;
-    line-height: $line-height-header;
-    text-align: $text-align-center;
-    color: $black-one;
-    text-transform: $text-transform-upper;
+  font-size: $font-size-menu;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-header;
+  text-align: $text-align-center;
+  color: $black-one;
+  text-transform: $text-transform-upper;
 }
