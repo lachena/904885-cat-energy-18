@@ -5,9 +5,9 @@
 
 .catalog__header {
   padding: $padding-base;
-  font-size: $font-size-header;
+  font-size: $font-size-xxl;
   font-weight: $font-weight-regular;
-  line-height: $line-height-header-two;
+  line-height: $line-height-xxl;
   text-align: $text-align-left;
   color: $black-one;
 }
@@ -18,9 +18,9 @@
 }
 
 .catalog__title {
-  font-size: $font-size-link;
+  font-size: $font-size-m;
   font-weight: $font-weight-regular;
-  line-height: $line-height-catalog-title;
+  line-height: $line-height-xs;
   text-align: $text-align-left;
   color: $black-one;
   text-transform: $text-transform-upper;
@@ -29,9 +29,9 @@
 .catalog__item-value,
 .catalog__item-field {
   font-family: $font-family-secondary;
-  font-size: $font-size-small;
+  font-size: $font-size-xs;
   font-weight: $font-weight-regular;
-  line-height: $line-height-catalog-table;
+  line-height: $line-height-m;
   text-align: $text-align-left;
   color: $greyish-brown;
 }
@@ -40,8 +40,8 @@
   display: $display-block-button;
   vertical-align: middle;
   padding: 13px 109px;
-  font-size: $font-size-link;
-  line-height: $line-height-catalog-title;
+  font-size: $font-size-m;
+  line-height: $line-height-xs;
   text-align: $text-align-center;
   color: $white;
   background: $leaf;
@@ -49,8 +49,8 @@
 }
 
 .catalog__more-title {
-  font-size: $font-size-link;
-  line-height: $line-height-catalog-title;
+  font-size: $font-size-m;
+  line-height: $line-height-xs;
   text-align: $text-align-center;
   color: $black-one;
   text-transform: $text-transform-upper;
@@ -58,8 +58,8 @@
 
 .catalog__more-info {
   font-family: $font-family-secondary;
-  font-size: $font-size-small;
-  line-height: $line-height-catalog-table;
+  font-size: $font-size-xs;
+  line-height: $line-height-m;
   text-align: $text-align-center;
   color: $greyish-brown;
 }
@@ -68,8 +68,8 @@
   display: $display-block-button;
   vertical-align: middle;
   padding: 13px 95px;
-  font-size: $font-size-link;
-  line-height: $line-height-catalog-title;
+  font-size: $font-size-m;
+  line-height: $line-height-xs;
   text-align: $text-align-center;
   color: $greyish-brown;
   background: $white-two;

@@ -13,13 +13,13 @@
 }
 
 .info__header {
-  font-size: $font-size-header;
-  line-height: $line-height-header;
+  font-size: $font-size-xxl;
+  line-height: $line-height-xxs;
 }
 
 .info__intro {
-  font-size: $font-size-main;
-  line-height: $line-height-header;
+  font-size: $font-size-s;
+  line-height: $line-height-xxs;
   text-transform: $text-transform-upper;
 }
 
@@ -27,8 +27,8 @@
   display: $display-block-button;
   vertical-align: middle;
   padding: 14px 74px 11px 71px;
-  font-size: $font-size-main;
-  line-height: $line-height-main;
+  font-size: $font-size-s;
+  line-height: $line-height-s;
   background-color: $leaf;
   text-transform: $text-transform-upper;
 }

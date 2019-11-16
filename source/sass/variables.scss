@@ -1,23 +1,25 @@
 $font-family-primary: "Oswald", "Arial", sans-serif;
 $font-family-secondary: "Arial", sans-serif;
-$font-size-header: 36px;
-$font-size-menu: 20px;
-$font-size-topic: 24px;
-$font-size-link: 16px;
-$font-size-main: 14px;
-$font-size-small: 12px;
+$font-size-xxl: 36px;
+$font-size-xl: 20px;
+$font-size-l: 24px;
+$font-size-m: 16px;
+$font-size-s: 14px;
+$font-size-xs: 12px;
 $font-weight-regular: normal;
 $font-weight-medium: 500;
 $font-style: normal;
 $font-stretch: normal;
 $font-letter-spacing: normal;
-$line-height-header: 1;
-$line-height-header-two: 1.67;
-$line-height-topic: 1.54;
-$line-height-main: 1.29;
-$line-height-catalog-title: 1.25;
-$line-height-small: 1.43;
-$line-height-catalog-table: 1.33;
+
+$line-height-xxl: 1.67;
+$line-height-xl: 1.54;
+$line-height-l: 1.43;
+$line-height-m: 1.33;
+$line-height-s: 1.29;
+$line-height-xs: 1.25;
+$line-height-xxs: 1;
+
 $text-align-center: center;
 $text-align-left: left;
 $text-transform-upper: uppercase;
