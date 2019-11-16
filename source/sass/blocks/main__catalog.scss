@@ -1,10 +1,9 @@
 .catalog {
   margin-bottom: 25px;
-  background: $white;
+  background-color: $white;
 }
 
 .catalog__header {
-  padding: $padding-base;
   font-size: $font-size-xxl;
   font-weight: $font-weight-regular;
   line-height: $line-height-xxl;
@@ -44,7 +43,7 @@
   line-height: $line-height-xs;
   text-align: $text-align-center;
   color: $white;
-  background: $leaf;
+  background-color: $leaf;
   text-transform: $text-transform-upper;
 }
 
@@ -72,6 +71,6 @@
   line-height: $line-height-xs;
   text-align: $text-align-center;
   color: $greyish-brown;
-  background: $white-two;
+  background-color: $white-two;
   text-transform: $text-transform-upper;
 }
