@@ -47,6 +47,16 @@
   text-transform: $text-transform-upper;
 }
 
+.catalog__item-button:hover {
+  background-color: $green-button-color-hvr;
+  color: $green-button-textcolor-hvr;
+}
+
+.catalog__item-button:focus {
+  background-color: $green-button-color-down;
+  color: $green-button-textcolor-down;
+}
+
 .catalog__more-title {
   font-size: $font-size-m;
   line-height: $line-height-xs;
@@ -73,4 +83,14 @@
   color: $grayish-brown;
   background-color: $white-two;
   text-transform: $text-transform-upper;
+}
+
+.catalog__more-button:hover {
+  background-color: $gray-button-color-hvr;
+  color: $gray-button-textcolor-hvr;
+}
+
+.catalog__more-button:focus {
+  background-color: $gray-button-color-down;
+  color: $gray-button-textcolor-down;
 }
