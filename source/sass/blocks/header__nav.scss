@@ -1,5 +1,5 @@
 .nav {
-  background-color-color: $white;
+  background-color: $white;
 }
 
 .nav__list {
@@ -15,4 +15,16 @@
   text-align: $text-align-center;
   color: $black-one;
   text-transform: $text-transform-upper;
+}
+
+.nav__link:hover {
+  color: $menu-black-hvr;
+}
+
+.nav__link:focus {
+  color: $menu-black-down;
+}
+
+.nav__link:active {
+  color: $menu-black-active;
 }

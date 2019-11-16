@@ -41,3 +41,11 @@
   color: $black-one;
   text-transform: $text-transform-upper;
 }
+
+.programms__link:hover {
+  color: $programm-link-hvr;
+}
+
+.programms__link:focus {
+  color: $programm-link-down;
+}

@@ -31,3 +31,13 @@
   background-color: $leaf;
   text-transform: $text-transform-upper;
 }
+
+.info__button:hover {
+  background-color: $green-button-color-hvr;
+  color: $green-button-textcolor-hvr;
+}
+
+.info__button:focus {
+  background-color: $green-button-color-down;
+  color: $green-button-textcolor-down;
+}
