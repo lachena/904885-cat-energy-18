@@ -1,6 +1,13 @@
 .header {
+  background-color: $peachy-pink;
+}
+
+.header__wrapper {
   display: flex;
-  background-color: $white;
+  justify-content: space-between;
+  width: 320px;
+  margin: 0 auto;
+  min-height: 65px;
 }
 
 .header__logo-image:hover {
@@ -9,4 +16,20 @@
 
 .header__logo-image:focus {
   opacity: $logo-down-opacity;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    min-height: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    min-height: 65px;
+  }
 }

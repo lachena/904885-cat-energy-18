@@ -73,3 +73,10 @@ $menu-white-down: $white-30;
 $menu-white-active: $white;
 
 $tablet-width: 768px;
+$desktop-width: 1300px;
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

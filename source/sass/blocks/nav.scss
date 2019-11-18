@@ -1,12 +1,17 @@
 .nav {
+  width: 320px;
+  margin: 0 auto;
   min-height: 264px;/* Временно */
   background-color: $white;
 }
 
 .nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 200px;
+  @include list-reset;
 }
 
 .nav__link {
@@ -28,4 +33,36 @@
 
 .nav__link:active {
   color: $menu-black-active;
+}
+
+@media (min-width: $tablet-width) {
+  .nav {
+    width: 550px;
+    min-height: 60px;
+  }
+  .nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+  }
+  .header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav {
+    width: 720px;
+    min-height: 60px;
+  }
+  .nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+  }
+  .header__toggle {
+    display: none;
+  }
 }
