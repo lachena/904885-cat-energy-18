@@ -1,3 +1,16 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: $font-size-s;
+  font-weight: $font-weight-regular;
+  font-style: $font-style-normal;
+  line-height: $line-height-xxs;
+  color: $black-zero;
+  background-color: $white;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -16,12 +29,4 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-body {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: $font-size-s;
-  font-weight: $font-weight-regular;
-  color: $black-zero;
-  background-color: $white;
 }
