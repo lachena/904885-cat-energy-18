@@ -31,7 +31,7 @@ img {
   height: auto;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: $tablet-width) {
   .nav {
     min-height: 85px;
   }
