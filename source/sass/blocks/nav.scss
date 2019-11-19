@@ -38,13 +38,13 @@
 @media (min-width: $tablet-width) {
   .nav {
     width: 550px;
-    min-height: 60px;
+    min-height: 65px;
   }
   .nav__list {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-height: 60px;
+    min-height: 65px;
   }
   .header__toggle {
     display: none;
@@ -54,13 +54,13 @@
 @media (min-width: $desktop-width) {
   .nav {
     width: 720px;
-    min-height: 60px;
+    min-height: 65px;
   }
   .nav__list {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-height: 60px;
+    min-height: 65px;
   }
   .header__toggle {
     display: none;
