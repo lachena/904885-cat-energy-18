@@ -26,6 +26,9 @@
     width: auto;
     margin-bottom: 61px;
   }
+  .header__wrapper {
+    width: 708px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -35,5 +38,8 @@
     min-height: 65px;
     width: auto;
     margin-bottom: 0;
+  }
+  .header__wrapper {
+    width: 1220px;
   }
 }
