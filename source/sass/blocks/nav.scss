@@ -11,6 +11,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 200px;
+
   @include list-reset;
 }
 
@@ -40,12 +41,14 @@
     width: 550px;
     min-height: 65px;
   }
+
   .nav__list {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     min-height: 65px;
   }
+
   .header__toggle {
     display: none;
   }
@@ -56,12 +59,14 @@
     width: 720px;
     min-height: 65px;
   }
+
   .nav__list {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     min-height: 65px;
   }
+
   .header__toggle {
     display: none;
   }

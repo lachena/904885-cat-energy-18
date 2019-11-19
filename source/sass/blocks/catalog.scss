@@ -110,19 +110,23 @@
   .catalog__wrapper {
     width: 708px;
   }
+
   .catalog__header {
     margin-bottom: 75px;
     font-size: $font-size-xxxl;
   }
+
   .catalog__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
   .catalog__item {
     width: 45%;
   }
+
   .catalog__more {
     display: flex;
     flex-direction: column;
@@ -133,6 +137,7 @@
   .catalog__wrapper {
     width: 1220px;
   }
+
   .catalog__item {
     width: 20%;
   }

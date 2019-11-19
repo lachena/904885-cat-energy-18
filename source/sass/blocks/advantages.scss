@@ -44,11 +44,13 @@
   .advantages {
     padding-bottom: 0;
   }
+
   .advantages__wrapper {
     width: 708px;
     padding-top: 51px;
     padding-bottom: 55px;
   }
+
   .advantages__list {
     display: flex;
     flex-direction: row;
@@ -56,19 +58,21 @@
     flex-wrap: wrap;
     padding-right: 88px;
   }
+
   .advantages__item {
     width: 45%;
     padding: 117px 0 0 0;
   }
+
   .advantages__header {
     margin-bottom: 63px;
     font-size: $font-size-xxxl;
   }
+
   .advantages__description {
     margin: 0;
     padding: 0 20px 0 0;
     font-size: $font-size-m;
-
   }
 }
 
@@ -76,11 +80,13 @@
   .advantages {
     padding-top: 80px;
   }
+
   .advantages__wrapper {
     width: 1220px;
     padding-top: 0;
     min-height: 355px;
   }
+
   .advantages__item {
     width: 25%;
     margin: 0;

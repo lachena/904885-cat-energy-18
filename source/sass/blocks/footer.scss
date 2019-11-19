@@ -15,6 +15,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+
   @include list-reset;
 }
 
@@ -82,12 +83,15 @@
     padding-top: 65px;
     padding-bottom: 58px;
   }
+
   .logo {
     padding: 0;
   }
+
   .copyright {
     padding: 0;
   }
+
   .copyright__sign {
     margin-left: 23px;
   }

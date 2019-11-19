@@ -62,27 +62,33 @@
   .programms {
     margin-bottom: 0;
   }
+
   .programms__wrapper {
     width: 708px;
   }
+
   .programms__list {
     display: flex;
     flex-direction: column;
   }
+
   .programms__item {
     margin-bottom: 30px;
     padding: 81px 0 62px 53px;
   }
+
   .programms__title {
     margin: 0 0 26px 0;
     padding: 0;
     font-size: $font-size-xxl;
   }
+
   .programms__description {
     margin: 0 0 61px 0;
     padding-right: 280px;
     font-size: $font-size-m;
   }
+
   .programms__link {
     font-size: $font-size-xl;
   }
@@ -92,28 +98,34 @@
   .programms {
     margin-bottom: 0;
   }
+
   .programms__wrapper {
     min-width: 1220px;
   }
+
   .programms__list {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
   .programms__item {
     width: 570px;
     min-height: 372px;
     margin-bottom: 0;
     padding: 0;
   }
+
   .programms__title {
     margin: 81px 0 75px 0;
     padding-left: 164px;
   }
+
   .programms__description {
     margin: 0 56px 36px 53px;
     padding: 0;
   }
+
   .programms__link {
     padding-left: 53px;
   }
