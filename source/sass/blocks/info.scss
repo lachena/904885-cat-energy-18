@@ -56,19 +56,23 @@
     min-width: 708px;
     min-height: 805px;
     margin-bottom: 0;
-    background-color: yellow;
+    background-color: $white;
   }
   .info__header {
-    padding: 0 0 0 89px;
+    padding: 0 45px 0 89px;
     color: $black-one;
+    font-size: $font-size-xxxl;
+    text-align: start;
   }
   .info__intro {
     padding: 0 0 48px 89px;
     color: $black-one;
+    font-size: $font-size-xl;
   }
   .info__button {
     align-self: flex-start;
     margin-left: 89px;
+    font-size: $font-size-xl;
   }
 }
 
