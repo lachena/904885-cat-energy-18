@@ -4,13 +4,13 @@
 }
 
 .programms__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  @include list-reset;
 }
 
 .programms__item {
   padding: 22px 20px;
+  margin-bottom: 20px;
+  min-height: 266px;
   background-color: $white-two;
 }
 
@@ -22,6 +22,8 @@
 }
 
 .programms__title {
+  padding-left: 82px;
+  margin-bottom: 36px;
   font-size: $font-size-l;
   line-height: $line-height-xl;
   color: $black-one;
@@ -29,6 +31,7 @@
 }
 
 .programms__description {
+  margin-bottom: 44px;
   font-family: $font-family-secondary;
   font-size: $font-size-s;
   line-height: $line-height-s;
@@ -48,4 +51,65 @@
 
 .programms__link:focus {
   color: $programm-link-down;
+}
+
+.programms__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  min-height: 552px;
+}
+
+@media (min-width: $tablet-width) {
+  .programms__wrapper {
+    width: 708px;
+  }
+  .programms__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .programms__item {
+    margin-bottom: 30px;
+    padding: 81px 0 62px 53px;
+  }
+  .programms__title {
+    margin: 0 0 26px 0;
+    padding: 0;
+    font-size: $font-size-xxl;
+  }
+  .programms__description {
+    margin: 0 0 61px 0;
+    padding-right: 280px;
+    font-size: $font-size-m;
+  }
+  .programms__link {
+    font-size: $font-size-xl;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programms__wrapper {
+    min-width: 1220px;
+  }
+  .programms__list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .programms__item {
+    width: 570px;
+    min-height: 372px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .programms__title {
+    margin: 81px 0 75px 0;
+    padding-left: 164px;
+  }
+  .programms__description {
+    margin: 0 56px 36px 53px;
+    padding: 0;
+  }
+  .programms__link {
+    padding-left: 53px;
+  }
 }
