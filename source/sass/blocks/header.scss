@@ -2,7 +2,7 @@
   background-color: $main-bg-color;
 }
 
-.header__wrapper {
+.header__inner {
   display: flex;
   justify-content: space-between;
   width: 320px;
@@ -27,7 +27,7 @@
     margin-bottom: 61px;
   }
 
-  .header__wrapper {
+  .header__inner {
     width: 708px;
   }
 }
@@ -41,7 +41,7 @@
     margin-bottom: 0;
   }
 
-  .header__wrapper {
+  .header__inner {
     width: 1220px;
   }
 }

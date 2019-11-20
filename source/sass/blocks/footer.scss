@@ -64,7 +64,7 @@
   color: $copyright-logo-color-down;
 }
 
-.footer__wrapper {
+.footer__inner {
   width: 320px;
   margin: 0 auto;
   padding-top: 39px;
@@ -75,7 +75,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .footer__wrapper {
+  .footer__inner {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -98,7 +98,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .footer__wrapper {
+  .footer__inner {
     width: 1220px;
     padding-top: 60px;
     padding-bottom: 55px;
