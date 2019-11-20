@@ -1,9 +1,10 @@
 .header {
+  padding: 0 $mobile-padding;
   background-color: $main-bg-color;
+  @include mobile-center;
 }
 
 .header__inner {
-  @include mobile-center;
   display: flex;
   justify-content: space-between;
   min-height: 65px;
@@ -19,28 +20,19 @@
 
 @media (min-width: $tablet-width) {
   .header {
+    max-width: $tablet-width;
+    padding: 0 $tablet-padding;
     display: flex;
     flex-direction: row;
     min-height: 65px;
-    width: auto;
     margin-bottom: 61px;
-  }
-
-  .header__inner {
-    width: $tablet-width;
   }
 }
 
 @media (min-width: $desktop-width) {
   .header {
-    display: flex;
-    flex-direction: row;
-    min-height: 65px;
-    width: auto;
+    max-width: $desktop-width;
+    padding: 0 $desktop-padding;
     margin-bottom: 0;
-  }
-
-  .header__inner {
-    width: $desktop-width;
   }
 }

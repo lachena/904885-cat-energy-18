@@ -1,6 +1,8 @@
 .programms {
   margin-bottom: 32px;
   background-color: $main-bg-color;
+  @include mobile-center;
+  padding: 0 $mobile-padding;
 }
 
 .programms__list {
@@ -53,17 +55,11 @@
   color: $main-color-30;
 }
 
-.programms__inner {
-  @include mobile-center;
-}
-
 @media (min-width: $tablet-width) {
   .programms {
+    max-width: $tablet-width;
+    padding: 0 $tablet-padding;
     margin-bottom: 0;
-  }
-
-  .programms__inner {
-    width: $tablet-width;
   }
 
   .programms__list {
@@ -95,11 +91,9 @@
 
 @media (min-width: $desktop-width) {
   .programms {
+    max-width: $desktop-width;
+    padding: 0 $desktop-padding;
     margin-bottom: 0;
-  }
-
-  .programms__inner {
-    min-width: $desktop-width;
   }
 
   .programms__list {
@@ -109,7 +103,7 @@
   }
 
   .programms__item {
-    width: 570px;
+    width: 48%;
     min-height: 372px;
     margin-bottom: 0;
     padding: 0;

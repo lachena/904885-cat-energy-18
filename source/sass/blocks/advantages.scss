@@ -1,6 +1,8 @@
 .advantages {
-  padding-bottom: 42px;
+  padding: 0 $mobile-padding;
   background-color: $main-bg-color;
+  @include mobile-center;
+  min-height: 370px;
 }
 
 .advantages__header,
@@ -34,18 +36,13 @@
   color: $accent-color;
 }
 
-.advantages__inner {
-  @include mobile-center;
-  min-height: 370px;
-}
-
 @media (min-width: $tablet-width) {
   .advantages {
-    padding-bottom: 0;
+    max-width: $tablet-width;
+    padding: $tablet-padding;
   }
 
   .advantages__inner {
-    width: $tablet-width;
     padding-top: 51px;
     padding-bottom: 55px;
   }
@@ -77,12 +74,11 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    padding-top: 80px;
+    max-width: $desktop-width;
+    padding: 0 $desktop-padding;
   }
 
   .advantages__inner {
-    width: $desktop-width;
-    padding-top: 0;
     min-height: 355px;
   }
 

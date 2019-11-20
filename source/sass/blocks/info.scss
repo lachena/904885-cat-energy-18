@@ -1,10 +1,15 @@
 .info {
+  padding: 0 $mobile-padding;
+  background-color: $main-bg-color;
+  @include mobile-center;
+}
+
+.info__inner {
   display: flex;
   flex-direction: column;
   min-height: 480px;
   margin-bottom: 22px;
   background-color: $secondary-button-bg-color-hvr;
-  @include mobile-center;
 }
 
 .info__header,
@@ -51,8 +56,11 @@
 
 @media (min-width: $tablet-width) {
   .info {
+    max-width: $tablet-width;
+    padding: 0 $tablet-padding;
+  }
+  .info__inner {
     align-items: flex-start;
-    min-width: $tablet-width;
     min-height: 805px;
     margin-bottom: 0;
     background-color: $main-bg-color;
@@ -80,11 +88,13 @@
 
 @media (min-width: $desktop-width) {
   .info {
-    min-width: $desktop-width;
+    max-width: $desktop-width;
+    padding: 0 $desktop-padding;
+  }
+  .info__inner {
     min-height: 696px;
     margin-top: 113px;
     margin-bottom: 80px;
-    padding-left: 80px;
   }
 
   .info__header {
