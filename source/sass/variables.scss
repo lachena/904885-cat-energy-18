@@ -68,9 +68,3 @@ $logo-down-opacity: 0.6;
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1300px;
-
-@mixin list-reset {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
