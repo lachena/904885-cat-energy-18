@@ -65,8 +65,7 @@
 }
 
 .footer__inner {
-  width: 320px;
-  margin: 0 auto;
+  @include mobile-center;
   padding-top: 39px;
   padding-bottom: 22px;
   display: flex;

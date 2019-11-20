@@ -3,10 +3,9 @@
 }
 
 .header__inner {
+  @include mobile-center;
   display: flex;
   justify-content: space-between;
-  width: 320px;
-  margin: 0 auto;
   min-height: 65px;
 }
 

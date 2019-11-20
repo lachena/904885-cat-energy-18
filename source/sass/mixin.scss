@@ -3,3 +3,8 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin mobile-center {
+  width: 320px;
+  margin: 0 auto;
+}

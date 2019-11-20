@@ -54,8 +54,7 @@
 }
 
 .programms__inner {
-  width: 320px;
-  margin: 0 auto;
+  @include mobile-center;
 }
 
 @media (min-width: $tablet-width) {
