@@ -1,5 +1,5 @@
 .catalog {
-  padding: $mobile-padding;
+  padding: 0 $mobile-padding;
   margin-bottom: 25px;
   background-color: $main-bg-color;
 
@@ -107,7 +107,7 @@
 @media (min-width: $tablet-width) {
   .catalog {
     max-width: $tablet-width;
-    padding: $tablet-padding;
+    padding: 0 $tablet-padding;
   }
 
   .catalog__header {
@@ -135,7 +135,7 @@
 @media (min-width: $desktop-width) {
   .catalog {
     max-width: $desktop-width;
-    padding: $desktop-padding;
+    padding: 0 $desktop-padding;
   }
 
   .catalog__item {

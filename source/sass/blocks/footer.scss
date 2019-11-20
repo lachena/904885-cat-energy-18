@@ -78,7 +78,7 @@
 @media (min-width: $tablet-width) {
   .footer {
     max-width: $tablet-width;
-    padding: $tablet-padding;
+    padding: 0 $tablet-padding;
   }
 
   .footer__inner {
@@ -105,7 +105,7 @@
 @media (min-width: $desktop-width) {
   .footer {
     max-width: $desktop-width;
-    padding: $desktop-padding;
+    padding: 0 $desktop-padding;
   }
 
   .footer__inner {

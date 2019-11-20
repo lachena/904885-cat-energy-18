@@ -40,7 +40,7 @@
 @media (min-width: $tablet-width) {
   .advantages {
     max-width: $tablet-width;
-    padding: $tablet-padding;
+    padding: 0 $tablet-padding;
   }
 
   .advantages__inner {
