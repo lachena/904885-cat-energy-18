@@ -52,7 +52,7 @@
 @media (min-width: $tablet-width) {
   .info {
     align-items: flex-start;
-    min-width: 708px;
+    min-width: $tablet-width;
     min-height: 805px;
     margin-bottom: 0;
     background-color: $main-bg-color;
@@ -80,7 +80,7 @@
 
 @media (min-width: $desktop-width) {
   .info {
-    min-width: 1220px;
+    min-width: $desktop-width;
     min-height: 696px;
     margin-top: 113px;
     margin-bottom: 80px;

@@ -63,7 +63,7 @@
   }
 
   .programms__inner {
-    width: 708px;
+    width: $tablet-width;
   }
 
   .programms__list {
@@ -99,7 +99,7 @@
   }
 
   .programms__inner {
-    min-width: 1220px;
+    min-width: $desktop-width;
   }
 
   .programms__list {

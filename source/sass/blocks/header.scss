@@ -27,7 +27,7 @@
   }
 
   .header__inner {
-    width: 708px;
+    width: $tablet-width;
   }
 }
 
@@ -41,6 +41,6 @@
   }
 
   .header__inner {
-    width: 1220px;
+    width: $desktop-width;
   }
 }

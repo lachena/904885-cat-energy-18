@@ -78,7 +78,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 708px;
+    width: $tablet-width;
     padding-top: 65px;
     padding-bottom: 58px;
   }
@@ -98,7 +98,7 @@
 
 @media (min-width: $desktop-width) {
   .footer__inner {
-    width: 1220px;
+    width: $desktop-width;
     padding-top: 60px;
     padding-bottom: 55px;
   }
