@@ -7,8 +7,8 @@ body {
   font-weight: $font-weight-regular;
   font-style: $font-style-normal;
   line-height: $line-height-xxs;
-  color: $black-zero;
-  background-color: $white;
+  color: $main-color;
+  background-color: $main-bg-color;
 }
 
 .visually-hidden {

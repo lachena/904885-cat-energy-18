@@ -1,5 +1,5 @@
 .footer {
-  background-color: $white-two;
+  background-color: $secondary-bg-color;
 }
 
 .logo {
@@ -29,7 +29,7 @@
   font-weight: $font-weight-regular;
   line-height: $line-height-xxs;
   text-align: $text-align-left;
-  color: $grayish-brown;
+  color: $accent-color;
 }
 
 .logo__sign:hover {
@@ -49,11 +49,11 @@
 }
 
 .copyright__link:hover {
-  color: $copyright-link-color-hvr;
+  color: $accent-color;
 }
 
 .copyright__link:focus {
-  color: $copyright-link-color-down;
+  color: $accent-color-30;
 }
 
 .copyright__logo-image:hover {

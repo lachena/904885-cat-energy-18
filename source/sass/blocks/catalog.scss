@@ -1,6 +1,6 @@
 .catalog {
   margin-bottom: 25px;
-  background-color: $white;
+  background-color: $main-bg-color;
 }
 
 .catalog__wrapper {
@@ -15,13 +15,13 @@
   font-weight: $font-weight-regular;
   line-height: $line-height-xxl;
   text-align: $text-align-left;
-  color: $black-one;
+  color: $main-color;
 }
 
 .catalog__item {
   padding: 25px 0;
   border: $border-catalog-item;
-  background-color: $white-two;
+  background-color: $secondary-bg-color;
 }
 
 .catalog__title {
@@ -29,7 +29,7 @@
   font-weight: $font-weight-regular;
   line-height: $line-height-xs;
   text-align: $text-align-left;
-  color: $black-one;
+  color: $main-color;
   text-transform: $text-transform-upper;
 }
 
@@ -40,7 +40,7 @@
   font-weight: $font-weight-regular;
   line-height: $line-height-m;
   text-align: $text-align-left;
-  color: $grayish-brown;
+  color: $accent-color;
 }
 
 .catalog__item-button {
@@ -50,19 +50,19 @@
   font-size: $font-size-m;
   line-height: $line-height-xs;
   text-align: $text-align-center;
-  color: $white;
-  background-color: $leaf;
+  color: $secondary-button-bg-color;
+  background-color: $main-button-bg-color;
   text-transform: $text-transform-upper;
 }
 
 .catalog__item-button:hover {
-  background-color: $green-button-color-hvr;
-  color: $green-button-textcolor-hvr;
+  background-color: $main-button-bg-color-hvr;
+  color: $main-button-color;
 }
 
 .catalog__item-button:focus {
-  background-color: $green-button-color-down;
-  color: $green-button-textcolor-down;
+  background-color: $main-button-bg-color-hvr;
+  color: $addition-color-30;
 }
 
 .catalog__more-title {
@@ -70,7 +70,7 @@
   font-size: $font-size-m;
   line-height: $line-height-xs;
   text-align: $text-align-center;
-  color: $black-one;
+  color: $main-color;
   text-transform: $text-transform-upper;
 }
 
@@ -81,7 +81,7 @@
   font-size: $font-size-xs;
   line-height: $line-height-m;
   text-align: $text-align-center;
-  color: $grayish-brown;
+  color: $accent-color;
 }
 
 .catalog__more-button {
@@ -91,19 +91,19 @@
   font-size: $font-size-m;
   line-height: $line-height-xs;
   text-align: $text-align-center;
-  color: $grayish-brown;
-  background-color: $white-two;
+  color: $secondary-button-color;
+  background-color: $secondary-button-bg-color;
   text-transform: $text-transform-upper;
 }
 
 .catalog__more-button:hover {
-  background-color: $gray-button-color-hvr;
-  color: $gray-button-textcolor-hvr;
+  background-color: $secondary-button-bg-color-hvr;
+  color: $accent-color;
 }
 
 .catalog__more-button:focus {
-  background-color: $gray-button-color-down;
-  color: $gray-button-textcolor-down;
+  background-color: $secondary-button-bg-color-hvr;
+  color: $accent-color-30;
 }
 
 @media (min-width: $tablet-width) {

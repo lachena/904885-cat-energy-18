@@ -1,6 +1,6 @@
 .programms {
   margin-bottom: 32px;
-  background-color: $white;
+  background-color: $main-bg-color;
 }
 
 .programms__list {
@@ -11,7 +11,7 @@
   padding: 22px 20px;
   margin-bottom: 20px;
   min-height: 266px;
-  background-color: $white-two;
+  background-color: $secondary-bg-color;
 }
 
 .programms__title,
@@ -26,7 +26,7 @@
   margin-bottom: 36px;
   font-size: $font-size-l;
   line-height: $line-height-xl;
-  color: $black-one;
+  color: $main-color;
   text-transform: $text-transform-upper;
 }
 
@@ -35,22 +35,22 @@
   font-family: $font-family-secondary;
   font-size: $font-size-s;
   line-height: $line-height-s;
-  color: $grayish-brown;
+  color: $accent-color;
 }
 
 .programms__link {
   font-size: $font-size-m;
   line-height: $line-height-xxs;
-  color: $black-one;
+  color: $main-color;
   text-transform: $text-transform-upper;
 }
 
 .programms__link:hover {
-  color: $programm-link-hvr;
+  color: $main-color;
 }
 
 .programms__link:focus {
-  color: $programm-link-down;
+  color: $main-color-30;
 }
 
 .programms__wrapper {
