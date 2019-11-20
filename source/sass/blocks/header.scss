@@ -1,6 +1,7 @@
 .header {
   padding: 0 $mobile-padding;
   background-color: $main-bg-color;
+
   @include mobile-center;
 }
 
@@ -24,6 +25,7 @@
     padding: 0 $tablet-padding;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     min-height: 65px;
     margin-bottom: 61px;
   }

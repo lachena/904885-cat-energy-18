@@ -1,6 +1,7 @@
 .info {
   padding: 0 $mobile-padding;
   background-color: $main-bg-color;
+
   @include mobile-center;
 }
 
@@ -59,6 +60,7 @@
     max-width: $tablet-width;
     padding: 0 $tablet-padding;
   }
+
   .info__inner {
     align-items: flex-start;
     min-height: 805px;
@@ -91,6 +93,7 @@
     max-width: $desktop-width;
     padding: 0 $desktop-padding;
   }
+
   .info__inner {
     min-height: 696px;
     margin-top: 113px;

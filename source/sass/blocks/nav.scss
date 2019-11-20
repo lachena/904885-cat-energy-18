@@ -1,6 +1,5 @@
 .nav {
-  @include mobile-center;
-  min-height: 264px;/* Временно */
+  min-height: 264px;
   background-color: $main-bg-color;
 }
 
@@ -37,7 +36,7 @@
 
 @media (min-width: $tablet-width) {
   .nav {
-    width: 550px;
+    width: 480px;
     min-height: 65px;
   }
 
@@ -55,7 +54,7 @@
 
 @media (min-width: $desktop-width) {
   .nav {
-    width: 720px;
+    width: 700px;
     min-height: 65px;
   }
 
