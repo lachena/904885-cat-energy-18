@@ -1,5 +1,14 @@
 .header {
-  background-color: $white;
+  padding: 0 $mobile-padding;
+  background-color: $main-bg-color;
+
+  @include mobile-center;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  min-height: 65px;
 }
 
 .header__logo-image:hover {
@@ -8,4 +17,24 @@
 
 .header__logo-image:focus {
   opacity: $logo-down-opacity;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    max-width: $tablet-width;
+    padding: 0 $tablet-padding;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 65px;
+    margin-bottom: 61px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    max-width: $desktop-width;
+    padding: 0 $desktop-padding;
+    margin-bottom: 0;
+  }
 }

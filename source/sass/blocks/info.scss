@@ -1,6 +1,16 @@
 .info {
+  padding: 0 $mobile-padding;
+  background-color: $main-bg-color;
+
+  @include mobile-center;
+}
+
+.info__inner {
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
   margin-bottom: 22px;
-  background-color: $white-three;
+  background-color: $secondary-button-bg-color-hvr;
 }
 
 .info__header,
@@ -8,15 +18,17 @@
 .info__button {
   font-weight: $font-weight-regular;
   text-align: $text-align-center;
-  color: $white;
+  color: $addition-color;
 }
 
 .info__header {
+  padding: 30px 30px 20px 30px;
   font-size: $font-size-xxl;
   line-height: $line-height-xxs;
 }
 
 .info__intro {
+  padding-bottom: 300px;
   font-size: $font-size-s;
   line-height: $line-height-xxs;
   text-transform: $text-transform-upper;
@@ -25,19 +37,79 @@
 .info__button {
   display: $display-block-button;
   vertical-align: middle;
+  align-self: center;
   padding: 14px 74px 11px 71px;
   font-size: $font-size-s;
   line-height: $line-height-s;
-  background-color: $leaf;
+  background-color: $main-button-bg-color;
   text-transform: $text-transform-upper;
 }
 
 .info__button:hover {
-  background-color: $green-button-color-hvr;
-  color: $green-button-textcolor-hvr;
+  background-color: $main-button-bg-color-hvr;
+  color: $main-button-color;
 }
 
 .info__button:focus {
-  background-color: $green-button-color-down;
-  color: $green-button-textcolor-down;
+  background-color: $main-button-bg-color-hvr;
+  color: $addition-color-30;
+}
+
+@media (min-width: $tablet-width) {
+  .info {
+    max-width: $tablet-width;
+    padding: 0 $tablet-padding;
+  }
+
+  .info__inner {
+    align-items: flex-start;
+    min-height: 805px;
+    margin-bottom: 0;
+    background-color: $main-bg-color;
+  }
+
+  .info__header {
+    padding: 0 45px 0 89px;
+    color: $main-color;
+    font-size: $font-size-xxxl;
+    text-align: start;
+  }
+
+  .info__intro {
+    padding: 0 0 48px 89px;
+    color: $main-color;
+    font-size: $font-size-xl;
+  }
+
+  .info__button {
+    align-self: flex-start;
+    margin-left: 89px;
+    font-size: $font-size-xl;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info {
+    max-width: $desktop-width;
+    padding: 0 $desktop-padding;
+  }
+
+  .info__inner {
+    min-height: 696px;
+    margin-top: 113px;
+    margin-bottom: 80px;
+  }
+
+  .info__header {
+    width: 450px;
+    text-align: start;
+    margin-bottom: 33px;
+  }
+
+  .info__intro {
+    width: 450px;
+    text-align: start;
+    margin-bottom: 53px;
+    padding-bottom: 0;
+  }
 }
