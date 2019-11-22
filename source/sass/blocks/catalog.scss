@@ -1,9 +1,8 @@
 .catalog {
+  @include mobile-center;
   padding: 0 $mobile-padding;
   margin-bottom: 25px;
   background-color: $main-bg-color;
-
-  @include mobile-center;
 }
 
 .catalog__header {

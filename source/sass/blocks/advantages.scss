@@ -1,9 +1,8 @@
 .advantages {
+  @include mobile-center;
   padding: 0 $mobile-padding;
   background-color: $main-bg-color;
   min-height: 370px;
-
-  @include mobile-center;
 }
 
 .advantages__header,

@@ -1,9 +1,8 @@
 .programms {
+  @include mobile-center;
   margin-bottom: 32px;
   background-color: $main-bg-color;
   padding: 0 $mobile-padding;
-
-  @include mobile-center;
 }
 
 .programms__list {

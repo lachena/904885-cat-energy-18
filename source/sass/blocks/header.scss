@@ -1,8 +1,7 @@
 .header {
+  @include mobile-center;
   padding: 0 $mobile-padding;
   background-color: $main-bg-color;
-
-  @include mobile-center;
 }
 
 .header__inner {

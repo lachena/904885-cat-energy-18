@@ -1,8 +1,7 @@
 .footer {
+  @include mobile-center;
   padding: 0 $mobile-padding;
   background-color: $secondary-bg-color;
-
-  @include mobile-center;
 }
 
 .footer__inner {
@@ -23,11 +22,10 @@
 }
 
 .social__list {
+  @include list-reset;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-
-  @include list-reset;
 }
 
 .copyright {

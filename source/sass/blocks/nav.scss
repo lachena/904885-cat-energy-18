@@ -4,13 +4,12 @@
 }
 
 .nav__list {
+  @include list-reset;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   min-height: 200px;
-
-  @include list-reset;
 }
 
 .nav__link {
