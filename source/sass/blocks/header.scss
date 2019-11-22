@@ -10,6 +10,10 @@
   min-height: 65px;
 }
 
+.header__link {
+  align-self: center;
+}
+
 .header__logo-image:hover {
   opacity: $logo-hvr-opacity;
 }
