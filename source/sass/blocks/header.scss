@@ -15,6 +15,7 @@
   background-color: $main-bg-color;
   cursor: pointer;
   border: none;
+
   &::before,
   &::after {
     content: "";
