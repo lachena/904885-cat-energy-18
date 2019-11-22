@@ -1,8 +1,50 @@
 .header {
   @include inner;
-  /* padding: 0 $mobile-padding; */
+  position: relative;
   background-color: $main-bg-color;
 }
+
+.header__toggle {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  z-index: 2;
+  display: block;
+  width: 19px;
+  height: 19px;
+  background-color: $main-bg-color;
+  cursor: pointer;
+  border: none;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -3px;
+    width: 25px;
+    height: 2px;
+    background-color: $main-color;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+/* .header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25px;
+  height: 2px;
+  background-color: $main-color;
+  box-shadow: 0 8px 0 0 $main-color, 0 16px 0 0 $main-color;
+} */
 
 .header__inner {
   display: flex;
@@ -16,9 +58,9 @@
   padding-left: 20px;
 }
 
-.header__toggle {
+/* .header__toggle {
   padding-right: 20px;
-}
+} */
 
 .header__logo-image:hover {
   opacity: $logo-hvr-opacity;
