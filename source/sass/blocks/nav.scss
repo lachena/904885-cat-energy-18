@@ -1,5 +1,5 @@
 .nav {
-  min-height: 264px;
+  /* min-height: 264px; */
   background-color: $main-bg-color;
 }
 
@@ -9,10 +9,17 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 200px;
+  /* min-height: 200px; */
+}
+
+.nav__item {
+  width: 100%;
+  border-bottom: 1px solid $check-border-color;
 }
 
 .nav__link {
+  display: block;
+  padding: 24px 0;
   font-size: $font-size-xl;
   font-weight: $font-weight-medium;
   line-height: $line-height-xxs;

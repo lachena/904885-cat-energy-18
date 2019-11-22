@@ -1,6 +1,6 @@
 .header {
   @include inner;
-  padding: 0 $mobile-padding;
+  /* padding: 0 $mobile-padding; */
   background-color: $main-bg-color;
 }
 
@@ -8,10 +8,16 @@
   display: flex;
   justify-content: space-between;
   min-height: 65px;
+  border-bottom: 1px solid $check-border-color;
 }
 
 .header__link {
   align-self: center;
+  padding-left: 20px;
+}
+
+.header__toggle {
+  padding-right: 20px;
 }
 
 .header__logo-image:hover {
