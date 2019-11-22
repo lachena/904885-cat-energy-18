@@ -23,11 +23,11 @@
 }
 
 .nav__link:hover {
-  color: $main-color-60;
+  color: $main-color-hvr;
 }
 
 .nav__link:focus {
-  color: $main-color-30;
+  color: $main-color-active;
 }
 
 .nav__link:active {
