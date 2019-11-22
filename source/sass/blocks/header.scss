@@ -1,5 +1,5 @@
 .header {
-  @include mobile-center;
+  @include inner;
   padding: 0 $mobile-padding;
   background-color: $main-bg-color;
 }
