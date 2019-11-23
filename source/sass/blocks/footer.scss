@@ -14,11 +14,16 @@
 
 .logo {
   padding-bottom: 31px;
+  border-bottom: 1px solid $input-border-color;
+  width: 100%;
+  text-align: center;
 }
 
 .social {
   width: 125px;
   padding: 22px 0;
+  border-bottom: 1px solid $input-border-color;
+  width: 100%;
 }
 
 .social__list {
@@ -26,6 +31,8 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  align-items: center;
+  padding: 0 90px;
 }
 
 .copyright {
@@ -41,6 +48,10 @@
   color: $accent-color;
 }
 
+.copyright__sign {
+  vertical-align: middle;
+}
+
 .logo__sign:hover {
   opacity: $logo-hvr-opacity;
 }
@@ -49,20 +60,26 @@
   opacity: $logo-down-opacity;
 }
 
-.social-icon:hover {
-  color: $social-icon-color-hvr;
+.social__icon:hover path,
+.social__icon:hover circle {
+  fill: $social-icon-color-hvr;
 }
 
-.social-icon:focus {
-  color: $social-icon-color-down;
+.social__icon:active path,
+.social__icon:active circle {
+  fill: $social-icon-color-down;
 }
 
 .copyright__link:hover {
-  color: $accent-color;
+  color: $copyright-logo-color-hvr;
 }
 
-.copyright__link:focus {
-  color: $copyright-link-down;
+.copyright__link:hover path {
+  fill: $copyright-logo-color-hvr;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
 }
 
 .copyright__logo-image:hover {
