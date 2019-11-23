@@ -1,19 +1,17 @@
 .info {
   @include inner;
-  /* padding: 0 $mobile-padding; */
   background-color: $main-bg-color;
+  background-image: url('/img/index-background-mobile@1x.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .info__inner {
   position: relative;
   display: flex;
   flex-direction: column;
-  /* min-height: 480px; */
   margin-bottom: 22px;
-  /* background-color: $secondary-button-bg-color-hvr; */
-  background-image: url('/img/index-background-mobile@1x.jpg');
-  background-position: top center;
-  background-repeat: no-repeat;
+  padding: 0 $mobile-padding;
 }
 
 .info__header,
