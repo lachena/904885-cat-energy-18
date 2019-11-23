@@ -8,12 +8,15 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* min-height: 200px; */
 }
 
 .nav__item {
   width: 100%;
   border-bottom: 1px solid $check-border-color;
+}
+
+.nav__item--active:hover .nav__link {
+  color: $main-color;
 }
 
 .nav__link {
@@ -31,12 +34,8 @@
   color: $main-color-hvr;
 }
 
-.nav__link:focus {
-  color: $main-color-active;
-}
-
 .nav__link:active {
-  color: $main-color;
+  color: $main-color-active;
 }
 
 @media (min-width: $tablet-width) {
