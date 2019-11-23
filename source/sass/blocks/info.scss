@@ -1,7 +1,7 @@
 .info {
   @include inner;
   background-color: $main-bg-color;
-  background-image: url('/img/index-background-mobile@1x.jpg');
+  background-image: url("/img/index-background-mobile@1x.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -14,6 +14,17 @@
   padding: 0 $mobile-padding;
 }
 
+.info__inner::after {
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  width: 280px;
+  height: 270px;
+  background-image: url("/img/index-can-mobile@1x.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
 .info__header,
 .info__intro,
 .info__button {
@@ -23,13 +34,15 @@
 }
 
 .info__header {
-  padding: 30px 30px 20px 30px;
+  margin: 0;
+  padding: 29px 0 19px 0;
   font-size: $font-size-xxl;
   line-height: $line-height-xxs;
 }
 
 .info__intro {
-  padding-bottom: 300px;
+  margin: 0;
+  padding-bottom: 302px;
   font-size: $font-size-s;
   line-height: $line-height-xxs;
   text-transform: $text-transform-upper;
