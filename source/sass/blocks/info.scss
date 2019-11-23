@@ -73,32 +73,48 @@
   .info {
     max-width: $tablet-width;
     padding: 0 $tablet-padding;
+    background-image: none;
+    padding-bottom: 529px;;
   }
 
   .info__inner {
     align-items: flex-start;
-    min-height: 805px;
     margin-bottom: 0;
     background-color: $main-bg-color;
   }
 
+  .info__inner::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 200px;
+    left: 55px;
+    width: 618px;
+    height: 609px;
+    background-image: url("/img/index-can-tablet-jpg.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
   .info__header {
-    padding: 0 45px 0 89px;
+    padding: 0 45px 33px 68px;
     color: $main-color;
     font-size: $font-size-xxxl;
     text-align: start;
   }
 
   .info__intro {
-    padding: 0 0 48px 89px;
+    padding: 0 0 48px 68px;
     color: $main-color;
     font-size: $font-size-xl;
   }
 
   .info__button {
+    z-index: 1;
     align-self: flex-start;
-    margin-left: 89px;
+    margin-left: 68px;
     font-size: $font-size-xl;
+    padding: 17px 29px 16px 26px;;
   }
 }
 
