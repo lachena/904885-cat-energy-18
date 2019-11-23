@@ -41,7 +41,6 @@
 @media (min-width: $tablet-width) {
   .nav {
     width: 480px;
-    min-height: 65px;
   }
 
   .nav__list {
@@ -49,6 +48,22 @@
     justify-content: space-between;
     align-items: center;
     min-height: 65px;
+  }
+
+  .nav__link {
+    font-size: $font-size-lm;
+    line-height: $line-height-lm;
+    font-weight: $font-weight-regular;
+    padding-bottom: 12px;
+  }
+
+  .nav__item {
+    border-bottom: none;
+    width: auto;
+  }
+
+  .nav__item--active {
+    border-bottom: 2px solid $main-button-bg-color;
   }
 
   .header__toggle {
