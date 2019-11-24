@@ -31,26 +31,24 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   padding: 0 90px;
 }
 
 .copyright {
+  width: 100%;
   padding-top: 22px;
 }
 
-.copyright__link {
+.copyright__name{
+  margin: 0;
   font-family: $font-family-secondary;
   font-size: $font-size-m;
   font-weight: $font-weight-regular;
   line-height: $line-height-xxs;
   text-align: $text-align-left;
   color: $accent-color;
-}
-
-.copyright__sign {
-  padding-left: 132px;
-  vertical-align: middle;
 }
 
 .logo__sign:hover {
@@ -69,6 +67,12 @@
 .social__icon:active path,
 .social__icon:active circle {
   fill: $social-icon-color-down;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .copyright__link:hover {
@@ -100,21 +104,32 @@
   .footer__inner {
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
     padding-top: 65px;
     padding-bottom: 58px;
   }
 
   .logo {
     padding: 0;
+    border: none;
+    max-width: 130px;
+  }
+
+  .social {
+    width: auto;
+    border: none;
+  }
+
+  .social__item {
+    margin-right: 28px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .copyright {
+    max-width: 162px;
     padding: 0;
-  }
-
-  .copyright__sign {
-    margin-left: 23px;
   }
 }
 
