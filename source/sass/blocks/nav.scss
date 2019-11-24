@@ -46,8 +46,8 @@
   .nav__list {
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    min-height: 65px;
   }
 
   .nav__link {
@@ -60,10 +60,18 @@
   .nav__item {
     border-bottom: none;
     width: auto;
-  }
-
-  .nav__item--active {
-    border-bottom: 2px solid $main-button-bg-color;
+    &--active {
+      position: relative;
+      &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -12px;
+      left: 0;
+      height: 2px;
+      background-color: $main-button-bg-color;
+      }
+    }
   }
 
   .header__toggle {
