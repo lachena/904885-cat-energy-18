@@ -168,12 +168,20 @@
   }
 
   .advantages__inner {
-    min-height: 355px;
+    padding-bottom: 90px;
+  }
+
+  .advantages__list {
+    padding-right: 0;
   }
 
   .advantages__item {
-    width: 25%;
+    width: 20%;
     margin: 0;
     padding-bottom: 48px;
+  }
+
+  .advantages__description {
+    padding: 0;
   }
 }

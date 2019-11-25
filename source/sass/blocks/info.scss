@@ -64,7 +64,7 @@
   color: $main-button-color;
 }
 
-.info__button:focus {
+.info__button:active {
   background-color: $main-button-bg-color-hvr;
   color: $addition-color-active;
 }

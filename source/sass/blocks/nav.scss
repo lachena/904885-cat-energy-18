@@ -13,10 +13,10 @@
 .nav__item {
   width: 100%;
   border-bottom: 1px solid $check-border-color;
-}
 
-.nav__item--active:hover .nav__link {
-  color: $main-color;
+  &--active:hover .nav__link {
+    color: $main-color;
+  }
 }
 
 .nav__link {
@@ -50,13 +50,6 @@
     align-items: center;
   }
 
-  .nav__link {
-    font-size: $font-size-lm;
-    line-height: $line-height-lm;
-    font-weight: $font-weight-regular;
-    padding-bottom: 12px;
-  }
-
   .nav__item {
     border-bottom: none;
     width: auto;
@@ -73,6 +66,13 @@
         background-color: $main-button-bg-color;
       }
     }
+  }
+
+  .nav__link {
+    font-size: $font-size-lm;
+    line-height: $line-height-lm;
+    font-weight: $font-weight-regular;
+    padding-bottom: 12px;
   }
 
   .header__toggle {
@@ -96,9 +96,21 @@
     background-color: $addition-color;
   }
 
+  .nav__item--active:hover .nav__link {
+    color: $addition-color;
+  }
+
   .nav__link {
     color: $addition-color;
     line-height: $line-height-xs;
+
+    &:hover {
+      color: $addition-color-hvr;
+    }
+
+    &:active {
+      color: $addition-color-active;
+    }
   }
 
   .header__toggle {

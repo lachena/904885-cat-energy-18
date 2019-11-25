@@ -1,10 +1,10 @@
 .footer {
   @include inner;
-  padding: 0 $mobile-padding;
   background-color: $secondary-bg-color;
 }
 
 .footer__inner {
+  padding: 0 $mobile-padding;
   padding-top: 39px;
   padding-bottom: 22px;
   display: flex;
@@ -57,6 +57,21 @@
 
 .logo__sign:focus {
   opacity: $logo-down-opacity;
+}
+
+.social__link--vkontakte .social__icon {
+  width: 30px;
+  height: 16px;
+}
+
+.social__link--instagram .social__icon {
+  width: 23px;
+  height: 23px;
+}
+
+.social__link--facebook .social__icon {
+  width: 14px;
+  height: 28px;
 }
 
 .social__icon:hover path,
