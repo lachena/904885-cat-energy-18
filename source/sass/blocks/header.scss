@@ -81,6 +81,7 @@
     justify-content: space-between;
     margin-top: 24px;
     margin-bottom: 68px;
+    background-color: transparent;
   }
 
   .header__logo-image {
@@ -92,7 +93,7 @@
   }
 
   .header__link {
-    background-image: url("/img/logo-tablet.svg");
+    background-image: url("/img/logo-desktop.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
     width: 174px;
@@ -107,5 +108,9 @@
     max-width: $desktop-width;
     padding: 0 $desktop-padding;
     margin-bottom: 0;
+  }
+
+  .header__inner {
+    z-index: 2;
   }
 }

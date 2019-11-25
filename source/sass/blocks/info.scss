@@ -114,6 +114,7 @@
     align-self: flex-start;
     margin-left: 68px;
     font-size: $font-size-xl;
+    line-height: $line-height-xxs;
     padding: 17px 29px 16px 26px;;
   }
 }
@@ -121,23 +122,37 @@
 @media (min-width: $desktop-width) {
   .info {
     max-width: $desktop-width;
-    padding: 0 $desktop-padding;
+    margin-top: -90px;
+    margin-bottom: 80px;
+    padding: 0 $desktop-padding 80px $desktop-padding;
+    background-color: transparent;
+    background-image: url("/img/index-background-desktop@1x.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
   }
 
   .info__inner {
-    min-height: 696px;
-    margin-top: 113px;
+    max-width: 610px;
     margin-bottom: 80px;
+
+    &::after {
+      top: 142px;
+      left: 532px;
+      width: 552px;
+      height: 499px;
+      background-image: url("/img/index-can-desktop@1x.png");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
   }
 
   .info__header {
-    width: 450px;
     text-align: start;
+    margin-top: 226px;
     margin-bottom: 33px;
   }
 
   .info__intro {
-    width: 450px;
     text-align: start;
     margin-bottom: 53px;
     padding-bottom: 0;
