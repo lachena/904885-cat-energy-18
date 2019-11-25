@@ -92,15 +92,15 @@
     align-items: center;
   }
 
-  .nav__item--active::after {
+  /* .nav__item--active::after {
     background-color: $addition-color;
   }
 
   .nav__item--active:hover .nav__link {
     color: $addition-color;
-  }
+  } */
 
-  .nav__link {
+  /* .nav__link {
     color: $addition-color;
     line-height: $line-height-xs;
 
@@ -111,7 +111,7 @@
     &:active {
       color: $addition-color-active;
     }
-  }
+  } */
 
   .header__toggle {
     display: none;
