@@ -81,6 +81,24 @@
   color: $addition-color-active;
 }
 
+.catalog__more {
+  position: relative;
+  text-align: center;
+  padding-bottom: 25px;
+  border-bottom: $border-catalog-item;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 145px;
+    width: 31px;
+    height: 31px;
+    background-image: url("/img/icon-plus-mobile.svg");
+    opacity: 0.1;
+  }
+}
+
 .catalog__more-title {
   padding: 83px 0 0 0;
   font-size: $font-size-m;
