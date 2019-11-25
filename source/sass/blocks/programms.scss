@@ -127,12 +127,14 @@
   .programms__item {
     margin-bottom: 30px;
     padding: 81px 0 62px 53px;
+
     &::before {
       top: 92px;
       left: 446px;
       width: 200px;
       height: 200px;
     }
+
     &--sit::after {
       top: 80px;
       left: 475px;
@@ -140,6 +142,7 @@
       height: 194px;
       background-image: url("/img/icon-cat-slim.svg");
     }
+
     &--walk::after {
       top: 135px;
       left: 412px;
@@ -167,6 +170,7 @@
   .programms__link {
     max-width: 123px;
     font-size: $font-size-xl;
+
     &::after {
       bottom: 2px;
       left: 131px;
@@ -190,23 +194,53 @@
   }
 
   .programms__item {
-    width: 48%;
-    min-height: 372px;
+    max-width: 40%;
     margin-bottom: 0;
-    padding: 0;
+    padding: 81px 56px 62px 52px;
+
+    &::before {
+      top: 47px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &--sit::after {
+      top: 41px;
+      left: 65px;
+      width: 71px;
+      height: 97px;
+    }
+
+    &--walk::after {
+      top: 69px;
+      left: 34px;
+      width: 134px;
+      height: 57px;
+    }
   }
 
   .programms__title {
-    margin: 81px 0 75px 0;
+    padding-bottom: 75px;
     padding-left: 164px;
+    margin: 0;
   }
 
   .programms__description {
-    margin: 0 56px 36px 53px;
     padding: 0;
+    padding-bottom: 36px;
+    padding-right: 25px;
+    margin: 0;
   }
 
   .programms__link {
-    padding-left: 53px;
+    max-width: 131px;
+
+    &::after {
+      bottom: 4px;
+      left: 131px;
+      width: 24px;
+      height: 11px;
+    }
   }
 }
