@@ -1,10 +1,10 @@
 .footer {
   @include inner;
+  padding: 0 $mobile-padding;
   background-color: $secondary-bg-color;
 }
 
 .footer__inner {
-  padding: 0 $mobile-padding;
   padding-top: 39px;
   padding-bottom: 22px;
   display: flex;
@@ -90,8 +90,7 @@
   justify-content: space-between;
 }
 
-.copyright__link:hover,
-.copyright__link .copyright__name:hover {
+.copyright__link:hover .copyright__name{
   color: $copyright-logo-color-hvr;
 }
 
@@ -99,20 +98,12 @@
   fill: $copyright-logo-color-hvr;
 }
 
-.copyright__link:active {
-  opacity: 0.3;
-}
-
-.copyright__link .copyright__name:active {
+.copyright__link:active .copyright__name{
   color: $copyright-logo-color-down;
 }
 
-.copyright__logo-image:hover {
-  color: $copyright-logo-color-hvr;
-}
-
-.copyright__logo-image:focus {
-  color: $copyright-logo-color-down;
+.copyright__link:active path {
+  fill: $copyright-logo-color-down;
 }
 
 @media (min-width: $tablet-width) {
