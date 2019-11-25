@@ -62,14 +62,15 @@
     width: auto;
     &--active {
       position: relative;
+
       &::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: -12px;
-      left: 0;
-      height: 2px;
-      background-color: $main-button-bg-color;
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -12px;
+        left: 0;
+        height: 2px;
+        background-color: $main-button-bg-color;
       }
     }
   }
@@ -81,15 +82,23 @@
 
 @media (min-width: $desktop-width) {
   .nav {
-    width: 700px;
-    min-height: 65px;
+    max-width: 610px;
+    background-color: yellow;
   }
 
   .nav__list {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-height: 65px;
+  }
+
+  .nav__item--active::after {
+    background-color: $addition-color;
+  }
+
+  .nav__link {
+    color: $addition-color;
+    line-height: $line-height-xs;
   }
 
   .header__toggle {
