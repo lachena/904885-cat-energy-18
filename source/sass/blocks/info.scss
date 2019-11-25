@@ -12,17 +12,17 @@
   flex-direction: column;
   margin-bottom: 22px;
   padding: 0 $mobile-padding;
-}
 
-.info__inner::after {
-  content: "";
-  position: absolute;
-  bottom: 40px;
-  width: 280px;
-  height: 270px;
-  background-image: url("/img/index-can-mobile@1x.png");
-  background-position: top center;
-  background-repeat: no-repeat;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    width: 280px;
+    height: 270px;
+    background-image: url("/img/index-can-mobile@1x.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
 }
 
 .info__header,
@@ -57,16 +57,16 @@
   line-height: $line-height-s;
   background-color: $main-button-bg-color;
   text-transform: $text-transform-upper;
-}
 
-.info__button:hover {
-  background-color: $main-button-bg-color-hvr;
-  color: $main-button-color;
-}
+  &:hover {
+    background-color: $main-button-bg-color-hvr;
+    color: $main-button-color;
+  }
 
-.info__button:active {
-  background-color: $main-button-bg-color-hvr;
-  color: $addition-color-active;
+  &:active {
+    background-color: $main-button-bg-color-hvr;
+    color: $addition-color-active;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -74,26 +74,26 @@
     max-width: $tablet-width;
     padding: 0 $tablet-padding;
     background-image: none;
-    padding-bottom: 529px;;
+    padding-bottom: 529px;
   }
 
   .info__inner {
     align-items: flex-start;
     margin-bottom: 0;
     background-color: $main-bg-color;
-  }
 
-  .info__inner::after {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    top: 200px;
-    left: 55px;
-    width: 618px;
-    height: 609px;
-    background-image: url("/img/index-can-tablet-jpg.png");
-    background-position: top center;
-    background-repeat: no-repeat;
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      top: 200px;
+      left: 55px;
+      width: 618px;
+      height: 609px;
+      background-image: url("/img/index-can-tablet-jpg.png");
+      background-position: top center;
+      background-repeat: no-repeat;
+    }
   }
 
   .info__header {
@@ -115,7 +115,7 @@
     margin-left: 68px;
     font-size: $font-size-xl;
     line-height: $line-height-xxs;
-    padding: 17px 29px 16px 26px;;
+    padding: 17px 29px 16px 26px;
   }
 }
 

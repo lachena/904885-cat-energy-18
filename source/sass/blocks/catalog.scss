@@ -7,10 +7,7 @@
 
 .catalog__header {
   margin: 0;
-  padding: 0;
-  padding-top: 31px;
-  padding-bottom: 36px;
-  padding: 0 $mobile-padding;;
+  padding: 31px $mobile-padding 36px $mobile-padding;
   font-size: $font-size-xxl;
   font-weight: $font-weight-regular;
   line-height: $line-height-xxl;
@@ -25,6 +22,7 @@
   padding: 25px 0;
   text-align: center;
   border-bottom: $border-catalog-item;
+
   &:first-child {
     border-top: $border-catalog-item;
   }
@@ -69,16 +67,16 @@
   color: $secondary-button-bg-color;
   background-color: $main-button-bg-color;
   text-transform: $text-transform-upper;
-}
 
-.catalog__item-button:hover {
-  background-color: $main-button-bg-color-hvr;
-  color: $main-button-color;
-}
+  &:hover {
+    background-color: $main-button-bg-color-hvr;
+    color: $main-button-color;
+  }
 
-.catalog__item-button:focus {
-  background-color: $main-button-bg-color-hvr;
-  color: $addition-color-active;
+  &:active {
+    background-color: $main-button-bg-color-hvr;
+    color: $addition-color-active;
+  }
 }
 
 .catalog__more {
@@ -130,16 +128,16 @@
   color: $secondary-button-color;
   background-color: $secondary-button-bg-color;
   text-transform: $text-transform-upper;
-}
 
-.catalog__more-button:hover {
-  background-color: $secondary-button-bg-color-hvr;
-  color: $accent-color;
-}
+  &:hover {
+    background-color: $secondary-button-bg-color-hvr;
+    color: $accent-color;
+  }
 
-.catalog__more-button:focus {
-  background-color: $secondary-button-bg-color-hvr;
-  color: $accent-color;
+  &:active {
+    background-color: $secondary-button-bg-color-hvr;
+    color: $accent-color;
+  }
 }
 
 @media (min-width: $tablet-width) {

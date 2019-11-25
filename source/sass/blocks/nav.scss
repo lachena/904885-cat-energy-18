@@ -28,14 +28,14 @@
   text-align: $text-align-center;
   color: $main-color;
   text-transform: $text-transform-upper;
-}
 
-.nav__link:hover {
-  color: $main-color-hvr;
-}
+  &:hover {
+    color: $main-color-hvr;
+  }
 
-.nav__link:active {
-  color: $main-color-active;
+  &:active {
+    color: $main-color-active;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -53,6 +53,7 @@
   .nav__item {
     border-bottom: none;
     width: auto;
+
     &--active {
       position: relative;
 
