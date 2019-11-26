@@ -73,35 +73,36 @@
   height: 28px;
 }
 
-.social__icon:hover path,
-.social__icon:hover circle {
-  fill: $social-icon-color-hvr;
+.social__icon {
+  color: #666666;
 }
 
-.social__icon:active path,
-.social__icon:active circle {
-  fill: $social-icon-color-down;
+.social__icon:hover {
+  color: $social-icon-color-hvr;
+}
+
+.social__icon:active {
+  color: $social-icon-color-down;
 }
 
 .copyright__link {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: $copyright-logo-color;
 
-  &:hover .copyright__name {
+  &:hover {
     color: $copyright-logo-color-hvr;
+    & .copyright__name {
+      color: $copyright-logo-color-hvr;
+    }
   }
 
-  &:hover path {
-    fill: $copyright-logo-color-hvr;
-  }
-
-  &:active .copyright__name {
+  &:active {
     color: $copyright-logo-color-down;
-  }
-
-  &:active path {
-    fill: $copyright-logo-color-down;
+    & .copyright__name {
+      color: $copyright-logo-color-down;
+    }
   }
 }
 
