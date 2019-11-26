@@ -1,13 +1,12 @@
 .catalog {
   @include inner;
-  padding: 0 $mobile-padding;
   margin-bottom: 25px;
   background-color: $main-bg-color;
 }
 
 .catalog__header {
   margin: 0;
-  padding: 0;
+  padding: 31px $mobile-padding 36px $mobile-padding;
   font-size: $font-size-xxl;
   font-weight: $font-weight-regular;
   line-height: $line-height-xxl;
@@ -16,18 +15,31 @@
 }
 
 .catalog__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 25px 0;
-  border: $border-catalog-item;
-  background-color: $secondary-bg-color;
+  text-align: center;
+  border-bottom: $border-catalog-item;
+
+  &:first-child {
+    border-top: $border-catalog-item;
+  }
 }
 
 .catalog__title {
+  padding-top: 25px;
   font-size: $font-size-m;
   font-weight: $font-weight-regular;
   line-height: $line-height-xs;
   text-align: $text-align-left;
   color: $main-color;
   text-transform: $text-transform-upper;
+}
+
+.catalog__table {
+  width: 100%;
+  margin-top: 18px;
 }
 
 .catalog__item-value,
@@ -40,6 +52,10 @@
   color: $accent-color;
 }
 
+.catalog__item-field {
+  text-align: end;
+}
+
 .catalog__item-button {
   display: $display-block-button;
   vertical-align: middle;
@@ -50,19 +66,38 @@
   color: $secondary-button-bg-color;
   background-color: $main-button-bg-color;
   text-transform: $text-transform-upper;
+
+  &:hover {
+    background-color: $main-button-bg-color-hvr;
+    color: $main-button-color;
+  }
+
+  &:active {
+    background-color: $main-button-bg-color-hvr;
+    color: $addition-color-active;
+  }
 }
 
-.catalog__item-button:hover {
-  background-color: $main-button-bg-color-hvr;
-  color: $main-button-color;
-}
+.catalog__more {
+  position: relative;
+  text-align: center;
+  padding-bottom: 25px;
+  border-bottom: $border-catalog-item;
 
-.catalog__item-button:focus {
-  background-color: $main-button-bg-color-hvr;
-  color: $addition-color-active;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 145px;
+    width: 31px;
+    height: 31px;
+    background-image: url("../../img/icon-plus-mobile.svg");
+    opacity: 0.1;
+  }
 }
 
 .catalog__more-title {
+  margin: 0;
   padding: 83px 0 0 0;
   font-size: $font-size-m;
   line-height: $line-height-xs;
@@ -72,6 +107,7 @@
 }
 
 .catalog__more-info {
+  margin: 0;
   padding-top: 11px;
   padding-bottom: 22px;
   font-family: $font-family-secondary;
@@ -91,16 +127,16 @@
   color: $secondary-button-color;
   background-color: $secondary-button-bg-color;
   text-transform: $text-transform-upper;
-}
 
-.catalog__more-button:hover {
-  background-color: $secondary-button-bg-color-hvr;
-  color: $accent-color;
-}
+  &:hover {
+    background-color: $secondary-button-bg-color-hvr;
+    color: $accent-color;
+  }
 
-.catalog__more-button:focus {
-  background-color: $secondary-button-bg-color-hvr;
-  color: $accent-color;
+  &:active {
+    background-color: $secondary-button-bg-color-hvr;
+    color: $accent-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -112,6 +148,7 @@
   .catalog__header {
     margin-bottom: 75px;
     font-size: $font-size-xxxl;
+    padding: 0;
   }
 
   .catalog__list {
@@ -122,12 +159,52 @@
   }
 
   .catalog__item {
+    flex-direction: column;
     width: 45%;
+    margin-bottom: 140px;
+    border: none;
+    background-color: $secondary-bg-color;
+
+    &:first-child {
+      border: none;
+    }
+  }
+
+  .catalog__table {
+    margin-top: 28px;
+    padding: 0 38px 40px 38px;
+  }
+
+  .catalog__item-value,
+  .catalog__item-field {
+    font-size: $font-size-m;
+    line-height: $line-height-xxs;
+    padding: 5px 0;
   }
 
   .catalog__more {
     display: flex;
     flex-direction: column;
+    width: 45%;
+    border: 1px solid $secondary-bg-color;
+
+    &::before {
+      top: 55px;
+      width: 61px;
+      height: 61px;
+      background-image: url("../../img/icon-plus.svg");
+      opacity: 0.1;
+    }
+  }
+
+  .catalog__more-title {
+    padding: 166px 95px 28px 95px;
+    font-size: $font-size-xl;
+  }
+
+  .catalog__more-info {
+    padding: 0 80px 85px 80px;
+    font-size: $font-size-m;
   }
 }
 
@@ -138,6 +215,26 @@
   }
 
   .catalog__item {
-    width: 20%;
+    width: 23%;
+  }
+
+  .catalog__table {
+    margin-top: 28px;
+  }
+
+  .catalog__more {
+    width: 23%;
+  }
+
+  .catalog__more-title {
+    padding: 166px 56px 28px 56px;
+  }
+
+  .catalog__more-info {
+    padding: 0 40px 85px 40px;
+  }
+
+  .catalog__more-button {
+    padding: 13px 40px;
   }
 }

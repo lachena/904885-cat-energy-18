@@ -1,15 +1,28 @@
 .info {
   @include inner;
-  padding: 0 $mobile-padding;
   background-color: $main-bg-color;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .info__inner {
+  position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 480px;
   margin-bottom: 22px;
-  background-color: $secondary-button-bg-color-hvr;
+  padding: 0 $mobile-padding;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    width: 280px;
+    height: 270px;
+    background-image: url("../../img/index-can-mobile@1x.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
 }
 
 .info__header,
@@ -21,13 +34,15 @@
 }
 
 .info__header {
-  padding: 30px 30px 20px 30px;
+  margin: 0;
+  padding: 29px 0 19px 0;
   font-size: $font-size-xxl;
   line-height: $line-height-xxs;
 }
 
 .info__intro {
-  padding-bottom: 300px;
+  margin: 0;
+  padding-bottom: 302px;
   font-size: $font-size-s;
   line-height: $line-height-xxs;
   text-transform: $text-transform-upper;
@@ -42,71 +57,103 @@
   line-height: $line-height-s;
   background-color: $main-button-bg-color;
   text-transform: $text-transform-upper;
-}
 
-.info__button:hover {
-  background-color: $main-button-bg-color-hvr;
-  color: $main-button-color;
-}
+  &:hover {
+    background-color: $main-button-bg-color-hvr;
+    color: $main-button-color;
+  }
 
-.info__button:focus {
-  background-color: $main-button-bg-color-hvr;
-  color: $addition-color-active;
+  &:active {
+    background-color: $main-button-bg-color-hvr;
+    color: $addition-color-active;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .info {
     max-width: $tablet-width;
     padding: 0 $tablet-padding;
+    background-image: none;
+    padding-bottom: 529px;
   }
 
   .info__inner {
     align-items: flex-start;
-    min-height: 805px;
     margin-bottom: 0;
     background-color: $main-bg-color;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      top: 200px;
+      left: 55px;
+      width: 618px;
+      height: 609px;
+      background-image: url("../../img/index-can-tablet-jpg.png");
+      background-position: top center;
+      background-repeat: no-repeat;
+    }
   }
 
   .info__header {
-    padding: 0 45px 0 89px;
+    padding: 0 45px 33px 68px;
     color: $main-color;
     font-size: $font-size-xxxl;
     text-align: start;
   }
 
   .info__intro {
-    padding: 0 0 48px 89px;
+    padding: 0 0 48px 68px;
     color: $main-color;
     font-size: $font-size-xl;
   }
 
   .info__button {
+    z-index: 1;
     align-self: flex-start;
-    margin-left: 89px;
+    margin-left: 68px;
     font-size: $font-size-xl;
+    line-height: $line-height-xxs;
+    padding: 17px 29px 16px 26px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .info {
     max-width: $desktop-width;
-    padding: 0 $desktop-padding;
+    margin-top: -90px;
+    margin-bottom: 80px;
+    padding: 0 $desktop-padding 80px $desktop-padding;
+    background-color: transparent;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
   }
 
   .info__inner {
-    min-height: 696px;
-    margin-top: 113px;
+    max-width: 610px;
     margin-bottom: 80px;
+    background-color: transparent;
+
+    &::after {
+      top: 142px;
+      left: 532px;
+      width: 552px;
+      height: 499px;
+      background-image: url("../../img/index-can-desktop@1x.png");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
   }
 
   .info__header {
-    width: 450px;
     text-align: start;
+    margin-top: 226px;
     margin-bottom: 33px;
   }
 
   .info__intro {
-    width: 450px;
     text-align: start;
     margin-bottom: 53px;
     padding-bottom: 0;
