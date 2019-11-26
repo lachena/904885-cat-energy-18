@@ -93,6 +93,7 @@
 
   &:hover {
     color: $copyright-logo-color-hvr;
+
     & .copyright__name {
       color: $copyright-logo-color-hvr;
     }
@@ -100,6 +101,7 @@
 
   &:active {
     color: $copyright-logo-color-down;
+
     & .copyright__name {
       color: $copyright-logo-color-down;
     }
