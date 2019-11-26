@@ -5,14 +5,14 @@
 }
 
 @mixin inner {
-  max-width: $mobile-width;
+  width: $mobile-width;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    max-width: $tablet-width;
+    width: $tablet-width;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: $desktop-width;
+    width: $desktop-width;
   }
 }
