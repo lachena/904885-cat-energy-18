@@ -17,17 +17,11 @@
   flex-direction: column;
   margin-bottom: 22px;
   padding: 0 $mobile-padding;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 40px;
-    width: 280px;
-    height: 270px;
-    background-image: url("../img/index-can-mobile@1x.png");
-    background-position: top center;
-    background-repeat: no-repeat;
-  }
+.info__image {
+  position: absolute;
+  bottom: 40px;
 }
 
 .info__header,
@@ -86,19 +80,12 @@
     align-items: flex-start;
     margin-bottom: 0;
     background-color: $main-bg-color;
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      z-index: 0;
-      top: 200px;
-      left: 55px;
-      width: 618px;
-      height: 609px;
-      background-image: url("../img/index-can-tablet-jpg.png");
-      background-position: top center;
-      background-repeat: no-repeat;
-    }
+  .info__image {
+    width: 709px;
+    top: 200px;
+    left: 55px;
   }
 
   .info__header {
@@ -145,16 +132,12 @@
     max-width: 610px;
     margin-bottom: 80px;
     background-color: transparent;
+  }
 
-    &::after {
-      top: 142px;
-      left: 532px;
-      width: 552px;
-      height: 499px;
-      background-image: url("../img/index-can-desktop@1x.png");
-      background-position: 0 0;
-      background-repeat: no-repeat;
-    }
+  .info__image {
+    width: 552px;
+    top: 142px;
+    left: 532px;
   }
 
   .info__header {

@@ -26,9 +26,9 @@
 }
 
 .header__link {
-  background-image: url("../img/logo-mobile.svg");
+  /* background-image: url("../img/logo-mobile.svg");
   background-position: 0 0;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   width: 191px;
   height: 39px;
   margin-left: 20px;
@@ -63,11 +63,11 @@
   }
 
   .header__link {
-    background-image: url("../img/logo-desktop.svg");
+    /* background-image: url("../img/logo-desktop.svg");
     background-position: 0 0;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     width: 174px;
-    height: 59px;
+    height: auto;
     margin-left: 0;
     margin-right: 85px;
   }
