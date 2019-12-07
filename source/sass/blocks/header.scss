@@ -31,6 +31,11 @@
   margin-left: 20px;
 }
 
+/* .header__logo-image {
+  width: 191px;
+  height: 39px;
+} */
+
 .header__logo-image:hover {
   opacity: $logo-hvr-opacity;
 }
@@ -49,10 +54,6 @@
     margin-top: 24px;
     margin-bottom: 68px;
     background-color: transparent;
-  }
-
-  .header__logo-image {
-    display: none;
   }
 
   .header__inner {
