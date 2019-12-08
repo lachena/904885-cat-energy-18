@@ -116,11 +116,8 @@
     max-width: $desktop-width;
     margin-top: -90px;
     margin-bottom: 80px;
-    padding: 0 $desktop-padding 80px $desktop-padding;
-    background-color: transparent;
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-position: top right;
-    background-repeat: no-repeat;
+    padding: 0 $desktop-padding;
+    background: linear-gradient(to left, rgb(0, 128, 0) 50%, rgb(255, 255, 255) 50%);
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
@@ -129,9 +126,14 @@
   }
 
   .info__inner {
-    max-width: 610px;
+    width: 100%;
     margin-bottom: 80px;
-    background-color: transparent;
+    padding-bottom: 220px;
+    padding-right: 91px;
+    background-color: $main-bg-color;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
   }
 
   .info__image {
@@ -144,6 +146,7 @@
     text-align: start;
     margin-top: 226px;
     margin-bottom: 33px;
+    padding-right: 660px;
   }
 
   .info__intro {
