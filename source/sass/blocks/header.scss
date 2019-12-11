@@ -1,7 +1,11 @@
 .header {
-  @include inner;
   position: relative;
   background-color: $main-bg-color;
+}
+
+.header__inner {
+  @include inner;
+  box-sizing: border-box;
 }
 
 .header__toggle {
@@ -41,14 +45,19 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    max-width: $tablet-width;
-    padding: 0 $tablet-padding;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 24px;
     margin-bottom: 68px;
     background-color: transparent;
+  }
+
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: $tablet-width;
+    padding: 0 $tablet-padding;
   }
 
   .header__wrapper {
@@ -66,8 +75,11 @@
 @media (min-width: $desktop-width) {
   .header {
     z-index: 2;
+    margin-bottom: 0;
+  }
+
+  .header__inner {
     max-width: $desktop-width;
     padding: 0 $desktop-padding;
-    margin-bottom: 0;
   }
 }
