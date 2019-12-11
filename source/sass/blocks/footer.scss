@@ -1,10 +1,10 @@
 .footer {
-  @include inner;
-  padding: 0 $mobile-padding;
   background-color: $secondary-bg-color;
 }
 
 .footer__inner {
+  @include inner;
+  padding: 0 $mobile-padding;
   padding-top: 39px;
   padding-bottom: 22px;
   display: flex;
@@ -111,12 +111,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .footer {
+  .footer__inner {
     max-width: $tablet-width;
     padding: 0 $tablet-padding;
-  }
-
-  .footer__inner {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 65px;
@@ -149,12 +146,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .footer {
+  .footer__inner {
     max-width: $desktop-width;
     padding: 0 $desktop-padding;
-  }
-
-  .footer__inner {
     padding-top: 60px;
     padding-bottom: 55px;
   }
