@@ -1,14 +1,15 @@
 .info {
   width: 100%;
+  min-height: 305px;
   background-color: $main-bg-color;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: auto 305px;
+  background-clip: content-box;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
-    background-size: 100% auto;
   }
 }
 
@@ -19,6 +20,7 @@
   flex-direction: column;
   margin-bottom: 22px;
   padding: 0 $mobile-padding;
+  box-sizing: border-box;
 }
 
 .info__image {
@@ -81,7 +83,6 @@
     padding: 0 $tablet-padding;
     align-items: flex-start;
     margin-bottom: 0;
-    /* background-color: $main-bg-color; */
   }
 
   .info__image {
