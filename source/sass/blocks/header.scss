@@ -17,7 +17,7 @@
   border: none;
 }
 
-.header__inner {
+.header__wrapper {
   display: flex;
   justify-content: space-between;
   min-height: 65px;
@@ -51,7 +51,7 @@
     background-color: transparent;
   }
 
-  .header__inner {
+  .header__wrapper {
     border-bottom: none;
   }
 
