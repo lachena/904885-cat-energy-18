@@ -1,7 +1,11 @@
 .advantages {
+  background-color: $main-bg-color;
+}
+
+.advantages__inner {
   @include inner;
   padding: 0 $mobile-padding;
-  background-color: $main-bg-color;
+  box-sizing: border-box;
 }
 
 .advantages__header,
@@ -92,12 +96,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages {
+  .advantages__inner {
     max-width: $tablet-width;
     padding: 0 $tablet-padding;
-  }
-
-  .advantages__inner {
     padding-top: 51px;
     padding-bottom: 55px;
   }
@@ -174,12 +175,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .advantages {
+  .advantages__inner {
     max-width: $desktop-width;
     padding: 0 $desktop-padding;
-  }
-
-  .advantages__inner {
     padding-bottom: 90px;
   }
 
