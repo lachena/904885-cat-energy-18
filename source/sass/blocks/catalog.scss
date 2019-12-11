@@ -1,7 +1,11 @@
 .catalog {
-  @include inner;
   margin-bottom: 25px;
   background-color: $main-bg-color;
+}
+
+.catalog__inner {
+  @include inner;
+  box-sizing: border-box;
 }
 
 .catalog__header {
@@ -140,7 +144,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog {
+  .catalog__inner {
     max-width: $tablet-width;
     padding: 0 $tablet-padding;
   }
@@ -209,7 +213,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .catalog {
+  .catalog__inner {
     max-width: $desktop-width;
     padding: 0 $desktop-padding;
   }
