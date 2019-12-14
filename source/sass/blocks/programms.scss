@@ -1,8 +1,12 @@
 .programms {
-  @include inner;
   margin-bottom: 32px;
   background-color: $main-bg-color;
+}
+
+.programms__inner {
+  @include inner;
   padding: 0 $mobile-padding;
+  box-sizing: border-box;
 }
 
 .programms__list {
@@ -114,9 +118,12 @@
 
 @media (min-width: $tablet-width) {
   .programms {
+    margin-bottom: 0;
+  }
+
+  .programms__inner {
     max-width: $tablet-width;
     padding: 0 $tablet-padding;
-    margin-bottom: 0;
   }
 
   .programms__list {
@@ -182,9 +189,12 @@
 
 @media (min-width: $desktop-width) {
   .programms {
+    margin-bottom: 0;
+  }
+
+  .programms__inner {
     max-width: $desktop-width;
     padding: 0 $desktop-padding;
-    margin-bottom: 0;
   }
 
   .programms__list {

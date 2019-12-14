@@ -1,22 +1,26 @@
 .info {
-  @include inner;
+  width: 100%;
+  min-height: 305px;
   background-color: $main-bg-color;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: auto 305px;
+  background-clip: content-box;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
-    background-size: 640px auto;
   }
 }
 
 .info__inner {
+  @include inner;
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 22px;
   padding: 0 $mobile-padding;
+  box-sizing: border-box;
 }
 
 .info__image {
@@ -70,16 +74,15 @@
 
 @media (min-width: $tablet-width) {
   .info {
-    max-width: $tablet-width;
-    padding: 0 $tablet-padding;
     background-image: none;
     padding-bottom: 529px;
   }
 
   .info__inner {
+    max-width: $tablet-width;
+    padding: 0 $tablet-padding;
     align-items: flex-start;
     margin-bottom: 0;
-    background-color: $main-bg-color;
   }
 
   .info__image {
@@ -113,25 +116,28 @@
 
 @media (min-width: $desktop-width) {
   .info {
-    max-width: $desktop-width;
     margin-top: -90px;
     margin-bottom: 80px;
-    padding: 0 $desktop-padding 80px $desktop-padding;
-    background-color: transparent;
+    min-height: 696px;
+    padding-bottom: 0;
+    background: linear-gradient(to left, $additional-bg-color 50%, $main-bg-color 50%);
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-position: top right;
     background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-clip: content-box;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
-      background-size: 1440px auto;
     }
   }
 
   .info__inner {
-    max-width: 610px;
+    max-width: $desktop-width;
+    padding: 0 $desktop-padding;
     margin-bottom: 80px;
-    background-color: transparent;
+    min-height: 696px;
+    /* background-color: $main-bg-color; */
   }
 
   .info__image {
@@ -144,6 +150,7 @@
     text-align: start;
     margin-top: 226px;
     margin-bottom: 33px;
+    padding-right: 660px;
   }
 
   .info__intro {

@@ -1,7 +1,11 @@
 .header {
-  @include inner;
   position: relative;
   background-color: $main-bg-color;
+}
+
+.header__inner {
+  @include inner;
+  box-sizing: border-box;
 }
 
 .header__toggle {
@@ -17,7 +21,7 @@
   border: none;
 }
 
-.header__inner {
+.header__wrapper {
   display: flex;
   justify-content: space-between;
   min-height: 65px;
@@ -41,8 +45,6 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    max-width: $tablet-width;
-    padding: 0 $tablet-padding;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -51,11 +53,14 @@
     background-color: transparent;
   }
 
-  .header__logo-image {
-    display: none;
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: $tablet-width;
+    padding: 0 $tablet-padding;
   }
 
-  .header__inner {
+  .header__wrapper {
     border-bottom: none;
   }
 
@@ -69,8 +74,12 @@
 
 @media (min-width: $desktop-width) {
   .header {
+    z-index: 2;
+    margin-bottom: 0;
+  }
+
+  .header__inner {
     max-width: $desktop-width;
     padding: 0 $desktop-padding;
-    margin-bottom: 0;
   }
 }
