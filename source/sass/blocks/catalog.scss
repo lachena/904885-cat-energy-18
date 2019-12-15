@@ -186,6 +186,10 @@
     padding: 5px 0;
   }
 
+  .catalog__item-button {
+    padding: 13px 94px;
+  }
+
   .catalog__more {
     display: flex;
     flex-direction: column;
@@ -224,6 +228,10 @@
 
   .catalog__table {
     margin-top: 28px;
+  }
+
+  .catalog__item-button {
+    padding: 13px 54px;
   }
 
   .catalog__more {
