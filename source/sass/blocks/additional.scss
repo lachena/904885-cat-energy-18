@@ -1,0 +1,9 @@
+.additional {
+  background-color: $main-bg-color;
+}
+
+.additional__inner {
+  @include inner;
+  padding: 0 $mobile-padding;
+  box-sizing: border-box;
+}
