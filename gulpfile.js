@@ -49,7 +49,7 @@ gulp.task("webp", function () {
 });
 
 gulp.task("svgmin", function () {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src("source/img/**/*.svg")
     .pipe(svgmin())
     .pipe(gulp.dest("source/img"));
 });
