@@ -1,0 +1,9 @@
+.profile {
+  background-color: $main-bg-color;
+}
+
+.profile__inner {
+  @include inner;
+  padding: 0 $mobile-padding;
+  box-sizing: border-box;
+}
