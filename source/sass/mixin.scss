@@ -4,6 +4,11 @@
   list-style: none;
 }
 
+@mixin indent-reset {
+  margin: 0;
+  padding: 0;
+}
+
 @mixin inner {
   width: $mobile-width;
   margin: 0 auto;
