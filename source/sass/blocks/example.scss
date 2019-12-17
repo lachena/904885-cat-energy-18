@@ -73,12 +73,17 @@
 }
 
 .example__title {
-  padding: 25px 0 311px 0;
+  @include indent-reset;
+  padding: 25px 0 40px 0;
   font-size: $font-size-s;
   font-weight: $font-weight-regular;
   line-height: $line-height-l;
   text-align: $text-align-center;
   text-transform: $text-transform-upper;
+}
+
+.example__image {
+  padding-bottom: 35px;
 }
 
 .example__range-wrapper {
