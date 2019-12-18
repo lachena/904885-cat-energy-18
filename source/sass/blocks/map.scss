@@ -57,3 +57,38 @@
     background-size: contain;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .map__inner {
+    max-width: $tablet-width;
+    padding: 0 $tablet-padding;
+  }
+
+  .map__adress-wrapper {
+    justify-content: space-between;
+    padding: 69px 0 62px 0;
+  }
+
+  .map__title {
+    width: 25%;
+    font-size: $font-size-xl;
+    line-height: $line-height-xs;
+  }
+
+  .map__line {
+    font-size: $font-size-m;
+    line-height: $line-height-xs;
+    text-align: $text-align-right;
+  }
+
+  .map__line-town {
+    padding-top: 13px;
+  }
+
+  .map__frame-wrapper::after {
+    top: 30%;
+    right: 30%;
+    width: 113px;
+    height: 106px;
+  }
+}

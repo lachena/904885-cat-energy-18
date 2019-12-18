@@ -204,6 +204,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-bottom: 80px;
   }
 
   .example__list {
@@ -245,8 +246,6 @@
 
     &-fat {
       position: absolute;
-      top: 15px;
-      right: 27px;
       width: auto;
       height: 499px;
       clip: rect(auto, 345px, auto, auto);
@@ -254,7 +253,6 @@
 
     &-skinny {
       position: absolute;
-      left: 10px;
       display: block;
       width: auto;
       height: 517px;
