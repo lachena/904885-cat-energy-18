@@ -92,3 +92,30 @@
     height: 106px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .map {
+    position: relative;
+  }
+
+  .map__inner {
+    max-width: $desktop-width;
+    padding: 0 $desktop-padding;
+  }
+
+  .map__adress-wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 95px;
+    left: 110px;
+    width: 570px;
+    margin: 0;
+    padding: 69px 90px 59px 76px;
+    background-color: $main-bg-color;
+    box-sizing: border-box;
+  }
+
+  .map__title {
+    width: 50%;
+  }
+}
