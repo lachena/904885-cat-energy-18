@@ -1,5 +1,16 @@
 .additional {
+  position: relative;
   background-color: $main-bg-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 50%;
+    height: 3px;
+    background-color: $additional-bg-color;
+  }
 }
 
 .additional__inner {
@@ -10,11 +21,15 @@
 
 .additional__header {
   @include indent-reset;
-  padding: 30px 0;
+  position: relative;
+  z-index: 2;
+  width: 226px;
+  padding: 30px 20px 30px 0;
   font-size: $font-size-l;
   font-weight: $font-weight-regular;
   line-height: $line-height-xxs;
   text-align: $text-align-left;
+  background-color: $main-bg-color;
   border-bottom: $border-catalog-item;
 }
 
@@ -98,9 +113,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .additional {
+    position: relative;
+
+    &::before {
+      top: 50px;
+      width: 100%;
+      height: 3px;
+    }
+  }
+
   .additional__header {
+    width: 338px;
+    padding-right: 40px;
+    padding-left: 40px;
     font-size: $font-size-xxl;
-    line-height: $line-height-xxs;
     border: none;
   }
 
