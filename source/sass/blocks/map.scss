@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+.map__inner-catalog {
+  background-color: $secondary-bg-color;
+}
+
 .map__adress-wrapper {
   display: flex;
   margin: 0 auto;
