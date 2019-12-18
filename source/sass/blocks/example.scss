@@ -182,6 +182,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
+    position: relative;
     background-color: $main-bg-color;
   }
 
@@ -334,5 +335,58 @@
     &::after {
       display: none;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__inner {
+    max-width: $desktop-width;
+    padding: 0 $desktop-padding;
+  }
+
+  .example__description {
+    width: 40%;
+    margin-bottom: 0;
+    padding-bottom: 71px;
+  }
+
+  .example__header {
+    padding-bottom: 142px;
+  }
+
+  .example__list-wrapper {
+    display: block;
+    width: 40%;
+  }
+
+  .example__list {
+    padding-bottom: 59px;
+  }
+
+  .example__name {
+    background-color: $secondary-bg-color;
+  }
+
+  .example__title {
+    max-width: 100%;
+    padding-top: 0;
+    text-align: $text-align-left;
+  }
+
+  .example__image-fat {
+    top: 0;
+    right: 69px;
+  }
+
+  .example__image-skinny {
+    top: 0;
+    right: 45px;
+  }
+
+  .example__range-wrapper {
+    justify-content: flex-end;
+    margin-top: -509px;
+    padding-right: 100px;
+    background: linear-gradient(to right,rgb(242, 242, 242) 70%,rgb(234, 234, 234) 30%);
   }
 }
