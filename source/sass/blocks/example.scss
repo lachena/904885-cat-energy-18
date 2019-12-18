@@ -49,7 +49,7 @@
 
 .example__result {
   border: 1px solid $input-border-color;
-  border-radius: 2px;
+  border-radius: 3px;
   font-size: $font-size-l;
   font-weight: $font-weight-regular;
   text-align: $text-align-center;
@@ -86,6 +86,10 @@
   padding-bottom: 35px;
 }
 
+.example__image-skinny {
+  display: none;
+}
+
 .example__range-wrapper {
   display: flex;
   justify-content: center;
@@ -102,9 +106,11 @@
   text-transform: $text-transform-upper;
   border: none;
   background: none;
+  cursor: pointer;
 }
 
 .example__range {
+  position: relative;
   width: 84px;
   height: 14px;
   padding: 0 18px;
@@ -129,7 +135,7 @@
     height: 14px;
     cursor: pointer;
     background-color: $main-bg-color;
-    border-radius: 10px;
+    border-radius: 6px;
     border: 1px solid $input-border-color;
   }
 
@@ -139,7 +145,7 @@
     height: 14px;
     cursor: pointer;
     background-color: $main-bg-color;
-    border-radius: 10px;
+    border-radius: 6px;
     border: 1px solid $input-border-color;
   }
 
@@ -160,5 +166,175 @@
 
   &::-ms-fill-upper {
     background-color: $main-bg-color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 24px;
+    width: 35px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: $additional-bg-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: $main-bg-color;
+  }
+
+  .example__inner {
+    max-width: $tablet-width;
+    padding: 0 $tablet-padding;
+  }
+
+  .example__header {
+    font-size: $font-size-xxxl;
+    line-height: $line-height-xxs;
+  }
+
+  .example__description {
+    font-size: $font-size-m;
+    line-height: $line-height-xl-l;
+  }
+
+  .example__list-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .example__list {
+    justify-content: start;
+  }
+
+  .example__item:first-child {
+    margin-right: 42px;
+
+    & .example__result {
+      padding: 23px 57px;
+    }
+  }
+
+  .example__item:nth-child(2) .example__result {
+    padding: 23px 32px;
+  }
+
+  .example__result {
+    font-size: $font-size-xxxl-xxl;
+    line-height: $line-height-xs;
+  }
+
+  .example__name {
+    font-size: $font-size-s;
+    line-height: $line-height-xxs;
+    background-color: $main-bg-color;
+  }
+
+  .example__title {
+    max-width: 195px;
+    font-size: $font-size-xl;
+    line-height: $line-height-xxs;
+    text-align: $text-align-right;
+  }
+
+  .example__image{
+    position: relative;
+
+    &-fat {
+      position: absolute;
+      top: 15px;
+      right: 27px;
+      width: auto;
+      height: 499px;
+      clip: rect(auto, 345px, auto, auto);
+    }
+
+    &-skinny {
+      position: absolute;
+      left: 10px;
+      display: block;
+      width: auto;
+      height: 517px;
+      clip: rect(auto, auto, auto, 345px);
+    }
+  }
+
+  .example__range-wrapper {
+    margin-top: 241px;
+    padding-top: 369px;
+    background: linear-gradient(to right, $secondary-bg-color 50%, $accent-bg-color 50%);
+  }
+
+  .example__button {
+    padding: 0 0 6px 0;
+    font-size: $font-size-xl;
+    line-height: $line-height-xxs;
+    border-bottom: 1px dotted $input-border-color;
+  }
+
+  .example__range {
+    width: 428px;
+    height: 6px;
+    padding: 0 21px;
+
+    &::-webkit-slider-runnable-track {
+      width: 428px;
+      height: 6px;
+      background-color: $range-bg-color;
+      border-radius: 2.5px;
+      border: none;
+    }
+
+    &::-moz-range-track {
+      width: 428px;
+      height: 6px;
+      background-color: $range-bg-color;
+      border-radius: 2.5px;
+      border: none;
+    }
+
+    &::-ms-track {
+      width: 428px;
+      height: 6px;
+    }
+
+    &::-webkit-slider-thumb {
+      position: relative;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px 0 $range-thumb-shadow, inset 0 0 0 13px $main-bg-color;
+      border: solid 1px $input-border-color;
+      background-color: $additional-bg-color;
+      margin-top: -13px;
+      cursor: pointer;
+    }
+
+    &::-moz-range-thumb {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px 0 $range-thumb-shadow, inset 0 0 0 13px $main-bg-color;
+      border: solid 1px $input-border-color;
+      background-color: $main-bg-color;
+      cursor: pointer;
+    }
+
+    &::-ms-thumb {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px 0 $range-thumb-shadow, inset 0 0 0 13px $main-bg-color;
+      border: solid 1px $input-border-color;
+      background-color: $main-bg-color;
+      cursor: pointer;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 }
