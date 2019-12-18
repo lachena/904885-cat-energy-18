@@ -95,19 +95,17 @@
   }
 
   .nav__item {
-    &--active::after {
+    &--active-desktop::after {
       background-color: $addition-color;
     }
 
-    &--active:hover .nav__link {
+    &--active-desktop:hover .nav__link--desktop {
       color: $addition-color;
     }
   }
 
-  .nav__link {
-    &--desktop {
-      color: $addition-color;
-    }
+  .nav__link--desktop {
+    color: $addition-color;
 
     &:hover {
       color: $addition-color-hvr;
