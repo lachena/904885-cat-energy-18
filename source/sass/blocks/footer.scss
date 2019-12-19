@@ -34,7 +34,6 @@
   flex-wrap: wrap;
   align-items: center;
   padding: 0 90px;
-  fill: currentColor;
 }
 
 .copyright {
@@ -60,6 +59,10 @@
   opacity: $logo-down-opacity;
 }
 
+.social__link {
+  fill: currentColor;
+}
+
 .social__link--vkontakte .social__icon {
   width: 30px;
   height: 16px;
@@ -76,7 +79,7 @@
 }
 
 .social__icon {
-  color: #666666;
+  color: $social-icon-color;
 }
 
 .social__icon:hover {

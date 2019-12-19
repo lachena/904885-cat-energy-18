@@ -1,3 +1,125 @@
 .map {
   background-color: $main-bg-color;
 }
+
+.map__inner {
+  @include inner;
+  padding: 0 $mobile-padding;
+  box-sizing: border-box;
+}
+
+.map__inner-catalog {
+  background-color: $secondary-bg-color;
+}
+
+.map__adress-wrapper {
+  display: flex;
+  margin: 0 auto;
+  padding: 33px 0 28px 0;
+}
+
+.map__title {
+  @include indent-reset;
+  width: 50%;
+  font-size: $font-size-m;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-xs;
+  text-align: $text-align-left;
+  text-transform: $text-transform-upper;
+}
+
+.map__adress {
+  @include indent-reset;
+  display: flex;
+  flex-direction: column;
+}
+
+.map__line {
+  font-family: $font-family-secondary;
+  font-size: $font-size-s;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-l;
+  text-align: $text-align-left;
+  color: $accent-color;
+}
+
+.map__frame-wrapper {
+  position: relative;
+  width: 100%;
+  height: 400px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 55px;
+    height: 53px;
+    background-image: url("../img/map-pin.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .map__inner {
+    max-width: $tablet-width;
+    padding: 0 $tablet-padding;
+  }
+
+  .map__adress-wrapper {
+    justify-content: space-between;
+    padding: 69px 0 62px 0;
+  }
+
+  .map__title {
+    width: 25%;
+    font-size: $font-size-xl;
+    line-height: $line-height-xs;
+  }
+
+  .map__line {
+    font-size: $font-size-m;
+    line-height: $line-height-xs;
+    text-align: $text-align-right;
+  }
+
+  .map__line-town {
+    padding-top: 13px;
+  }
+
+  .map__frame-wrapper::after {
+    top: 30%;
+    right: 30%;
+    width: 113px;
+    height: 106px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    position: relative;
+  }
+
+  .map__inner {
+    max-width: $desktop-width;
+    padding: 0 $desktop-padding;
+  }
+
+  .map__adress-wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 95px;
+    left: 110px;
+    width: 570px;
+    margin: 0;
+    padding: 69px 90px 59px 76px;
+    background-color: $main-bg-color;
+    box-sizing: border-box;
+  }
+
+  .map__title {
+    width: 50%;
+  }
+}

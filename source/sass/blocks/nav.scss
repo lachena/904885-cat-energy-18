@@ -11,6 +11,7 @@
 }
 
 .nav__item {
+  z-index: 1;
   width: 100%;
   border-bottom: 1px solid $check-border-color;
 
@@ -91,6 +92,28 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .nav__item {
+    &--active-desktop::after {
+      background-color: $addition-color;
+    }
+
+    &--active-desktop:hover .nav__link--desktop {
+      color: $addition-color;
+    }
+  }
+
+  .nav__link--desktop {
+    color: $addition-color;
+
+    &:hover {
+      color: $addition-color-hvr;
+    }
+
+    &:active {
+      color: $addition-color-active;
+    }
   }
 
   .header__toggle {

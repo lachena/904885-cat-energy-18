@@ -1,5 +1,4 @@
 .catalog {
-  margin-bottom: 25px;
   background-color: $main-bg-color;
 }
 
@@ -32,6 +31,9 @@
 }
 
 .catalog__title {
+  @include indent-reset;
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 25px;
   font-size: $font-size-m;
   font-weight: $font-weight-regular;
@@ -41,8 +43,12 @@
   text-transform: $text-transform-upper;
 }
 
-.catalog__table {
+.catalog__line-first {
   width: 100%;
+}
+
+.catalog__table {
+  width: 140px;
   margin-top: 18px;
 }
 
@@ -58,6 +64,10 @@
 
 .catalog__item-field {
   text-align: end;
+}
+
+.catalog__button-wrapper {
+  @include indent-reset;
 }
 
 .catalog__item-button {
@@ -121,6 +131,10 @@
   color: $accent-color;
 }
 
+.catalog__more-wrapper {
+  @include indent-reset;
+}
+
 .catalog__more-button {
   display: $display-block-button;
   vertical-align: middle;
@@ -150,7 +164,7 @@
   }
 
   .catalog__header {
-    margin-bottom: 75px;
+    margin-bottom: 156px;
     font-size: $font-size-xxxl;
     padding: 0;
   }
@@ -163,6 +177,7 @@
   }
 
   .catalog__item {
+    position: relative;
     flex-direction: column;
     width: 45%;
     margin-bottom: 140px;
@@ -174,9 +189,37 @@
     }
   }
 
+  .catalog__image {
+    position: absolute;
+    bottom: 330px;
+    right: 0;
+    width: 100%;
+  }
+
+  .catalog__wrap-description {
+    padding: 165px 38px 33px 38px;
+  }
+
+  .catalog__title {
+    justify-content: center;
+    padding-top: 0;
+    font-size: $font-size-xl;
+    text-align: $text-align-center;
+  }
+
+  .catalog__line-first {
+    width: auto;
+  }
+
+  .catalog__line-third {
+    width: 100%;
+  }
+
   .catalog__table {
+    width: 100%;
     margin-top: 28px;
-    padding: 0 38px 40px 38px;
+    padding-bottom: 40px;
+    border-collapse: collapse;
   }
 
   .catalog__item-value,
@@ -184,12 +227,18 @@
     font-size: $font-size-m;
     line-height: $line-height-xxs;
     padding: 5px 0;
+    border-bottom: 1px solid $input-border-color;
+  }
+
+  .catalog__item-button {
+    padding: 13px 94px;
   }
 
   .catalog__more {
     display: flex;
     flex-direction: column;
     width: 45%;
+    padding-bottom: 0;
     border: 1px solid $secondary-bg-color;
 
     &::before {
@@ -202,13 +251,17 @@
   }
 
   .catalog__more-title {
-    padding: 166px 95px 28px 95px;
+    padding: 166px 70px 28px 70px;
     font-size: $font-size-xl;
   }
 
   .catalog__more-info {
-    padding: 0 80px 85px 80px;
+    padding: 0 75px 85px 75px;
     font-size: $font-size-m;
+  }
+
+  .catalog__more-wrapper {
+    @include indent-reset;
   }
 }
 
@@ -224,6 +277,10 @@
 
   .catalog__table {
     margin-top: 28px;
+  }
+
+  .catalog__item-button {
+    padding: 13px 54px;
   }
 
   .catalog__more {
