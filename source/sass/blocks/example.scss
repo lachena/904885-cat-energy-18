@@ -82,6 +82,10 @@
   text-transform: $text-transform-upper;
 }
 
+.example__picture-wrapper {
+  position: relative;
+}
+
 .example__image {
   padding-bottom: 35px;
 }
@@ -237,29 +241,39 @@
     text-align: $text-align-right;
   }
 
+  .example__picture--skinny {
+    width: 384px;
+    position: absolute;
+    top: 0;
+    height: 517px;
+    right: 0;
+    overflow: hidden;
+    background-color: $accent-bg-color;
+  }
+
   .example__image {
     position: relative;
 
     &-fat {
-      position: absolute;
       width: auto;
       height: 499px;
-      clip: rect(auto, 345px, auto, auto);
     }
 
     &-skinny {
-      position: absolute;
       display: block;
       width: auto;
       height: 517px;
-      clip: rect(auto, auto, auto, 345px);
+      position: absolute;
+      top: 0;
+      right: 50%;
+      object-fit: cover;
     }
   }
 
   .example__range-wrapper {
     margin-top: 241px;
     padding-top: 369px;
-    background: linear-gradient(to right, $secondary-bg-color 50%, $accent-bg-color 50%);
+    background: $secondary-bg-color;
   }
 
   .example__button {
