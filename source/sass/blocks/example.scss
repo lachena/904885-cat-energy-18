@@ -241,14 +241,21 @@
     text-align: $text-align-right;
   }
 
+  .example__picture--fat {
+    width: 355px;
+    top: 0;
+    height: 499px;
+    right: 0;
+    overflow: hidden;
+  }
+
   .example__picture--skinny {
-    width: 384px;
+    width: 355px;
     position: absolute;
     top: 0;
     height: 517px;
     right: 0;
     overflow: hidden;
-    background-color: $accent-bg-color;
   }
 
   .example__image {
@@ -257,6 +264,9 @@
     &-fat {
       width: auto;
       height: 499px;
+      object-fit: cover;
+      top: 0;
+      left: 50%;
     }
 
     &-skinny {
@@ -271,9 +281,9 @@
   }
 
   .example__range-wrapper {
-    margin-top: 241px;
+    margin-top: -380px;
     padding-top: 369px;
-    background: $secondary-bg-color;
+    background: linear-gradient(to right, $secondary-bg-color 50%, $accent-bg-color 50%);
   }
 
   .example__button {
