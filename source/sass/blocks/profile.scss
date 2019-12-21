@@ -18,8 +18,8 @@
 }
 
 .profile__sector {
-  border: none;
   @include indent-reset;
+  border: none;
 
 
   &--data {
