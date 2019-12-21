@@ -39,6 +39,10 @@
       height: 3px;
       background-color: $additional-bg-color;
     }
+
+    & .profile__title {
+      width: 182px;
+    }
   }
 
   &--comment {
