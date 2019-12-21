@@ -396,20 +396,24 @@
     padding-right: 64px;
   }
 
-  .example__image-fat {
-    top: 0;
-    right: 69px;
+  .example__picture-wrapper {
+    max-width: 60%;
+    margin-left: auto;
+    margin-top: -665px;
   }
 
-  .example__image-skinny {
-    top: 0;
-    right: 45px;
+  .example__picture--fat {
+    width: 378px;
+  }
+
+  .example__picture--skinny {
+    width: 271px;
   }
 
   .example__range-wrapper {
     justify-content: flex-end;
-    margin-top: -509px;
-    padding-right: 100px;
-    background: linear-gradient(to right, $secondary-bg-color 70%, $accent-bg-color 30%);
+    margin-top: -340px;
+    padding-right: 15%;
+    background: linear-gradient(to right, $secondary-bg-color 67%, $accent-bg-color 33%);
   }
 }
