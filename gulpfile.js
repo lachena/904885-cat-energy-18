@@ -15,6 +15,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var svgmin = require("gulp-svgmin");
+var htmlmin = require("gulp-html-minifier");
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
@@ -68,6 +69,7 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 });
 
