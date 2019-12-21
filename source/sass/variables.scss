@@ -24,6 +24,7 @@ $line-height-lm: 1.39;
 $line-height-m: 1.33;
 $line-height-s: 1.29;
 $line-height-xs: 1.25;
+$line-height-xss: 1.13;
 $line-height-xs-xxs: 1.03;
 $line-height-xxs: 1;
 
@@ -31,6 +32,7 @@ $text-align-center: center;
 $text-align-left: left;
 $text-align-right: right;
 $text-transform-upper: uppercase;
+$text-transform-lower: lowercase;
 $padding-base: 0 20px;
 $display-block-button: inline-block;
 $border-catalog-item: solid 1px #ededed;
@@ -61,7 +63,7 @@ $error-color: #ff8282;
 
 $range-bg-color: #dcdcdc;
 $range-thumb-shadow: rgba(0, 0, 0, 0.15);
-$input-border-color: #cdcdcd;
+$input-border-color: rgba(205, 205, 205, 0.15);
 $input-border-color-active:  #444444;
 $input-text-color: #444444;
 $check-border-color: #cdcdcd;

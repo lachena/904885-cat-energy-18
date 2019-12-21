@@ -7,3 +7,177 @@
   padding: 0 $mobile-padding;
   box-sizing: border-box;
 }
+
+.profile__header {
+  @include indent-reset;
+  padding: 30px 0 35px 0;
+  font-size: $font-size-xxl;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-xxl;
+  text-align: $text-align-left;
+}
+
+.profile__sector {
+  border: none;
+  @include indent-reset;
+
+
+  &--data {
+    padding-bottom: 23px;
+  }
+
+  &--info {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 45px;
+      right: 0;
+      margin-right: -20px;
+      width: 70%;
+      height: 3px;
+      background-color: $additional-bg-color;
+    }
+  }
+
+  &--comment {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 45px;
+      right: 0;
+      margin-right: -20px;
+      width: 70%;
+      height: 3px;
+      background-color: $additional-bg-color;
+    }
+  }
+
+  &--add {
+    padding-bottom: 34px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 45px;
+      right: 0;
+      margin-right: -20px;
+      width: 70%;
+      height: 3px;
+      background-color: $additional-bg-color;
+    }
+  }
+
+  &--goal {
+    margin: 0 -20px;
+    padding: 20px;
+    border: 1px solid $input-border-color;
+  }
+}
+
+.profile__title {
+  position: relative;
+  z-index: 1;
+  padding: 30px 24px 30px 0;
+  font-size: $font-size-l;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-xxs;
+  text-align: $text-align-left;
+  text-transform: inherit;
+  background-color: $main-bg-color;
+}
+
+.profile__list {
+  @include list-reset;
+}
+
+.profile__item {
+  @include indent-reset;
+  display: flex;
+  align-items: center;
+  padding-bottom: 14px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.profile__text {
+  @include indent-reset;
+  padding-bottom: 39px;
+  font-size: $font-size-s;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-s;
+  text-align: $text-align-left;
+  text-transform: $text-transform-upper;
+}
+
+.profile__name {
+  padding-right: 16px;
+  font-size: $font-size-m;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-xss;
+  text-align: $text-align-left;
+  text-transform: $text-transform-upper;
+  color: $secondary-color;
+}
+
+.profile__field {
+  flex-grow: 1;
+  padding: 12px;
+  font-family: inherit;
+  font-size: $font-size-m;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-xss;
+  text-align: $text-align-left;
+  text-transform: $text-transform-upper;
+  color: $accent-color;
+  border: 1px solid $input-border-color;
+}
+
+.profile__check {
+  padding: 12px 16px 12px 12px;
+}
+
+.profile__button-wrapper {
+  padding-bottom: 23px;
+}
+
+.profile__button {
+  padding: 12px 75px;
+  font-family: inherit;
+  font-size: $font-size-m;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-xs;
+  text-align: $text-align-center;
+  text-transform: $text-transform-upper;
+  color: $addition-color;
+  background-color: $additional-bg-color;
+}
+
+.profile__note {
+  @include indent-reset;
+  font-family: $font-family-secondary;
+  font-size: $font-size-s;
+  line-height: $line-height-xss;
+  text-align: $text-align-center;
+  color: $accent-color;
+}
+
+@media (min-width: $tablet-width) {
+  .profile__inner {
+    max-width: $tablet-width;
+    padding: 0 $tablet-padding;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .profile__inner {
+    max-width: $desktop-width;
+    padding: 0 $desktop-padding;
+  }
+}

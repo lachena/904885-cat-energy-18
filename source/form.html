@@ -51,7 +51,7 @@
         <div class="profile__inner">
           <h2 class="profile__header">Подбор программы</h2>
           <form class="profile__form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="profile__field">
+            <fieldset class="profile__sector profile__sector--data">
               <legend class="visually-hidden">Данные кота</legend>
               <div class="profile__block">
                 <p class="profile__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
@@ -71,26 +71,26 @@
                 </ul>
               </div>
             </fieldset>
-            <fieldset class="profile__field">
+            <fieldset class="profile__sector profile__sector--goal">
               <legend class="visually-hidden">Цель</legend>
               <div class="profile__block">
                 <ul class="profile__list">
                   <li class="profile__item">
-                    <input class="profile__field" id="losing" type="radio" name="purpose" checked>
+                    <input class="profile__check" id="losing" type="radio" name="purpose" checked>
                     <label class="profile__name" for="losing">Похудение</label>
                   </li>
                   <li class="profile__item">
-                    <input class="profile__field" id="fattening" type="radio" name="purpose">
+                    <input class="profile__check" id="fattening" type="radio" name="purpose">
                     <label class="profile__name" for="fattening">Набор массы</label>
                   </li>
                   <li class="profile__item">
-                    <input class="profile__field" id="advice" type="radio" name="purpose">
+                    <input class="profile__check" id="advice" type="radio" name="purpose">
                     <label class="profile__name" for="advice">Не знаю (Нужен ваш совет)</label>
                   </li>
                 </ul>
               </div>
             </fieldset>
-            <fieldset class="profile__field">
+            <fieldset class="profile__sector profile__sector--info">
               <legend class="profile__title">Контактные данные (владельца кота)</legend>
               <div class="profile__block">
                 <ul class="profile__list">
@@ -105,32 +105,32 @@
                 </ul>
               </div>
             </fieldset>
-            <fieldset class="profile__field">
+            <fieldset class="profile__sector profile__sector--comment">
               <legend class="profile__title">Комментарий</legend>
               <div class="profile__block">
                 <p class="profile__item">
-                  <textarea name="comment" id="comment" cols="30" rows="5">Расскажите обо всех повадках кота</textarea>
+                  <textarea class="profile__field" name="comment" id="comment" cols="30" rows="5">Расскажите обо всех повадках кота</textarea class="profile__field">
                 </p>
               </div>
             </fieldset>
-            <fieldset class="profile__field">
+            <fieldset class="profile__sector profile__sector--add">
               <legend class="profile__title">Дополнительно</legend>
               <div class="profile__block">
                 <ul class="profile__list">
                   <li class="profile__item">
-                    <input class="profile__field" type="checkbox" name="sugarfree" checked>
+                    <input class="profile__check" type="checkbox" name="sugarfree" checked>
                     <label class="profile__name">Сахарозаменитель</label>
                   </li>
                   <li class="profile__item">
-                    <input class="profile__field" type="checkbox" name="water">
+                    <input class="profile__check" type="checkbox" name="water">
                     <label class="profile__name">Питьевая вода</label>
                   </li>
                   <li class="profile__item">
-                    <input class="profile__field" type="checkbox" name="milk">
+                    <input class="profile__check" type="checkbox" name="milk">
                     <label class="profile__name">Молоко</label>
                   </li>
                   <li class="profile__item">
-                    <input class="profile__field" type="checkbox" name="vitamin">
+                    <input class="profile__check" type="checkbox" name="vitamin">
                     <label class="profile__name">Витамины</label>
                   </li>
                 </ul>
