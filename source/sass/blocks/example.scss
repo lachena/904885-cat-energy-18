@@ -132,16 +132,35 @@
   cursor: pointer;
 }
 
+.example__range-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .example__range {
   position: relative;
   width: 84px;
   height: 14px;
   padding: 0 18px;
   background: transparent;
+  appearance: none;
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+  }
+
+  &::-ms-track {
+    width: 84px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
 
   &::-moz-range-thumb,
   &::-ms-thumb {
-    display: none;
+    appearance: none;
   }
 
   &:focus {
@@ -307,9 +326,6 @@
   }
 
   .example__range-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: -75px;
   }
 
@@ -325,7 +341,6 @@
     width: 428px;
     height: 6px;
     padding: 0 21px;
-    appearance: none;
 
     &::-webkit-slider-runnable-track {
       width: 428px;
@@ -353,8 +368,8 @@
       width: 34px;
       height: 34px;
       border-radius: 50%;
-      box-shadow: 0 2px 5px 0 $range-thumb-shadow, inset 0 0 0 13px $main-bg-color;
-      border: solid 1px $input-border-color;
+      border: solid 13px $main-bg-color;
+      box-shadow: 0 0 0 1px $input-border-color;
       background-color: $additional-bg-color;
       margin-top: -13px;
       cursor: pointer;
@@ -364,9 +379,9 @@
       width: 34px;
       height: 34px;
       border-radius: 50%;
-      box-shadow: 0 2px 5px 0 $range-thumb-shadow, inset 0 0 0 13px $main-bg-color;
-      border: solid 1px $input-border-color;
-      background-color: $main-bg-color;
+      border: solid 13px $main-bg-color;
+      box-shadow: 0 0 0 1px $input-border-color;
+      background-color: $additional-bg-color;
       cursor: pointer;
     }
 
@@ -374,9 +389,9 @@
       width: 34px;
       height: 34px;
       border-radius: 50%;
-      box-shadow: 0 2px 5px 0 $range-thumb-shadow, inset 0 0 0 13px $main-bg-color;
-      border: solid 1px $input-border-color;
-      background-color: $main-bg-color;
+      border: solid 13px $main-bg-color;
+      box-shadow: 0 0 0 1px $input-border-color;
+      background-color: $additional-bg-color;
       cursor: pointer;
     }
 
