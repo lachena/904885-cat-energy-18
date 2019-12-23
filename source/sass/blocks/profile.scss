@@ -34,8 +34,8 @@
       position: absolute;
       top: 45px;
       right: 0;
-      margin-right: -20px;
-      width: 70%;
+      margin-right: -100px;
+      width: 100%;
       height: 3px;
       background-color: $additional-bg-color;
     }
@@ -53,8 +53,8 @@
       position: absolute;
       top: 45px;
       right: 0;
-      margin-right: -20px;
-      width: 70%;
+      margin-right: -100px;
+      width: 100%;
       height: 3px;
       background-color: $additional-bg-color;
     }
@@ -69,8 +69,8 @@
       position: absolute;
       top: 45px;
       right: 0;
-      margin-right: -20px;
-      width: 70%;
+      margin-right: -100px;
+      width: 100%;
       height: 3px;
       background-color: $additional-bg-color;
     }
@@ -86,7 +86,7 @@
 .profile__title {
   position: relative;
   z-index: 1;
-  padding: 30px 24px 30px 0;
+  padding: 30px 40px 30px 0;
   font-size: $font-size-l;
   font-weight: $font-weight-regular;
   line-height: $line-height-xxs;
@@ -131,6 +131,7 @@
 }
 
 .profile__field {
+
   flex-grow: 1;
   padding: 12px;
   font-family: inherit;
@@ -141,6 +142,36 @@
   text-transform: $text-transform-upper;
   color: $accent-color;
   border: 1px solid $input-border-color;
+}
+
+.profile__item--email {
+  position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 15px;
+      width: 18px;
+      height: 14px;
+      background-image: url("../img/icon-mail.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+}
+
+.profile__item--phone {
+  position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 13px;
+      width: 21px;
+      height: 21px;
+      background-image: url("../img/icon-phone.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 }
 
 .profile__check {
@@ -177,11 +208,92 @@
     max-width: $tablet-width;
     padding: 0 $tablet-padding;
   }
+
+  .profile__text {
+    width: 35%;
+  }
+
+  .profile__sector--goal {
+    margin: 0;
+  }
+
+  .profile__sector--info::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 0;
+    margin-left: -100px;
+    width: 70%;
+    height: 3px;
+    background-color: rgb(104, 183, 56);
+  }
+
+  .profile__sector--comment::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 0;
+    margin-left: -100px;
+    width: 70%;
+    height: 3px;
+    background-color: rgb(104, 183, 56);
+  }
+
+  .profile__sector--add::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 0;
+    margin-left: -100px;
+    width: 70%;
+    height: 3px;
+    background-color: rgb(104, 183, 56);
+  }
+
+  .profile__title {
+    padding-left: 40px;
+    margin-left: -40px;
+  }
+
+  .profile__item--email::after {
+    right: 20px;
+  }
+
+  .profile__item--phone::after {
+    right: 17px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .profile__inner {
     max-width: $desktop-width;
     padding: 0 $desktop-padding;
+  }
+
+  .profile__text {
+    width: 25%;
+  }
+
+  .profile__sector-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .profile__sector--data,
+  .profile__sector--goal {
+    width: 45%;
+  }
+
+  .profile__sector--goal {
+    padding: 25px 0 25px 28px;
+
+    & .profile__item {
+      padding-bottom: 33px;
+
+      &:last-child {
+      padding-bottom: 0;
+      }
+    }
   }
 }
