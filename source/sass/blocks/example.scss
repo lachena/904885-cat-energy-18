@@ -434,6 +434,7 @@
 
   .example__picture--fat {
     background-image: url("../img/before-desktop@1x.png"), url("../img/before-desktop@2x.png");
+    background-position: right bottom;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/before-desktop@1x.webp"), url("../img/before-desktop@2x.webp");
@@ -441,7 +442,7 @@
   }
 
   .example__picture--skinny-container {
-    width: 51%;
+    width: 50%;
   }
 
   .example__picture--skinny {
@@ -452,14 +453,14 @@
     }
   }
 
-  .example__background {
+  .example__range-wrapper {
     justify-content: flex-end;
-    margin-top: -430px;
-    padding-right: 8%;
-    background: linear-gradient(to right, $secondary-bg-color 67%, $accent-bg-color 33%);
+    margin-right: -75px;
   }
 
-  /* .example__range-wrapper {
-    max-width: $desktop-width;
-  } */
+  .example__background {
+    justify-content: flex-end;
+    margin-top: -450px;
+    background: linear-gradient(to right, $secondary-bg-color 67%, $accent-bg-color 33%);
+  }
 }
