@@ -71,13 +71,13 @@ gulp.task("html", function () {
       include()
     ]))
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest("build/js"));
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("compress", function() {
   return gulp.src("source/*.js")
     .pipe(minify())
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("copy", function() {
