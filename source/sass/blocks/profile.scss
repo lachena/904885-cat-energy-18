@@ -35,7 +35,7 @@
       top: 45px;
       right: 0;
       margin-right: -100px;
-      width: 100%;
+      width: 100vw;
       height: 3px;
       background-color: $additional-bg-color;
     }
@@ -54,7 +54,7 @@
       top: 45px;
       right: 0;
       margin-right: -100px;
-      width: 100%;
+      width: 100vw;
       height: 3px;
       background-color: $additional-bg-color;
     }
@@ -70,7 +70,7 @@
       top: 45px;
       right: 0;
       margin-right: -100px;
-      width: 100%;
+      width: 100vw;
       height: 3px;
       background-color: $additional-bg-color;
     }
@@ -131,7 +131,6 @@
 }
 
 .profile__field {
-
   flex-grow: 1;
   padding: 12px;
   font-family: inherit;
@@ -176,6 +175,86 @@
 
 .profile__check {
   padding: 12px 16px 12px 12px;
+}
+
+.profile__check--goal,
+.profile__check--add {
+  position: absolute;
+  z-index: 1;
+	opacity: 0;
+  margin: 10px 0 0 20px;
+  width: 30%;
+  height: 30px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.profile__check--goal + .profile__name--goal {
+  position: relative;
+  padding: 0 0 0 46px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 1px $check-border-color;
+    background-color: $main-bg-color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $additional-bg-color;
+    opacity: 0;
+  }
+}
+
+.profile__check--goal:checked + .profile__name--goal::after {
+  opacity: 1;
+}
+
+.profile__check--add + .profile__name--add {
+  position: relative;
+  padding: 0 0 0 46px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px $check-border-color;
+    background-color: $main-bg-color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    width: 22px;
+    height: 17px;
+    background-image: url("../img/icon-tick.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+  }
+}
+
+.profile__check--add:checked + .profile__name--add::after {
+  opacity: 1;
 }
 
 .profile__button-wrapper {
@@ -223,7 +302,7 @@
     top: 45px;
     left: 0;
     margin-left: -100px;
-    width: 70%;
+    width: 100vw;
     height: 3px;
     background-color: rgb(104, 183, 56);
   }
@@ -234,7 +313,7 @@
     top: 45px;
     left: 0;
     margin-left: -100px;
-    width: 70%;
+    width: 100vw;
     height: 3px;
     background-color: rgb(104, 183, 56);
   }
@@ -245,7 +324,7 @@
     top: 45px;
     left: 0;
     margin-left: -100px;
-    width: 70%;
+    width: 100vw;
     height: 3px;
     background-color: rgb(104, 183, 56);
   }
@@ -261,6 +340,27 @@
 
   .profile__item--phone::after {
     right: 17px;
+  }
+
+  .profile__sector--add .profile__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+
+  .profile__sector--add .profile__item {
+    width: 40%;
+  }
+
+  .profile__button-container {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+  }
+
+  .profile__button {
+    margin-right: 61px;
   }
 }
 
@@ -307,20 +407,18 @@
     width: 45%;
   }
 
-  .profile__sector--add .profile__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-  }
-
   .profile__sector--add .profile__item {
-    width: 30%;
+    width: 25%;
   }
 
-  .profile__button-container {
-    display: flex;
-    justify-content: start;
-    align-items: baseline;
+  .profile__check--goal:hover + .profile__name--goal::before,
+  .profile__check--add:hover + .profile__name--add::before {
+    border-color: $check-border-color-hvr;
+  }
+
+  .profile__check--goal:active + .profile__name--goal,
+  .profile__check--add:active + .profile__name--add {
+    opacity: 0.3;
   }
 
   .profile__button {
