@@ -102,7 +102,8 @@
 .profile__item {
   @include indent-reset;
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: baseline;
   padding-bottom: 14px;
 
   &:last-child {
@@ -141,6 +142,7 @@
   text-transform: $text-transform-upper;
   color: $accent-color;
   border: 1px solid $input-border-color;
+  background-color: $main-bg-color;
 }
 
 .profile__item--email {
@@ -150,6 +152,7 @@
       content: "";
       position: absolute;
       right: 15px;
+      top: 15px;
       width: 18px;
       height: 14px;
       background-image: url("../img/icon-mail.svg");
@@ -165,6 +168,7 @@
       content: "";
       position: absolute;
       right: 13px;
+      top: 15px;
       width: 21px;
       height: 21px;
       background-image: url("../img/icon-phone.svg");
@@ -345,7 +349,7 @@
   .profile__sector--add .profile__list {
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
     flex-wrap: wrap;
   }
 
@@ -355,7 +359,7 @@
 
   .profile__button-container {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: baseline;
   }
 
@@ -400,7 +404,7 @@
   .profile__sector--info .profile__list {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .profile__sector--info .profile__item {
@@ -419,6 +423,26 @@
   .profile__check--goal:active + .profile__name--goal,
   .profile__check--add:active + .profile__name--add {
     opacity: 0.3;
+  }
+
+  .profile__field:hover {
+    border-color: $input-border-color-hvr;
+  }
+
+  .profile__field:active {
+    border: 1px solid $input-border-color-active;
+    outline: 1px solid $input-border-color-active;
+  }
+
+  .profile__field:invalid {
+    border: 1px solid $input-border-color-invalid;
+    outline: 1px solid $input-border-color-invalid;
+  }
+
+  .profile__field:focus {
+    border: 1px solid $input-border-color-active;
+    outline: 1px solid $input-border-color-active;
+    outline: none;
   }
 
   .profile__button {
