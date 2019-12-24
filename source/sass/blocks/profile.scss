@@ -296,4 +296,35 @@
       }
     }
   }
+
+  .profile__sector--info .profile__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .profile__sector--info .profile__item {
+    width: 45%;
+  }
+
+  .profile__sector--add .profile__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .profile__sector--add .profile__item {
+    width: 30%;
+  }
+
+  .profile__button-container {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+  }
+
+  .profile__button {
+    padding: 16px 207px;
+    margin-right: 82px;
+  }
 }
