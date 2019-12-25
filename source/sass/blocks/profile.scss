@@ -24,6 +24,7 @@
 
   &--data {
     padding-bottom: 23px;
+    fill: currentColor;
   }
 
   &--info {
@@ -143,38 +144,33 @@
   color: $accent-color;
   border: 1px solid $input-border-color;
   background-color: $main-bg-color;
+  fill: currentColor;
 }
 
 .profile__item--email {
   position: relative;
+}
 
-    &::after {
-      content: "";
-      position: absolute;
-      right: 15px;
-      top: 15px;
-      width: 18px;
-      height: 14px;
-      background-image: url("../img/icon-mail.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-    }
+.profile__icon-email {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 18px;
+  height: 14px;
+  fill: currentColor;
 }
 
 .profile__item--phone {
   position: relative;
+}
 
-    &::after {
-      content: "";
-      position: absolute;
-      right: 13px;
-      top: 15px;
-      width: 21px;
-      height: 21px;
-      background-image: url("../img/icon-phone.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-    }
+.profile__icon-phone {
+  position: absolute;
+  top: 13px;
+  right: 12px;
+  width: 21px;
+  height: 21px;
+  fill: currentColor;
 }
 
 .profile__check {
@@ -434,16 +430,30 @@
     outline: 1px solid $input-border-color-active;
   }
 
-  .profile__field:invalid {
-    border: 1px solid $input-border-color-invalid;
-    outline: 1px solid $input-border-color-invalid;
-  }
-
   .profile__field:focus {
     border: 1px solid $input-border-color-active;
     outline: 1px solid $input-border-color-active;
     outline: none;
   }
+
+  .profile__field:invalid {
+    border: 1px solid $input-border-color-invalid;
+    outline: 1px solid $input-border-color-invalid;
+  }
+
+  .profile__field--email:active + .profile__icon-email,
+  .profile__field--phone:active + .profile__icon-phone,
+  .profile__field--email:focus + .profile__icon-email,
+  .profile__field--phone:focus + .profile__icon-phone {
+    color: $icon-color-active;
+  }
+
+  .profile__field--email:invalid + .profile__icon-email,
+  .profile__field--phone:invalid + .profile__icon-phone {
+    color: $icon-color-invalid;
+  }
+
+
 
   .profile__button {
     padding: 16px 207px;
