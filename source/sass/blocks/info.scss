@@ -43,24 +43,28 @@
 
 .info__header {
   margin: 0;
-  padding: 29px 0 19px 0;
+  padding: 28px 0 24px 0;
   font-size: $font-size-xxl;
   line-height: $line-height-xxs;
 }
 
 .info__intro {
-  margin: 0;
+  margin: 0 0 -6px 0;
   padding-bottom: 302px;
   font-size: $font-size-s;
   line-height: $line-height-xxs;
   text-transform: $text-transform-upper;
 }
 
+.info__button-wrapper {
+  padding-top: 5px;
+}
+
 .info__button {
   display: $display-block-button;
   vertical-align: middle;
   align-self: center;
-  padding: 14px 74px 11px 71px;
+  padding: 12px 74px 11px 71px;
   font-size: $font-size-s;
   line-height: $line-height-s;
   background-color: $main-button-bg-color;

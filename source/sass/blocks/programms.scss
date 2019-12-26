@@ -1,5 +1,5 @@
 .programms {
-  margin-bottom: 32px;
+  margin-bottom: -2px;
   background-color: $main-bg-color;
 }
 
@@ -15,17 +15,16 @@
 
 .programms__item {
   position: relative;
-  padding: 22px 20px;
-  margin-bottom: 20px;
-  min-height: 266px;
+  padding: 7px 20px 20px 20px;
+  margin-bottom: 21px;
   background-color: $secondary-bg-color;
 
   &::before {
     content: "";
     position: absolute;
     z-index: 2;
-    top: 40px;
-    left: 25px;
+    top: 24px;
+    left: 22px;
     width: 50px;
     height: 51px;
     background-color: $main-button-bg-color;
@@ -36,8 +35,8 @@
     content: "";
     position: absolute;
     z-index: 3;
-    top: 40px;
-    left: 33px;
+    top: 22px;
+    left: 30px;
     width: 35px;
     height: 49px;
     background-image: url("../img/icon-cat-slim.svg");
@@ -49,8 +48,8 @@
     content: "";
     position: absolute;
     z-index: 3;
-    top: 50px;
-    left: 15px;
+    top: 36px;
+    left: 12px;
     width: 67px;
     height: 28px;
     background-image: url("../img/icon-cat-pro.svg");
@@ -67,8 +66,8 @@
 }
 
 .programms__title {
-  padding-left: 82px;
-  margin-bottom: 36px;
+  padding-left: 71px;
+  margin-bottom: 29px;
   font-size: $font-size-l;
   line-height: $line-height-xl;
   color: $main-color;
@@ -88,7 +87,7 @@
 .programms__link {
   display: block;
   position: relative;
-  padding-top: 20px;
+  padding-top: 19px;
   max-width: 100px;
   font-size: $font-size-m;
   line-height: $line-height-xxs;
@@ -99,7 +98,7 @@
     content: "";
     position: absolute;
     bottom: 2px;
-    left: 100px;
+    left: 97px;
     width: 25px;
     height: 12px;
     background-image: url("../img/icon-right-arrow-long.svg");

@@ -10,7 +10,7 @@
 
 .example__header {
   @include indent-reset;
-  padding: 33px 0;
+  padding: 17px 0 23px 0;
   font-size: $font-size-xxl;
   font-weight: $font-weight-regular;
   line-height: $line-height-xxl;
@@ -19,7 +19,7 @@
 
 .example__description {
   @include indent-reset;
-  margin-bottom: 44px;
+  margin-bottom: 40px;
   font-family: $font-family-secondary;
   font-size: $font-size-s;
   font-weight: $font-weight-regular;
@@ -36,14 +36,13 @@
 
 .example__item {
   min-width: 124px;
-  text-align: center;
 
   &:first-child .example__result {
-    padding: 17px 43px;
+    padding: 8px 41px 10px 43px;
   }
 
   &:nth-child(2) .example__result {
-    padding: 17px 23px;
+    padding: 8px 23px 10px 18px;
   }
 }
 
@@ -62,7 +61,7 @@
   background-color: $secondary-bg-color;
   width: 87px;
   margin: 0 auto;
-  padding: 12px 5px 0 5px;
+  padding: 9px 7px 0 7px;
   font-family: $font-family-secondary;
   font-size: $font-size-xs;
   color: $accent-color;
@@ -74,7 +73,7 @@
 
 .example__title {
   @include indent-reset;
-  padding: 25px 0 40px 0;
+  padding: 18px 0 38px 0;
   font-size: $font-size-s;
   font-weight: $font-weight-regular;
   line-height: $line-height-l;
@@ -84,6 +83,7 @@
 
 .example__picture-wrapper {
   position: relative;
+  margin-bottom: 33px;
 }
 
 .example__picture--fat {
@@ -92,7 +92,7 @@
   background-image: url("../img/before-mobile@1x.png"), url("../img/before-mobile@2x.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto 232px;
+  background-size: auto 240px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/before-mobile@1x.webp"), url("../img/before-mobile@2x.webp");
@@ -106,7 +106,7 @@
   background-image: url("../img/after-mobile@1x.png"), url("../img/after-mobile@2x.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto 232px;
+  background-size: auto 240px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/after-mobile@1x.webp"), url("../img/after-mobile@2x.webp");
@@ -136,13 +136,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 3px;
 }
 
 .example__range {
   position: relative;
   width: 84px;
   height: 14px;
-  padding: 0 18px;
+  padding: 0 9px;
   background: transparent;
   appearance: none;
 
@@ -209,8 +210,8 @@
     content: "";
     position: absolute;
     top: 4px;
-    left: 24px;
-    width: 35px;
+    left: 18px;
+    width: 34px;
     height: 6px;
     border-radius: 6px;
     background-color: $additional-bg-color;

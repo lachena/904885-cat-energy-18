@@ -15,7 +15,7 @@
 .map__adress-wrapper {
   display: flex;
   margin: 0 auto;
-  padding: 33px 0 28px 0;
+  padding: 26px 0 25px 0;
 }
 
 .map__title {
@@ -51,8 +51,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 40%;
-    left: 40%;
+    top: 34%;
+    left: 41%;
     width: 55px;
     height: 53px;
     background-image: url("../img/map-pin.png");

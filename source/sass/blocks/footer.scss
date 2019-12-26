@@ -5,7 +5,7 @@
 .footer__inner {
   @include inner;
   padding: 0 $mobile-padding;
-  padding-top: 39px;
+  padding-top: 3px;
   padding-bottom: 22px;
   display: flex;
   flex-direction: column;
@@ -14,14 +14,14 @@
 }
 
 .logo {
-  padding-bottom: 31px;
+  padding-bottom: 30px;
   border-bottom: 1px solid $input-border-color;
   width: 100%;
   text-align: center;
 }
 
 .social {
-  padding: 22px 0;
+  padding: 22px 0 20px 0;
   border-bottom: 1px solid $input-border-color;
   width: 100%;
 }
@@ -33,12 +33,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  padding: 0 90px;
+  padding: 0px 81px 0 72px;
 }
 
 .copyright {
   width: 100%;
-  padding-top: 22px;
+  padding-top: 20px;
 }
 
 .copyright__name {
@@ -64,6 +64,21 @@
 }
 
 .social__link--vkontakte .social__icon {
+  width: 22px;
+  height: 12px;
+}
+
+.social__link--instagram .social__icon {
+  width: 17px;
+  height: 17px;
+}
+
+.social__link--facebook .social__icon {
+  width: 10px;
+  height: 19px;
+}
+
+/* .social__link--vkontakte .social__icon {
   width: 30px;
   height: 16px;
 }
@@ -76,7 +91,7 @@
 .social__link--facebook .social__icon {
   width: 14px;
   height: 28px;
-}
+} */
 
 .social__icon {
   color: $social-icon-color;
