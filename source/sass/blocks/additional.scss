@@ -118,9 +118,10 @@
 @media (min-width: $tablet-width) {
   .additional {
     position: relative;
+    margin-top: -104px;
 
     &::before {
-      top: 50px;
+      top: 53px;
       width: 100%;
       height: 3px;
     }
@@ -128,14 +129,21 @@
 
   .additional__header {
     width: 338px;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 35px;
+    padding-left: 47px;
+    padding-bottom: 81px;
     font-size: $font-size-xxl;
     border: none;
   }
 
   .additional__item {
-    padding: 28px 37px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    padding: 25px 37px 28px 37px;
     border: 1px solid $input-border-color;
     border-bottom: none;
 
@@ -149,19 +157,37 @@
     line-height: $line-height-xxs;
   }
 
+  .additional__content-wrapper {
+    justify-content: flex-end;
+    align-items: center;
+    width: 227px;
+    padding-right: 9px;
+    padding-bottom: 23px;
+  }
+
   .additional__content,
   .additional__price {
     font-size: $font-size-m;
     line-height: $line-height-xs;
   }
 
+  .additional__price {
+    margin-left: 51px;
+  }
+
+  .additional__button {
+    width: 100%;
+    margin-right: 8px;
+    padding: 8px 115px 8px 111px;
+  }
+
   .additional__present {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 708px;
     height: 200px;
-    margin: 69px 0 76px 0;
+    margin: 69px 0 76px 8px;
     background-image: url("../img/gift-photo-tablet@1x.jpg"), url("../img/gift-photo-tablet@1x.webp");
     background-size: cover;
 
@@ -170,8 +196,13 @@
     }
   }
 
+  .additional__image {
+    padding: 51px 103px 60px 93px;
+  }
+
   .additional__present-text {
     width: 25%;
+    padding: 4px 107px 0 70px;
     text-align: $text-align-left;
   }
 }
@@ -201,8 +232,6 @@
 
   .additional__item {
     padding: 11px 0;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     border-right: none;
     border-left: none;

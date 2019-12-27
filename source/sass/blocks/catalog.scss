@@ -172,23 +172,26 @@
   }
 
   .catalog__header {
-    margin-bottom: 156px;
+    margin-bottom: 146px;
     font-size: $font-size-xxxl;
-    padding: 0;
+    padding: 33px 0 0 0;
   }
 
   .catalog__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
   }
 
   .catalog__item {
     position: relative;
     flex-direction: column;
-    width: 45%;
+    width: 46%;
     margin-bottom: 140px;
+    padding: 0;
+    padding-bottom: 41px;
     border: none;
     background-color: $secondary-bg-color;
 
@@ -199,13 +202,14 @@
 
   .catalog__image {
     position: absolute;
-    bottom: 330px;
+    bottom: 303px;
     right: 0;
     width: 100%;
   }
 
   .catalog__wrap-description {
-    padding: 165px 38px 33px 38px;
+    width: 77%;
+    padding: 159px 0 42px 0;
   }
 
   .catalog__title {
@@ -225,7 +229,7 @@
 
   .catalog__table {
     width: 100%;
-    margin-top: 28px;
+    margin-top: 8px;
     padding-bottom: 40px;
     border-collapse: collapse;
   }
@@ -239,7 +243,7 @@
   }
 
   .catalog__item-button {
-    padding: 13px 94px;
+    padding: 10px 94px;
   }
 
   .catalog__more {
@@ -250,7 +254,8 @@
     border: 1px solid $secondary-bg-color;
 
     &::before {
-      top: 55px;
+      top: 52px;
+      left: 130px;
       width: 61px;
       height: 61px;
       background-image: url("../img/icon-plus.svg");
@@ -259,17 +264,22 @@
   }
 
   .catalog__more-title {
-    padding: 166px 70px 28px 70px;
+    padding: 157px 70px 18px 70px;
     font-size: $font-size-xl;
   }
 
   .catalog__more-info {
-    padding: 0 75px 85px 75px;
+    padding: 0 75px 82px 75px;
     font-size: $font-size-m;
   }
 
   .catalog__more-wrapper {
     @include indent-reset;
+    padding-bottom: 39px;
+  }
+
+  .catalog__more-button {
+    padding: 10px 80px 10px 78px;
   }
 }
 
