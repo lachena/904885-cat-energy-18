@@ -86,6 +86,10 @@
   margin-bottom: 33px;
 }
 
+.example__picture--skinny-container {
+  margin-bottom: 35px;
+}
+
 .example__picture--fat {
   width: 100%;
   height: 232px;
@@ -117,7 +121,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 38px;
+  padding-bottom: 3px;
 }
 
 .example__button {
@@ -292,10 +296,10 @@
   }
 
   .example__picture--fat {
-    height: 499px;
+    height: 517px;
     background-image: url("../img/before-tablet@1x.png"), url("../img/before-tablet@2x.png");
     background-position: center bottom;
-    background-size: auto 499px;
+    background-size: 690px 517px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/before-tablet@1x.webp"), url("../img/before-tablet@2x.webp");
@@ -317,7 +321,7 @@
     height: 517px;
     background-image: url("../img/after-tablet@1x.png"), url("../img/after-tablet@2x.png");
     background-position: right bottom;
-    background-size: auto 517px;
+    background-size: 690px 517px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/after-tablet@1x.webp"), url("../img/after-tablet@2x.webp");
@@ -327,11 +331,12 @@
   .example__background {
     height: 425px;
     margin-top: -396px;
+    padding-bottom: 4px;
     background: linear-gradient(to right, $secondary-bg-color 50%, $accent-bg-color 50%);
   }
 
   .example__range-wrapper {
-    margin-top: -96px;
+    margin-top: -63px;
   }
 
   .example__button {
@@ -413,13 +418,13 @@
   }
 
   .example__description {
-    width: 40%;
+    width: 36%;
     margin-bottom: 0;
-    padding-bottom: 71px;
+    padding-bottom: 83px;
   }
 
   .example__header {
-    padding-bottom: 142px;
+    padding-bottom: 146px;
   }
 
   .example__list-wrapper {
@@ -428,10 +433,19 @@
   }
 
   .example__list {
-    padding-bottom: 59px;
+    padding-bottom: 52px;
+  }
+
+  .example__item:first-child .example__result {
+    padding: 11px 57px 14px 57px;
+  }
+
+  .example__item:nth-child(2) .example__result {
+    padding: 11px 34px 15px 27px;
   }
 
   .example__name {
+    padding-top: 11px;
     background-color: $secondary-bg-color;
   }
 
@@ -446,27 +460,41 @@
   }
 
   .example__picture-wrapper {
-    max-width: 60%;
+    max-width: 730px;
     margin-left: auto;
-    margin-top: -665px;
-    margin-right: -110px;
+    margin-top: -675px;
+    margin-right: -77px;
+    margin-bottom: 0;
+  }
+
+  .example__picture--fat-container {
+    width: 95%;
+    height: 652px;
+    background: linear-gradient(to top,rgb(242, 242, 242) 71%,rgb(255, 255, 255) 29%);
+  }
+
+  .example__picture--skinny-container {
+    top: -3px;
+    width: 50%;
+    height: 652px;
+    background: linear-gradient(to top,rgb(234, 234, 234) 70.5%,rgb(255, 255, 255) 29.5%);
   }
 
   .example__picture--fat {
     background-image: url("../img/before-desktop@1x.png"), url("../img/before-desktop@2x.png");
-    background-position: right bottom;
+    background-size: 690px 517px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/before-desktop@1x.webp"), url("../img/before-desktop@2x.webp");
     }
   }
 
-  .example__picture--skinny-container {
-    width: 50%;
-  }
-
   .example__picture--skinny {
+    position: absolute;
+    top: 0;
+    left: -35px;
     background-image: url("../img/after-desktop@1x.png"), url("../img/after-desktop@2x.png");
+    background-size: 690px 517px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/after-desktop@1x.webp"), url("../img/after-desktop@2x.webp");
@@ -474,13 +502,17 @@
   }
 
   .example__range-wrapper {
+    position: absolute;
+    bottom: 70px;
+    right: 74px;
     justify-content: flex-end;
-    margin-right: -75px;
   }
 
   .example__background {
     justify-content: flex-end;
-    margin-top: -450px;
+    height: 462px;
+    margin-top: -463px;
+    padding-bottom: 0;
     background: linear-gradient(to right, $secondary-bg-color 67%, $accent-bg-color 33%);
   }
 }

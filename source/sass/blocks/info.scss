@@ -133,7 +133,7 @@
 
 @media (min-width: $desktop-width) {
   .info {
-    margin-top: -90px;
+    margin-top: -118px;
     margin-bottom: 80px;
     min-height: 696px;
     padding-bottom: 0;
@@ -141,7 +141,7 @@
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-position: top right;
     background-repeat: no-repeat;
-    background-size: 50% auto;
+    background-size: auto 100%;
     background-clip: content-box;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -158,20 +158,29 @@
 
   .info__image {
     width: 552px;
-    top: 142px;
-    left: 532px;
+    top: 145px;
+    left: 490px;
   }
 
   .info__header {
     text-align: start;
     margin-top: 226px;
-    margin-bottom: 33px;
-    padding-right: 660px;
+    padding-right: 586px;
+    padding-left: 80px;
   }
 
   .info__intro {
     text-align: start;
-    margin-bottom: 53px;
+    margin-bottom: 47px;
     padding-bottom: 0;
+    padding-left: 80px;
+  }
+
+  .info__button-wrapper {
+    padding-left: 80px;
+  }
+
+  .info__button {
+    margin-left: 0;
   }
 }

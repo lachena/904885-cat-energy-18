@@ -193,7 +193,12 @@
   .advantages__inner {
     max-width: $desktop-width;
     padding: 0 $desktop-padding;
-    padding-bottom: 90px;
+    padding-bottom: 33px;
+    border-bottom: none;
+  }
+
+  .advantages__header {
+    padding-top: 76px;
   }
 
   .advantages__list {
@@ -204,6 +209,16 @@
     width: 20%;
     margin: 0;
     padding-bottom: 48px;
+
+    &--leaf::before {
+      right: 19px;
+    }
+
+    &--bubble::before,
+    &--fork::before,
+    &--time::before {
+      right: 0;
+    }
   }
 
   .advantages__description {

@@ -111,12 +111,16 @@
     position: absolute;
     z-index: 1;
     top: 95px;
-    left: 110px;
+    left: 105px;
     width: 570px;
     margin: 0;
-    padding: 69px 90px 59px 76px;
+    padding: 64px 90px 59px 76px;
     background-color: $main-bg-color;
     box-sizing: border-box;
+  }
+
+  .map__adress {
+    align-items: baseline;
   }
 
   .map__title {

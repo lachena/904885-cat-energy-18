@@ -217,42 +217,41 @@
   }
 
   .programms__item {
-    max-width: 40%;
+    max-width: 38%;
     margin-bottom: 0;
-    padding: 81px 56px 62px 52px;
+    padding: 79px 56px 61px 52px;
 
     &::before {
-      top: 47px;
-      left: 52px;
+      top: 50px;
+      left: 53px;
       width: 100px;
       height: 100px;
     }
 
     &--sit::after {
       top: 41px;
-      left: 65px;
+      left: 66px;
       width: 71px;
       height: 97px;
     }
 
     &--walk::after {
-      top: 69px;
-      left: 34px;
+      top: 72px;
+      left: 37px;
       width: 134px;
       height: 57px;
     }
   }
 
   .programms__title {
-    padding-bottom: 75px;
+    padding-bottom: 73px;
     padding-left: 164px;
     margin: 0;
   }
 
   .programms__description {
     padding: 0;
-    padding-bottom: 36px;
-    padding-right: 25px;
+    padding-bottom: 11px;
     margin: 0;
   }
 
