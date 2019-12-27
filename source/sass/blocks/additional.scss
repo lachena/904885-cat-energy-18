@@ -5,7 +5,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 45px;
+    top: 42px;
     right: 0;
     width: 50%;
     height: 3px;
@@ -24,13 +24,12 @@
   position: relative;
   z-index: 2;
   width: 226px;
-  padding: 30px 20px 30px 0;
+  padding: 29px 20px 33px 0;
   font-size: $font-size-l;
   font-weight: $font-weight-regular;
   line-height: $line-height-xxs;
   text-align: $text-align-left;
   background-color: $main-bg-color;
-  border-bottom: $border-catalog-item;
 }
 
 .additional__list {
@@ -42,6 +41,10 @@
   flex-direction: column;
   padding: 13px 0 17px 0;
   border-bottom: $border-catalog-item;
+
+  &:first-child {
+    border-top: $border-catalog-item;
+  }
 }
 
 .additional__name {
@@ -50,14 +53,14 @@
   line-height: $line-height-xxs;
   text-align: $text-align-left;
   text-transform: $text-transform-upper;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
 }
 
 .additional__content-wrapper {
   @include indent-reset;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 14px;
+  padding-bottom: 15px;
 }
 
 .additional__content,
@@ -79,13 +82,13 @@
   text-transform: $text-transform-upper;
   color: $addition-color;
   background-color: $additional-bg-color;
-  padding: 13px 109px;
+  padding: 9px 109px;
 }
 
 .additional__present {
   width: 280px;
   height: 289px;
-  margin: 39px 0 35px 0;
+  margin: 39px 0 36px 0;
   background-image: url("../img/gift-photo-mobile@1x.jpg"), url("../img/gift-photo-mobile@1x.webp");
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -97,13 +100,13 @@
 }
 
 .additional__image {
-  padding: 65px 111px;
+  padding: 65px 103px 60px 111px;
   color: $main-bg-color;
 }
 
 .additional__present-text {
   @include indent-reset;
-  padding: 0 60px;
+  padding: 0 58px 0 70px;
   font-family: $font-family-secondary;
   font-size: $font-size-m;
   font-weight: $font-weight-regular;
