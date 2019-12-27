@@ -230,11 +230,13 @@
   }
 
   .example__header {
+    padding-bottom: 65px;
     font-size: $font-size-xxxl;
     line-height: $line-height-xxs;
   }
 
   .example__description {
+    margin-bottom: 49px;
     font-size: $font-size-m;
     line-height: $line-height-xl-l;
   }
@@ -242,8 +244,8 @@
   .example__list-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 80px;
+    align-items: center;
+    margin-bottom: 64px;
   }
 
   .example__list {
@@ -254,12 +256,12 @@
     margin-right: 42px;
 
     & .example__result {
-      padding: 23px 57px;
+      padding: 10px 55px 13px 57px;
     }
   }
 
   .example__item:nth-child(2) .example__result {
-    padding: 23px 32px;
+    padding: 10px 32px 13px 27px;
   }
 
   .example__result {
@@ -268,6 +270,8 @@
   }
 
   .example__name {
+    width: 139px;
+    padding: 9px 6px 0 6px;
     font-size: $font-size-s;
     line-height: $line-height-xxs;
     background-color: $main-bg-color;
@@ -275,16 +279,16 @@
 
   .example__title {
     max-width: 195px;
+    padding: 10px 0 31px 0;
     font-size: $font-size-xl;
-    line-height: $line-height-xxs;
     text-align: $text-align-right;
   }
 
   .example__picture--fat-container {
     position: relative;
     width: 100%;
-    height: 631px;
-    background: linear-gradient(to top, rgb(242, 242, 242) 79%, rgb(255, 255, 255) 21%);
+    height: 600px;
+    background: linear-gradient(to top, rgb(242, 242, 242) 72%, rgb(255, 255, 255) 28%);
   }
 
   .example__picture--fat {
@@ -300,11 +304,11 @@
 
   .example__picture--skinny-container {
     width: 50%;
-    height: 631px;
+    height: 600px;
     position: absolute;
     top: 0;
     right: 0;
-    background: linear-gradient(to top, rgb(234, 234, 234) 79%, rgb(255, 255, 255) 21%);
+    background: linear-gradient(to top, rgb(234, 234, 234) 72%, rgb(255, 255, 255) 28%);
     overflow: hidden;
   }
 
@@ -321,13 +325,13 @@
   }
 
   .example__background {
-    height: 462px;
-    margin-top: -452px;
+    height: 425px;
+    margin-top: -396px;
     background: linear-gradient(to right, $secondary-bg-color 50%, $accent-bg-color 50%);
   }
 
   .example__range-wrapper {
-    margin-top: -75px;
+    margin-top: -96px;
   }
 
   .example__button {
@@ -341,7 +345,7 @@
   .example__range {
     width: 428px;
     height: 6px;
-    padding: 0 21px;
+    padding: 0 21px 5px 21px;
 
     &::-webkit-slider-runnable-track {
       width: 428px;

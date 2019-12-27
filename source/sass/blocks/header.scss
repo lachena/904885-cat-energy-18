@@ -48,14 +48,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 24px;
-    margin-bottom: 68px;
+    margin-top: 22px;
+    margin-bottom: 54px;
     background-color: transparent;
   }
 
   .header__inner {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     max-width: $tablet-width;
     padding: 0 $tablet-padding;
   }

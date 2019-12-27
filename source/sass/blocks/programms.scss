@@ -84,27 +84,31 @@
   color: $accent-color;
 }
 
-.programms__link {
-  display: block;
+.programms__link-wrapper {
   position: relative;
-  padding-top: 19px;
-  max-width: 100px;
-  font-size: $font-size-m;
-  line-height: $line-height-xxs;
-  color: $main-color;
-  text-transform: $text-transform-upper;
+  width: 121px;
 
   &::after {
     content: "";
     position: absolute;
     bottom: 2px;
-    left: 97px;
+    right: 0;
     width: 25px;
     height: 12px;
     background-image: url("../img/icon-right-arrow-long.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
   }
+}
+
+.programms__link {
+  display: block;
+  padding-top: 19px;
+  max-width: 100px;
+  font-size: $font-size-m;
+  line-height: $line-height-xxs;
+  color: $main-color;
+  text-transform: $text-transform-upper;
 
   &:hover {
     color: $main-color;
@@ -132,7 +136,7 @@
 
   .programms__item {
     margin-bottom: 30px;
-    padding: 81px 0 62px 53px;
+    padding: 77px 0 62px 53px;
 
     &::before {
       top: 92px;
@@ -158,32 +162,41 @@
     }
   }
 
-
   .programms__title {
-    margin: 0 0 26px 0;
+    margin: 0 0 24px 0;
     padding: 0;
     font-size: $font-size-xxl;
     line-height: $line-height-xs-xxs;
   }
 
   .programms__description {
-    margin: 0 0 61px 0;
-    padding-right: 335px;
+    margin: 0 0 14px 0;
     font-size: $font-size-m;
     line-height: $line-height-xl-l;
     border-bottom: none;
+
+    &--sit {
+      padding-right: 281px;
+    }
+
+    &--walk {
+      padding-right: 311px;
+    }
+  }
+
+  .programms__link-wrapper {
+    width: 153px;
+
+    &::after {
+      bottom: 2px;
+      width: 24px;
+      height: 11px;
+    }
   }
 
   .programms__link {
     max-width: 123px;
     font-size: $font-size-xl;
-
-    &::after {
-      bottom: 2px;
-      left: 131px;
-      width: 24px;
-      height: 11px;
-    }
   }
 }
 
@@ -241,6 +254,10 @@
     padding-bottom: 36px;
     padding-right: 25px;
     margin: 0;
+  }
+
+  .programms__link-wrapper {
+    width: 156px;
   }
 
   .programms__link {

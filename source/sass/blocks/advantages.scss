@@ -34,7 +34,6 @@
   position: relative;
   margin-bottom: 26px;
   padding: 0 0 0 80px;
-  /* min-height: 60px; */
 
   &::after {
     content: "";
@@ -101,29 +100,41 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    margin-bottom: 26px;
+  }
+
   .advantages__inner {
     max-width: $tablet-width;
     padding: 0 $tablet-padding;
-    padding-top: 51px;
-    padding-bottom: 55px;
+    padding-top: 15px;
+    padding-bottom: 102px;
+    border-bottom: 1px solid $input-border-color;
+  }
+
+  .advantages__header {
+    margin-bottom: 68px;
+    font-size: $font-size-xxxl;
+    line-height: $line-height-xxs;
   }
 
   .advantages__list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    padding-right: 88px;
+    padding-right: 12px;
   }
 
   .advantages__item {
     position: relative;
     width: 45%;
     padding: 117px 0 0 0;
-    margin-bottom: 137px;
+    margin-bottom: 127px;
 
     &::after {
-      bottom: 117px;
+      top: 4px;
       width: 80px;
       height: 80px;
     }
@@ -131,8 +142,8 @@
     &--leaf::before {
       content: "1";
       position: absolute;
-      top: 0;
-      left: 126px;
+      top: -33px;
+      right: 84px;
       font-size: $font-size-xxxxl;
       color: $secondary-bg-color;
     }
@@ -140,8 +151,8 @@
     &--bubble::before {
       content: "2";
       position: absolute;
-      top: 0;
-      left: 126px;
+      top: -33px;
+      right: 67px;
       font-size: $font-size-xxxxl;
       color: $secondary-bg-color;
     }
@@ -149,8 +160,8 @@
     &--fork::before {
       content: "3";
       position: absolute;
-      top: 0;
-      left: 126px;
+      top: -33px;
+      right: 67px;
       font-size: $font-size-xxxxl;
       color: $secondary-bg-color;
     }
@@ -158,22 +169,21 @@
     &--time::before {
       content: "4";
       position: absolute;
-      top: 0;
-      left: 126px;
+      top: -33px;
+      right: 64px;
       font-size: $font-size-xxxxl;
       color: $secondary-bg-color;
     }
-  }
 
-  .advantages__header {
-    margin-bottom: 63px;
-    font-size: $font-size-xxxl;
-    line-height: $line-height-xxs;
+    &:last-child,
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
   }
 
   .advantages__description {
     margin: 0;
-    padding: 0 20px 0 0;
+    padding: 0 53px 0 0;
     font-size: $font-size-m;
     line-height: $line-height-xl-l;
   }
