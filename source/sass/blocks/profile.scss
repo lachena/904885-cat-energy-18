@@ -210,9 +210,8 @@
     margin: 10px 0 0 20px;
     width: 30%;
     height: 30px;
-    margin: 0;
     cursor: pointer;
-    }
+  }
 }
 
 .profile__check--goal + .profile__name--goal {
@@ -259,7 +258,7 @@
     position: absolute;
     z-index: 1;
     top: -5px;
-    left: 0px;
+    left: 0;
     width: 30px;
     height: 30px;
     border: solid 1px $check-border-color;
@@ -482,7 +481,7 @@
 
   .profile__check--goal + .profile__name--goal::after {
     top: 2px;
-    left: 0px;
+    left: 0;
     width: 18px;
     height: 18px;
   }
@@ -555,7 +554,7 @@
       padding-bottom: 33px;
 
       &:last-child {
-      padding-bottom: 0;
+        padding-bottom: 0;
       }
     }
   }
@@ -610,7 +609,7 @@
     width: 295px;
   }
 
-  .profile__check--goal+.profile__name--goal {
+  .profile__check--goal + .profile__name--goal {
     padding-left: 54px;
 
     &::before {
@@ -646,7 +645,6 @@
   .profile__field:focus {
     border: 1px solid $input-border-color-active;
     outline: 1px solid $input-border-color-active;
-    outline: none;
   }
 
   .profile__field:invalid {

@@ -33,7 +33,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  padding: 0px 81px 0 72px;
+  padding: 0 81px 0 72px;
 }
 
 .copyright {
@@ -150,19 +150,19 @@
   }
 
   .social__link--vkontakte .social__icon {
-  width: 30px;
-  height: 16px;
-}
+    width: 30px;
+    height: 16px;
+  }
 
-.social__link--instagram .social__icon {
-  width: 23px;
-  height: 23px;
-}
+  .social__link--instagram .social__icon {
+    width: 23px;
+    height: 23px;
+  }
 
-.social__link--facebook .social__icon {
-  width: 14px;
-  height: 28px;
-}
+  .social__link--facebook .social__icon {
+    width: 14px;
+    height: 28px;
+  }
 
   .copyright {
     max-width: 163px;
