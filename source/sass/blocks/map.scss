@@ -2,6 +2,11 @@
   background-color: $main-bg-color;
 }
 
+.map--form {
+  margin-top: -8px;
+  background-color: $secondary-bg-color;
+}
+
 .map__inner {
   @include inner;
   padding: 0 $mobile-padding;

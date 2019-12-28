@@ -57,15 +57,15 @@
                 <legend class="visually-hidden">Данные кота</legend>
                 <div class="profile__block">
                   <ul class="profile__list">
-                    <li class="profile__item">
+                    <li class="profile__item profile__item--data">
                       <label class="profile__name" for="nickname">Имя:<sup>*</sup></label>
                       <input class="profile__field" id="nickname" type="text" name="name" placeholder="Барсик">
                     </li>
-                    <li class="profile__item">
+                    <li class="profile__item profile__item--data">
                       <label class="profile__name" for="weight">Вес (кг):<sup>*</sup></label>
                       <input class="profile__field" id="weight" type="text" name="weight" placeholder="7">
                     </li>
-                    <li class="profile__item">
+                    <li class="profile__item profile__item--data">
                       <label class="profile__name" for="age">Возраст (лет):<sup>*</sup></label>
                       <input class="profile__field" id="age" type="text" name="age" placeholder="7">
                     </li>
@@ -75,16 +75,16 @@
               <fieldset class="profile__sector profile__sector--goal">
                 <legend class="visually-hidden">Цель</legend>
                 <div class="profile__block">
-                  <ul class="profile__list">
-                    <li class="profile__item">
+                  <ul class="profile__list profile__list--goal">
+                    <li class="profile__item profile__item--goal">
                       <input class="profile__check profile__check--goal" id="losing" type="radio" name="purpose" checked>
                       <label class="profile__name profile__name--goal" for="losing">Похудение</label>
                     </li>
-                    <li class="profile__item">
+                    <li class="profile__item profile__item--goal">
                       <input class="profile__check profile__check--goal" id="fattening" type="radio" name="purpose">
                       <label class="profile__name profile__name--goal" for="fattening">Набор массы</label>
                     </li>
-                    <li class="profile__item">
+                    <li class="profile__item profile__item--goal">
                       <input class="profile__check profile__check--goal" id="advice" type="radio" name="purpose">
                       <label class="profile__name profile__name--goal" for="advice">Не знаю (Нужен ваш совет)</label>
                     </li>
@@ -93,7 +93,7 @@
               </fieldset>
             </div>
             <fieldset class="profile__sector profile__sector--info">
-              <legend class="profile__title">Контактные данные (владельца кота)</legend>
+              <legend class="profile__title profile__title--info">Контактные данные (владельца кота)</legend>
               <div class="profile__block">
                 <ul class="profile__list">
                   <li class="profile__item profile__item--email">
@@ -114,30 +114,30 @@
               </div>
             </fieldset>
             <fieldset class="profile__sector profile__sector--comment">
-              <legend class="profile__title">Комментарий</legend>
+              <legend class="profile__title profile__title--comment">Комментарий</legend>
               <div class="profile__block">
                 <p class="profile__item">
-                  <textarea class="profile__field" name="comment" id="comment" cols="30" rows="5">Расскажите обо всех повадках кота</textarea class="profile__field">
+                  <textarea class="profile__field" name="comment" id="comment" cols="30" rows="7">Расскажите обо всех повадках кота</textarea class="profile__field">
                 </p>
               </div>
             </fieldset>
             <fieldset class="profile__sector profile__sector--add">
-              <legend class="profile__title">Дополнительно</legend>
+              <legend class="profile__title profile__title--add">Дополнительно</legend>
               <div class="profile__block">
                 <ul class="profile__list">
-                  <li class="profile__item">
+                  <li class="profile__item profile__item--add">
                     <input class="profile__check profile__check--add" type="checkbox" name="sugarfree" checked>
                     <label class="profile__name profile__name--add">Сахарозаменитель</label>
                   </li>
-                  <li class="profile__item">
+                  <li class="profile__item profile__item--add">
                     <input class="profile__check profile__check--add" type="checkbox" name="water">
                     <label class="profile__name profile__name--add">Питьевая вода</label>
                   </li>
-                  <li class="profile__item">
+                  <li class="profile__item profile__item--add">
                     <input class="profile__check profile__check--add" type="checkbox" name="milk">
                     <label class="profile__name profile__name--add">Молоко</label>
                   </li>
-                  <li class="profile__item">
+                  <li class="profile__item profile__item--add">
                     <input class="profile__check profile__check--add" type="checkbox" name="vitamin">
                     <label class="profile__name profile__name--add">Витамины</label>
                   </li>
@@ -154,7 +154,7 @@
         </div>
       </section>
 
-      <section class="main__map map">
+      <section class="main__map map map--form">
         <h2 class="visually-hidden">Карта</h2>
         <div class="map__inner">
           <div class="map__adress-wrapper">
