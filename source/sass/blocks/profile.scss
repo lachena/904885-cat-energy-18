@@ -530,28 +530,46 @@
 }
 
 @media (min-width: $desktop-width) {
+  .profile {
+    padding-bottom: 49px;
+  }
+
   .profile__inner {
     max-width: $desktop-width;
     padding: 0 $desktop-padding;
   }
 
+  .profile__header {
+    padding-top: 53px;
+  }
+
+  .profile__form {
+    padding: 0;
+  }
+
   .profile__text {
-    width: 25%;
+    width: 30%;
+    padding-bottom: 67px;
+  }
+
+  .profile__item--data {
+    padding-bottom: 18px;
   }
 
   .profile__sector-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 
-  .profile__sector--data,
-  .profile__sector--goal {
-    width: 45%;
+  .profile__sector--data {
+    width: 47%;
+    padding-bottom: 0;
   }
 
   .profile__sector--goal {
-    padding: 25px 0 25px 28px;
+    width: 44%;
+    padding: 25px 0 29px 28px;
 
     & .profile__item {
       padding-bottom: 33px;
@@ -562,18 +580,65 @@
     }
   }
 
+  .profile__list--goal {
+    padding-top: 6px;
+  }
+
+  .profile__check--goal+.profile__name--goal {
+    padding-left: 54px;
+
+    &::before {
+      top: -9px;
+      left: -6px;
+    }
+
+    &::after {
+      top: 3px;
+      left: 6px;
+    }
+  }
+
   .profile__sector--info .profile__list {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
 
-  .profile__sector--info .profile__item {
-    width: 45%;
+  .profile__sector--info {
+    padding-bottom: 20px;
+
+    & .profile__item {
+      width: 46%;
+    }
+
+    &::before {
+      top: 87px;
+      left: 140px;
+    }
+
+    &::after {
+      top: 87px;
+    }
   }
 
-  .profile__sector--add .profile__item {
-    width: 25%;
+  .profile__sector--comment {
+    padding-bottom: 52px;
+
+    &::before {
+      left: 140px;
+    }
+  }
+
+  .profile__sector--add {
+    padding-bottom: 20px;
+
+    & .profile__item {
+      width: 20%;
+    }
+  }
+
+  .profile__title--info {
+    padding-top: 67px;
   }
 
   .profile__check--goal:hover + .profile__name--goal::before,
@@ -618,10 +683,8 @@
     color: $icon-color-invalid;
   }
 
-
-
   .profile__button {
-    padding: 16px 207px;
+    padding: 13px 207px 13px 207px;
     margin-right: 82px;
   }
 }
