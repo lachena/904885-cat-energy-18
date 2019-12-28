@@ -210,6 +210,10 @@
 @media (min-width: $desktop-width) {
   .additional {
     margin-bottom: 86px;
+
+    &::before {
+      top: 58px;
+    }
   }
 
   .additional__inner {
@@ -218,7 +222,10 @@
   }
 
   .additional__header {
-    padding-bottom: 75px;
+    padding-bottom: 81px;
+    margin-left: -40px;
+    padding-left: 41px;
+    padding-top: 36px;
   }
 
   .additional__present-wrapper {
@@ -227,12 +234,12 @@
   }
 
   .additional__list {
-    width: 73%;
+    width: 74%;
   }
 
   .additional__item {
-    padding: 11px 0;
-    align-items: center;
+    margin-left: 0;
+    padding: 14px 0;
     border-right: none;
     border-left: none;
   }
@@ -243,15 +250,18 @@
   }
 
   .additional__name {
-    width: 200px;
+    width: 184px;
   }
 
   .additional__content-wrapper {
-    width: 285px;
+    width: 287px;
+    justify-content: space-between;
+    margin-right: -117px;
   }
 
   .additional__button {
-    padding: 13px 92px;
+    width: auto;
+    padding: 10px 91px 11px 91px;
   }
 
   .additional__present {
@@ -267,7 +277,7 @@
   }
 
   .additional__image {
-    padding: 65px 0;
+    padding: 67px 0 65px 5px;
   }
 
   .additional__present-text {
