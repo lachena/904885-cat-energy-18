@@ -70,16 +70,6 @@
   line-height: $line-height-s;
   background-color: $main-button-bg-color;
   text-transform: $text-transform-upper;
-
-  &:hover {
-    background-color: $main-button-bg-color-hvr;
-    color: $main-button-color;
-  }
-
-  &:active {
-    background-color: $main-button-bg-color-hvr;
-    color: $addition-color-active;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -182,5 +172,15 @@
 
   .info__button {
     margin-left: 0;
+
+    &:hover {
+      background-color: $main-button-bg-color-hvr;
+      color: $main-button-color;
+    }
+
+    &:active {
+      background-color: $main-button-bg-color-hvr;
+      color: $addition-color-active;
+    }
   }
 }

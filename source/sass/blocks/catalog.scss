@@ -88,16 +88,6 @@
   color: $secondary-button-bg-color;
   background-color: $main-button-bg-color;
   text-transform: $text-transform-upper;
-
-  &:hover {
-    background-color: $main-button-bg-color-hvr;
-    color: $main-button-color;
-  }
-
-  &:active {
-    background-color: $main-button-bg-color-hvr;
-    color: $addition-color-active;
-  }
 }
 
 .catalog__more {
@@ -153,16 +143,6 @@
   color: $secondary-button-color;
   background-color: $secondary-button-bg-color;
   text-transform: $text-transform-upper;
-
-  &:hover {
-    background-color: $secondary-button-bg-color-hvr;
-    color: $accent-color;
-  }
-
-  &:active {
-    background-color: $secondary-button-bg-color-hvr;
-    color: $accent-color;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -331,6 +311,16 @@
 
   .catalog__item-button {
     padding: 10px 54px;
+
+    &:hover {
+      background-color: $main-button-bg-color-hvr;
+      color: $main-button-color;
+    }
+
+    &:active {
+      background-color: $main-button-bg-color-hvr;
+      color: $addition-color-active;
+    }
   }
 
   .catalog__more {
@@ -355,5 +345,15 @@
 
   .catalog__more-button {
     padding: 10px 40px;
+
+    &:hover {
+      background-color: $secondary-button-bg-color-hvr;
+      color: $accent-color;
+    }
+
+    &:active {
+      background-color: $secondary-button-bg-color-hvr;
+      color: $accent-color;
+    }
   }
 }

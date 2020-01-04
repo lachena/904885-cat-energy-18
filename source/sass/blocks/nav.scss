@@ -14,10 +14,6 @@
   z-index: 1;
   width: 100%;
   border-bottom: 1px solid $check-border-color;
-
-  &--active:hover .nav__link {
-    color: $main-color;
-  }
 }
 
 .nav__link {
@@ -29,14 +25,6 @@
   text-align: $text-align-center;
   color: $main-color;
   text-transform: $text-transform-upper;
-
-  &:hover {
-    color: $main-color-hvr;
-  }
-
-  &:active {
-    color: $main-color-active;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -108,10 +96,22 @@
     &--active-desktop:hover .nav__link--desktop {
       color: $addition-color;
     }
+
+    &--active:hover .nav__link {
+      color: $main-color;
+    }
   }
 
   .nav__link {
     letter-spacing: 1px;
+
+    &:hover {
+      color: $main-color-hvr;
+    }
+
+    &:active {
+      color: $main-color-active;
+    }
   }
 
   .nav__link--desktop {

@@ -33,14 +33,7 @@
   width: 191px;
   height: 39px;
   margin-left: 20px;
-}
-
-.header__logo-image:hover {
-  opacity: $logo-hvr-opacity;
-}
-
-.header__logo-image:active {
-  opacity: $logo-down-opacity;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -80,6 +73,14 @@
 
   .header__link {
     width: 203px;
+  }
+
+  .header__link:hover {
+    opacity: $logo-hvr-opacity;
+  }
+
+  .header__link:active {
+    opacity: $logo-down-opacity;
   }
 
   .header__logo-image {

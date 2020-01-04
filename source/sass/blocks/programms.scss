@@ -109,14 +109,6 @@
   line-height: $line-height-xxs;
   color: $main-color;
   text-transform: $text-transform-upper;
-
-  &:hover {
-    color: $main-color;
-  }
-
-  &:focus {
-    color: $main-color-active;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -267,6 +259,14 @@
       left: 131px;
       width: 24px;
       height: 11px;
+    }
+
+    &:hover {
+      color: $main-color;
+    }
+
+    &:focus {
+      color: $main-color-active;
     }
   }
 }
