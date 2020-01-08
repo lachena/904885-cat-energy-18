@@ -83,6 +83,7 @@
   color: $addition-color;
   background-color: $additional-bg-color;
   padding: 9px 109px;
+  border: none;
 }
 
 .additional__present {
@@ -93,6 +94,7 @@
   background-position: 0 0;
   background-repeat: no-repeat;
   fill: currentColor;
+  color: $main-bg-color;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg"), url("../img/gift-photo-mobile@2x.webp");

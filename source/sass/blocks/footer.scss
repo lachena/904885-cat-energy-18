@@ -53,6 +53,7 @@
 
 .social__link {
   fill: currentColor;
+  color: $social-icon-color;
 }
 
 .social__link--vkontakte .social__icon {
@@ -163,20 +164,33 @@
     opacity: $logo-down-opacity;
   }
 
-  .social__link[href]:hover .social__icon {
+  .social__link[href]:hover {
     color: $social-icon-color-hvr;
+
+    & .social__icon {
+      color: $social-icon-color-hvr;
+    }
   }
 
   .social__link[href]:active .social__icon {
     color: $social-icon-color-down;
+
+    .social__icon {
+      color: $social-icon-color-down;
+    }
   }
 
   .copyright__link {
+    &[href]:hover {
+      color: $copyright-logo-color-hvr;
+    }
+
     &[href]:hover .copyright__sign {
       color: $copyright-logo-color-hvr;
     }
 
     &[href]:active {
+      color: $copyright-logo-color-down;
 
       & .copyright__sign {
         color: $copyright-logo-color-down;
