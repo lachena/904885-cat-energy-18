@@ -163,19 +163,18 @@
   }
 
   .copyright__link {
-    &[href]:hover {
+    &[href]:hover .copyright__sign {
       color: $copyright-logo-color-hvr;
-
-      & .copyright__name {
-        color: $copyright-logo-color-hvr;
-      }
     }
 
     &[href]:active {
-      color: $copyright-logo-color-down;
+
+      & .copyright__sign {
+        color: $copyright-logo-color-down;
+      }
 
       & .copyright__name {
-        color: $copyright-logo-color-down;
+        opacity: $footer-sign-opacity;
       }
     }
   }
