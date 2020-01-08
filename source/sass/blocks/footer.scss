@@ -144,6 +144,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .footer {
+    padding-top: 2px;
+  }
+
   .footer__inner {
     max-width: $desktop-width;
     padding: 0 $desktop-padding;

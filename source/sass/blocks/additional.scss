@@ -100,19 +100,23 @@
 }
 
 .additional__image {
-  padding: 65px 103px 60px 111px;
+  padding: 65px 103px 60px 113px;
   color: $main-bg-color;
 }
 
 .additional__present-text {
   @include indent-reset;
-  padding: 0 58px 0 70px;
+  padding: 0 49px 0 46px;
   font-family: $font-family-secondary;
   font-size: $font-size-m;
   font-weight: $font-weight-regular;
   line-height: $line-height-xs;
   text-align: $text-align-center;
   color: $addition-color;
+}
+
+.additional__line {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -239,7 +243,7 @@
 
   .additional__item {
     margin-left: 0;
-    padding: 14px 0;
+    padding: 12px 0;
     border-right: none;
     border-left: none;
   }
@@ -261,7 +265,7 @@
 
   .additional__button {
     width: auto;
-    padding: 10px 91px 11px 91px;
+    padding: 13px 90px 12px 90px;
   }
 
   .additional__present {
@@ -277,7 +281,7 @@
   }
 
   .additional__image {
-    padding: 67px 0 65px 5px;
+    padding: 67px 0 65px 4px;
   }
 
   .additional__present-text {

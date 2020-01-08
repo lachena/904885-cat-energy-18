@@ -22,7 +22,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 0 $mobile-padding 25px $mobile-padding;
+  padding: 0 $mobile-padding 24px $mobile-padding;
   text-align: center;
   border-bottom: $border-catalog-item;
 
@@ -43,7 +43,7 @@
   @include indent-reset;
   display: flex;
   flex-wrap: wrap;
-  padding: 5px 0 10px 0;
+  padding: 0 0 9px 0;
   font-size: $font-size-m;
   font-weight: $font-weight-regular;
   line-height: $line-height-xs;
@@ -56,8 +56,21 @@
   width: 100%;
 }
 
+.catalog__line-second {
+  width: 30px;
+}
+
 .catalog__table {
-  width: 144px;
+  width: 146px;
+  margin-left: -2px;
+}
+
+.catalog__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 16px;
 }
 
 .catalog__item-value,
@@ -81,7 +94,7 @@
 .catalog__item-button {
   display: $display-block-button;
   vertical-align: middle;
-  padding: 9px 109px 9px 109px;
+  padding: 9px 109px 10px 111px;
   font-size: $font-size-m;
   line-height: $line-height-xs;
   text-align: $text-align-center;
@@ -136,7 +149,7 @@
 .catalog__more-button {
   display: $display-block-button;
   vertical-align: middle;
-  padding: 10px 94px 10px 94px;
+  padding: 10px 94px 10px 96px;
   font-size: $font-size-m;
   line-height: $line-height-xs;
   text-align: $text-align-center;
@@ -168,7 +181,7 @@
   .catalog__item {
     position: relative;
     flex-direction: column;
-    width: 46%;
+    width: 324px;
     margin-bottom: 140px;
     padding: 0;
     padding-bottom: 41px;
@@ -182,25 +195,31 @@
 
   .catalog__image {
     position: absolute;
-    bottom: 303px;
+    bottom: 305px;
     right: 0;
     width: 100%;
   }
 
   .catalog__wrap-description {
     width: 77%;
-    padding: 159px 0 42px 0;
+    padding: 159px 0 33px 0;
   }
 
   .catalog__title {
     justify-content: center;
-    padding-top: 0;
+    padding-top: 3px;
+    padding-bottom: 11px;
+    padding-left: 2px;
     font-size: $font-size-xl;
     text-align: $text-align-center;
   }
 
+  .catalog__line {
+    line-height: 1;
+  }
+
   .catalog__line-first {
-    width: auto;
+    width: 95px;
   }
 
   .catalog__line-third {
@@ -210,32 +229,38 @@
   .catalog__table {
     width: 100%;
     margin-top: 8px;
+    margin-left: 0;
     padding-bottom: 40px;
     border-collapse: collapse;
   }
 
+  .catalog__row {
+    height: 32px;
+  }
+
   .catalog__item-value,
   .catalog__item-field {
+    width: 100%;
+    padding: 5px 0 5px 2px;
     font-size: $font-size-m;
     line-height: $line-height-xxs;
-    padding: 5px 0;
     border-bottom: 1px solid $input-border-color;
   }
 
   .catalog__item-button {
-    padding: 10px 94px;
+    padding: 10px 94px 10px 95px;
   }
 
   .catalog__more {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 324px;
     padding-bottom: 0;
     border: 1px solid $secondary-bg-color;
 
     &::before {
       top: 52px;
-      left: 130px;
+      left: 135px;
       width: 61px;
       height: 61px;
       background-image: url("../img/icon-plus.svg");
@@ -244,8 +269,9 @@
   }
 
   .catalog__more-title {
-    padding: 157px 70px 18px 70px;
+    padding: 162px 75px 24px 75px;
     font-size: $font-size-xl;
+    line-height: $line-height-xxs;
   }
 
   .catalog__more-info {
@@ -259,7 +285,7 @@
   }
 
   .catalog__more-button {
-    padding: 10px 80px 10px 78px;
+    padding: 10px 79px 10px 82px;
   }
 }
 
@@ -278,7 +304,7 @@
   }
 
   .catalog__item {
-    width: 20%;
+    width: 245px;
     margin-right: 80px;
     margin-bottom: 142px;
 
@@ -292,12 +318,12 @@
   }
 
   .catalog__wrap-description {
-    width: 71%;
+    width: 69%;
     padding-bottom: 33px;
   }
 
   .catalog__table {
-    margin-top: 6px;
+    margin-top: 10px;
   }
 
   .catalog__title {
@@ -324,7 +350,7 @@
   }
 
   .catalog__more {
-    width: 20%;
+    width: 243px;
 
     &::before {
       left: 96px;
@@ -336,11 +362,11 @@
   }
 
   .catalog__more-title {
-    padding: 159px 34px 18px 34px;
+    padding: 162px 34px 22px 34px;
   }
 
   .catalog__more-info {
-    padding: 0 10px 80px 10px;
+    padding: 0 10px 84px 10px;
   }
 
   .catalog__more-button {
