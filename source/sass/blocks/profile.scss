@@ -181,6 +181,39 @@
   fill: currentColor;
 }
 
+.profile__field--email {
+  position: relative;
+}
+
+.profile__error--email {
+  position: absolute;
+  bottom: -2px;
+  left: 90px;
+  display: none;
+  color: $error-color;
+	text-align: $text-align-left;
+	font-size: $font-size-s;
+}
+
+.profile__field--phone {
+  position: relative;
+}
+
+.profile__error--phone {
+  position: absolute;
+  bottom: -20px;
+  left: 110px;
+  display: none;
+  color: $error-color;
+	text-align: $text-align-left;
+	font-size: $font-size-s;
+}
+
+.profile__field--email:not(:placeholder-shown) + .profile__error--email,
+.profile__field--phone:not(:placeholder-shown) + .profile__error--phone {
+	display: block;
+}
+
 .profile__icon-email {
   position: absolute;
   top: 15px;
@@ -649,8 +682,8 @@
     outline: 1px solid $input-border-color-active;
   }
 
-  .profile__field:invalid {
-    border: 1px solid $input-border-color-invalid;
+  .profile__field:invalid:not(:placeholder-shown) {
+    border-color: $input-border-color-invalid;
     outline: 1px solid $input-border-color-invalid;
   }
 
@@ -661,8 +694,8 @@
     color: $icon-color-active;
   }
 
-  .profile__field--email:invalid + .profile__icon-email,
-  .profile__field--phone:invalid + .profile__icon-phone {
+  .profile__field--email:invalid:not(:placeholder-shown) + .profile__icon-email,
+  .profile__field--phone:invalid:not(:placeholder-shown) + .profile__icon-phone {
     color: $icon-color-invalid;
   }
 
