@@ -146,24 +146,24 @@
     padding-bottom: 55px;
   }
 
-  .logo__sign:hover {
+  .logo__link[href]:hover {
     opacity: $logo-hvr-opacity;
   }
 
-  .logo__sign:focus {
+  .logo__link[href]:active {
     opacity: $logo-down-opacity;
   }
 
-  .social__icon:hover {
+  .social__link[href]:hover .social__icon {
     color: $social-icon-color-hvr;
   }
 
-  .social__icon:active {
+  .social__link[href]:active .social__icon {
     color: $social-icon-color-down;
   }
 
   .copyright__link {
-    &:hover {
+    &[href]:hover {
       color: $copyright-logo-color-hvr;
 
       & .copyright__name {
@@ -171,7 +171,7 @@
       }
     }
 
-    &:active {
+    &[href]:active {
       color: $copyright-logo-color-down;
 
       & .copyright__name {

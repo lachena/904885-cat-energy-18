@@ -92,24 +92,20 @@
     &--active-desktop::after {
       background-color: $addition-color;
     }
-
-    &--active-desktop:hover .nav__link--desktop {
-      color: $addition-color;
-    }
-
-    &--active:hover .nav__link {
-      color: $main-color;
-    }
   }
 
   .nav__link {
     letter-spacing: 1px;
 
-    &:hover {
+    &--active:hover {
+      color: $main-color;
+    }
+
+    &[href]:hover {
       color: $main-color-hvr;
     }
 
-    &:active {
+    &[href]:active {
       color: $main-color-active;
     }
   }
@@ -117,11 +113,15 @@
   .nav__link--desktop {
     color: $addition-color;
 
-    &:hover {
+    &-active:hover {
+      color: $addition-color;
+    }
+
+    &[href]:hover {
       color: $addition-color-hvr;
     }
 
-    &:active {
+    &[href]:active {
       color: $addition-color-active;
     }
   }

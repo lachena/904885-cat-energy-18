@@ -312,12 +312,12 @@
   .catalog__item-button {
     padding: 10px 54px;
 
-    &:hover {
+    &[href]:hover {
       background-color: $main-button-bg-color-hvr;
       color: $main-button-color;
     }
 
-    &:active {
+    &[href]:active {
       background-color: $main-button-bg-color-hvr;
       color: $addition-color-active;
     }
@@ -346,12 +346,12 @@
   .catalog__more-button {
     padding: 10px 40px;
 
-    &:hover {
+    &[href]:hover {
       background-color: $secondary-button-bg-color-hvr;
       color: $accent-color;
     }
 
-    &:active {
+    &[href]:active {
       background-color: $secondary-button-bg-color-hvr;
       color: $accent-color;
     }
