@@ -65,7 +65,7 @@
     }
   }
 
-  &--add {
+  &--narrow {
     padding-bottom: 42px;
     position: relative;
 
@@ -109,7 +109,7 @@
     padding-bottom: 35px;
   }
 
-  &--add {
+  &--narrow {
     padding-top: 26px;
     padding-bottom: 39px;
   }
@@ -123,7 +123,7 @@
     padding-bottom: 7px;
   }
 
-  &--add {
+  &--narrow {
     padding-bottom: 8px;
   }
 }
@@ -134,6 +134,7 @@
   justify-content: flex-start;
   align-items: baseline;
   padding-bottom: 14px;
+  padding-top: 1px;
 
   &:last-child {
     padding-bottom: 0;
@@ -143,7 +144,7 @@
     padding-bottom: 25px;
   }
 
-  &--add {
+  &--narrow {
     padding-bottom: 24px;
   }
 
@@ -187,12 +188,12 @@
 
 .profile__error--email {
   position: absolute;
-  bottom: -2px;
-  left: 90px;
+  bottom: 0;
+  left: 0;
   display: none;
   color: $error-color;
 	text-align: $text-align-left;
-	font-size: $font-size-s;
+	font-size: $font-size-xs;
 }
 
 .profile__field--phone {
@@ -201,17 +202,12 @@
 
 .profile__error--phone {
   position: absolute;
-  bottom: -20px;
-  left: 110px;
+  bottom: -15px;
+  left: 0;
   display: none;
   color: $error-color;
 	text-align: $text-align-left;
-	font-size: $font-size-s;
-}
-
-.profile__field--email:not(:placeholder-shown) + .profile__error--email,
-.profile__field--phone:not(:placeholder-shown) + .profile__error--phone {
-	display: block;
+	font-size: $font-size-xs;
 }
 
 .profile__icon-email {
@@ -236,7 +232,7 @@
   padding: 12px 16px 12px 12px;
 
   &--goal,
-  &--add {
+  &--narrow {
     position: absolute;
     z-index: 3;
     opacity: 0;
@@ -281,7 +277,7 @@
   opacity: 1;
 }
 
-.profile__check--add + .profile__name--add {
+.profile__check--narrow + .profile__name--narrow {
   position: relative;
   padding: 0 0 0 46px;
   cursor: pointer;
@@ -313,7 +309,7 @@
   }
 }
 
-.profile__check--add:checked + .profile__name--add::after {
+.profile__check--narrow:checked + .profile__name--narrow::after {
   opacity: 1;
 }
 
@@ -384,7 +380,7 @@
       padding-bottom: 75px;
     }
 
-    &--add {
+    &--narrow {
       padding-right: 40px;
       padding-bottom: 65px;
     }
@@ -435,7 +431,7 @@
     }
   }
 
-  .profile__sector--add {
+  .profile__sector--narrow {
     padding-bottom: 12px;
 
     &::before {
@@ -453,7 +449,7 @@
     }
   }
 
-  .profile__list--add {
+  .profile__list--narrow {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -481,7 +477,7 @@
     }
   }
 
-  .profile__item--add {
+  .profile__item--narrow {
     width: 45%;
     padding-bottom: 52px;
   }
@@ -496,13 +492,13 @@
     padding: 10px 12px 12px 13px;
   }
 
-  .profile__check--add + .profile__name--add::before {
+  .profile__check--narrow + .profile__name--narrow::before {
     top: -9px;
     width: 40px;
     height: 40px;
   }
 
-  .profile__check--add + .profile__name--add::after {
+  .profile__check--narrow + .profile__name--narrow::after {
     left: 9px;
   }
 
@@ -520,7 +516,7 @@
     height: 18px;
   }
 
-  .profile__check--add + .profile__name--add {
+  .profile__check--narrow + .profile__name--narrow {
     padding-left: 58px;
   }
 
@@ -539,6 +535,11 @@
 
   .profile__note {
     font-size: $font-size-m;
+  }
+
+  .profile__field--email:not(:placeholder-shown) + .profile__error--email,
+  .profile__field--phone:not(:placeholder-shown) + .profile__error--phone {
+    display: block;
   }
 }
 
@@ -610,7 +611,7 @@
     padding-bottom: 52px;
   }
 
-  .profile__sector--add {
+  .profile__sector--narrow {
     padding-bottom: 20px;
   }
 
@@ -640,7 +641,7 @@
     width: 47%;
   }
 
-  .profile__item--add {
+  .profile__item--narrow {
     width: 295px;
   }
 
@@ -659,12 +660,12 @@
   }
 
   .profile__check--goal:hover + .profile__name--goal::before,
-  .profile__check--add:hover + .profile__name--add::before {
+  .profile__check--narrow:hover + .profile__name--narrow::before {
     border-color: $check-border-color-hvr;
   }
 
   .profile__check--goal:active + .profile__name--goal,
-  .profile__check--add:active + .profile__name--add {
+  .profile__check--narrow:active + .profile__name--narrow {
     opacity: 0.3;
   }
 
