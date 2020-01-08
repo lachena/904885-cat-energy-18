@@ -82,6 +82,11 @@
   fill: currentColor;
 }
 
+.copyright__logo-image {
+  width: 27px;
+  height: 37px;
+}
+
 @media (min-width: $tablet-width) {
   .footer__inner {
     max-width: $tablet-width;

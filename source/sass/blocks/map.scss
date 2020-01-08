@@ -31,6 +31,10 @@
   line-height: $line-height-xs;
   text-align: $text-align-left;
   text-transform: $text-transform-upper;
+
+  &-line {
+    display: block;
+  }
 }
 
 .map__adress {

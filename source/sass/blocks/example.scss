@@ -20,6 +20,7 @@
 .example__description {
   @include indent-reset;
   margin-bottom: 40px;
+  padding-right: 5px;
   font-family: $font-family-secondary;
   font-size: $font-size-s;
   font-weight: $font-weight-regular;
@@ -241,6 +242,7 @@
 
   .example__description {
     margin-bottom: 49px;
+    padding-right: 10px;
     font-size: $font-size-m;
     line-height: $line-height-xl-l;
   }
@@ -292,13 +294,13 @@
     position: relative;
     width: 100%;
     height: 600px;
-    background: linear-gradient(to top, rgb(242, 242, 242) 67%, rgb(255, 255, 255) 33%);
+    background: linear-gradient(to top, rgb(242, 242, 242) 72%, rgb(255, 255, 255) 28%);
   }
 
   .example__picture--fat {
     height: 517px;
     background-image: url("../img/before-tablet@1x.png"), url("../img/before-tablet@2x.png");
-    background-position: center bottom;
+    background-position: 18px bottom;
     background-size: 690px 517px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -312,7 +314,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: linear-gradient(to top, rgb(234, 234, 234) 67%, rgb(255, 255, 255) 33%);
+    background: linear-gradient(to top, rgb(234, 234, 234) 72%, rgb(255, 255, 255) 28%);
     overflow: hidden;
   }
 
@@ -329,8 +331,8 @@
   }
 
   .example__background {
-    height: 425px;
-    margin-top: -396px;
+    height: 458px;
+    margin-top: -427px;
     padding-bottom: 4px;
     background: linear-gradient(to right, $secondary-bg-color 50%, $accent-bg-color 50%);
   }
@@ -367,11 +369,6 @@
       border-radius: 2.5px;
       border: none;
     }
-
-    /* &::-ms-track {
-      width: 428px;
-      height: 6px;
-    } */
 
     &::-webkit-slider-thumb {
       position: relative;
@@ -483,6 +480,7 @@
   .example__picture--fat {
     background-image: url("../img/before-desktop@1x.png"), url("../img/before-desktop@2x.png");
     background-size: 690px 517px;
+    background-position: 3px bottom;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/before-desktop@1x.webp"), url("../img/before-desktop@2x.webp");

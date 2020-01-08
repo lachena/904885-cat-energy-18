@@ -4,7 +4,7 @@ ymaps.ready(init);
           center: [59.938631, 30.323055],
           zoom: 17
       });
-      pointer = new ymaps.Placemark([59.938631, 30.323055], {
+      pointer = new ymaps.Placemark([55.938631, 25.323055], {
       iconLayout: "default#image",
       iconImageHref: "./img/map-pin.png",
       iconImageSize: [19, 19]
