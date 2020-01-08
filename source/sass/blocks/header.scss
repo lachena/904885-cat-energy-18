@@ -36,6 +36,50 @@
   cursor: pointer;
 }
 
+.header--closed .header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  width: 25px;
+  height: 19px;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.header--opened .header__toggle::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 7px;
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icon-close.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: $mobile-width-only) {
+  .header--closed .nav {
+    display: none;
+  }
+
+  .header--opened .nav {
+    display: block;
+  }
+
+  .header--nojs {
+    &.header__toggle {
+      display: none;
+    }
+
+    &.nav {
+      display: block;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .header {
     display: flex;
