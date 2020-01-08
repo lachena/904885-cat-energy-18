@@ -69,14 +69,12 @@
     display: block;
   }
 
-  .header--nojs {
-    &.header__toggle {
-      display: none;
-    }
+  .header--nojs .header__toggle {
+    display: none;
+  }
 
-    &.nav {
-      display: block;
-    }
+  .header--nojs .nav {
+    display: block;
   }
 }
 
