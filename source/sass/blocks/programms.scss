@@ -261,8 +261,8 @@
       height: 11px;
     }
 
-    &:hover {
-      color: $main-color;
+    &[href]:hover {
+      color: $main-color-hvr;
     }
 
     &:focus {

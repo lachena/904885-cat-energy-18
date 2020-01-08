@@ -75,7 +75,7 @@
     width: 203px;
   }
 
-  .header__link:hover {
+  .header__link[href]:hover {
     opacity: $logo-hvr-opacity;
   }
 

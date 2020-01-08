@@ -173,7 +173,7 @@
   .info__button {
     margin-left: 0;
 
-    &:hover {
+    &[href]:hover {
       background-color: $main-button-bg-color-hvr;
       color: $main-button-color;
     }
