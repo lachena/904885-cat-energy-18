@@ -27,6 +27,7 @@ $line-height-xs: 1.25;
 $line-height-xss: 1.13;
 $line-height-xs-xxs: 1.03;
 $line-height-xxs: 1;
+$line-height-normal: normal;
 
 $text-align-center: center;
 $text-align-left: left;
@@ -67,6 +68,7 @@ $input-border-color: rgba(205, 205, 205, 0.5);
 $input-border-color-hvr: #cdcdcd;
 $input-border-color-active:  #444444;
 $input-border-color-invalid: #ff8282;
+$border-color: #bababa;
 $icon-color: #222222;
 $icon-color-active: #68b738;
 $icon-color-invalid: #ff8282;
@@ -85,6 +87,8 @@ $error-color: #ff8282;
 $logo-hvr-opacity: 0.8;
 $logo-down-opacity: 0.6;
 $footer-sign-opacity: 0.3;
+$link-opacity-hvr: 0.6;
+$link-opacity-active: 0.3;
 
 $mobile-width: 320px;
 $tablet-width: 768px;

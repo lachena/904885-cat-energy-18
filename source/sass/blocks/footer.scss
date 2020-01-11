@@ -14,6 +14,7 @@
 }
 
 .logo {
+  padding-top: 39px;
   padding-bottom: 30px;
   border-bottom: 1px solid $input-border-color;
   width: 100%;
@@ -173,11 +174,7 @@
   }
 
   .social__link[href]:active .social__icon {
-    color: $social-icon-color-down;
-
-    .social__icon {
-      color: $social-icon-color-down;
-    }
+    opacity: $link-opacity-active;
   }
 
   .copyright__link {

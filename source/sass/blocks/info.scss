@@ -70,6 +70,7 @@
   line-height: $line-height-s;
   background-color: $main-button-bg-color;
   text-transform: $text-transform-upper;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {

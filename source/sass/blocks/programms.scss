@@ -87,6 +87,30 @@
 .programms__link-wrapper {
   position: relative;
   width: 121px;
+  /* fill: currentColor;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    width: 25px;
+    height: 12px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  } */
+}
+
+.programms__link {
+  display: block;
+  padding-top: 19px;
+  max-width: 100px;
+  font-size: $font-size-m;
+  line-height: $line-height-xxs;
+  color: $main-color;
+  text-transform: $text-transform-upper;
+  fill: currentColor;
 
   &::after {
     content: "";
@@ -99,16 +123,6 @@
     background-position: 0 0;
     background-repeat: no-repeat;
   }
-}
-
-.programms__link {
-  display: block;
-  padding-top: 19px;
-  max-width: 100px;
-  font-size: $font-size-m;
-  line-height: $line-height-xxs;
-  color: $main-color;
-  text-transform: $text-transform-upper;
 }
 
 @media (min-width: $tablet-width) {
@@ -251,6 +265,10 @@
     width: 156px;
   }
 
+  .programms__link:active::after {
+    color: $main-color-active;
+  }
+
   .programms__link {
     max-width: 131px;
 
@@ -262,11 +280,15 @@
     }
 
     &[href]:hover {
-      color: $main-color-hvr;
+      color: $main-color;
+    }
+
+    &:active {
+      opacity: $link-opacity-active;
     }
 
     &:focus {
-      color: $main-color-active;
+      opacity: $link-opacity-active;
     }
   }
 }

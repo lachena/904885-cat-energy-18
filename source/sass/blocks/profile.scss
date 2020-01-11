@@ -115,10 +115,10 @@
   justify-content: flex-start;
   align-items: baseline;
   padding-bottom: 13px;
-  padding-top: 1px;
+  padding-top: 2px;
 
   &:last-child {
-    padding-bottom: 0;
+    padding-bottom: 2px;
   }
 
   &--goal {
@@ -154,7 +154,7 @@
   font-family: inherit;
   font-size: $font-size-m;
   font-weight: $font-weight-regular;
-  line-height: $line-height-xss;
+  line-height: $line-height-normal;
   text-align: $text-align-left;
   text-transform: $text-transform-upper;
   color: $accent-color;
@@ -167,28 +167,8 @@
   position: relative;
 }
 
-.profile__error--email {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: none;
-  color: $error-color;
-  text-align: $text-align-left;
-  font-size: $font-size-xs;
-}
-
 .profile__field--phone {
   position: relative;
-}
-
-.profile__error--phone {
-  position: absolute;
-  bottom: -15px;
-  left: 0;
-  display: none;
-  color: $error-color;
-  text-align: $text-align-left;
-  font-size: $font-size-xs;
 }
 
 .profile__icon-email {
@@ -198,6 +178,7 @@
   width: 18px;
   height: 14px;
   fill: currentColor;
+  color: $icon-color;
 }
 
 .profile__icon-phone {
@@ -207,6 +188,7 @@
   width: 21px;
   height: 21px;
   fill: currentColor;
+  color: $icon-color;
 }
 
 .profile__check {
@@ -308,6 +290,7 @@
   color: $addition-color;
   background-color: $additional-bg-color;
   border: none;
+  cursor: pointer;
 }
 
 .profile__note {
@@ -464,6 +447,7 @@
 
   .profile__field {
     padding: 10px 12px 12px 20px;
+    line-height: $line-height-normal;
   }
 
   .profile__check--narrow + .profile__name--narrow::before {
@@ -691,5 +675,14 @@
   .profile__button {
     padding: 12px 207px 12px 207px;
     margin-right: 82px;
+
+    &:hover {
+      background-color: $main-button-bg-color-hvr;
+    }
+
+    &:active {
+      background-color: $main-button-bg-color-hvr;
+      color: $main-button-color-active;
+    }
   }
 }

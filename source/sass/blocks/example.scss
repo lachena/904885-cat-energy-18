@@ -142,6 +142,16 @@
   justify-content: center;
   align-items: center;
   margin-left: 3px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 104px;
+    width: 34px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: $additional-bg-color;
+  }
 }
 
 .example__range {
@@ -156,15 +166,21 @@
     appearance: none;
   }
 
-  /* &::-ms-track {
+  &::-ms-track {
     width: 84px;
     cursor: pointer;
     background: transparent;
     border-color: transparent;
     color: transparent;
-  } */
+  }
 
-  &::-moz-range-thumb,
+  &::-moz-range-thumb {
+    appearance: none;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
   &::-ms-thumb {
     appearance: none;
   }
@@ -192,14 +208,14 @@
     border: 1px solid $input-border-color;
   }
 
-  /* &::-ms-track {
+  &::-ms-track {
     width: 84px;
     height: 14px;
     cursor: pointer;
     background: transparent;
     border-color: transparent;
     color: transparent;
-  } */
+  }
 
   &::-ms-fill-lower {
     background-color: $additional-bg-color;
@@ -209,17 +225,6 @@
 
   &::-ms-fill-upper {
     background-color: $main-bg-color;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 18px;
-    width: 34px;
-    height: 6px;
-    border-radius: 6px;
-    background-color: $additional-bg-color;
   }
 }
 
@@ -339,6 +344,10 @@
 
   .example__range-wrapper {
     margin-top: -63px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .example__button {
@@ -346,7 +355,7 @@
     padding: 0 0 6px 0;
     font-size: $font-size-xl;
     line-height: $line-height-xxs;
-    border-bottom: 1px dotted $input-border-color;
+    border-bottom: 1px dotted $border-color;
   }
 
   .example__range {
@@ -383,8 +392,8 @@
     }
 
     &::-moz-range-thumb {
-      width: 34px;
-      height: 34px;
+      width: 9px;
+      height: 9px;
       border-radius: 50%;
       border: solid 13px $main-bg-color;
       box-shadow: 0 0 0 1px $input-border-color;
@@ -512,5 +521,23 @@
     margin-top: -463px;
     padding-bottom: 0;
     background: linear-gradient(to right, $secondary-bg-color 67%, $accent-bg-color 33%);
+  }
+
+  .example__button:hover {
+    border-bottom: 1px solid $border-color;
+  }
+
+  .example__range {
+    &::-webkit-slider-thumb:active {
+      box-shadow: 0 0 0 2px $additional-bg-color;
+    }
+
+    &::-moz-range-thumb:active {
+      box-shadow: 0 0 0 2px $additional-bg-color;
+    }
+
+    &::-ms-thumb:active {
+      box-shadow: 0 0 0 2px $additional-bg-color;
+    }
   }
 }

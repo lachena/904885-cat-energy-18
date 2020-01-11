@@ -101,6 +101,7 @@
   color: $secondary-button-bg-color;
   background-color: $main-button-bg-color;
   text-transform: $text-transform-upper;
+  cursor: pointer;
 }
 
 .catalog__more {
@@ -156,6 +157,7 @@
   color: $secondary-button-color;
   background-color: $secondary-button-bg-color;
   text-transform: $text-transform-upper;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -350,7 +352,7 @@
   }
 
   .catalog__more {
-    width: 243px;
+    width: 240px;
 
     &::before {
       left: 96px;
@@ -374,12 +376,12 @@
 
     &[href]:hover {
       background-color: $secondary-button-bg-color-hvr;
-      color: $accent-color;
+      color: $secondary-button-color;
     }
 
     &[href]:active {
       background-color: $secondary-button-bg-color-hvr;
-      color: $accent-color;
+      color: $secondary-button-color-active;
     }
   }
 }
