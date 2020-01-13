@@ -302,6 +302,23 @@
   color: $accent-color;
 }
 
+.profile__field:invalid:not(:placeholder-shown) {
+  border-color: $input-border-color-invalid;
+  outline: 1px solid $input-border-color-invalid;
+}
+
+.profile__field--email:invalid:not(:placeholder-shown) + .profile__icon-email,
+.profile__field--phone:invalid:not(:placeholder-shown) + .profile__icon-phone {
+  color: $icon-color-invalid;
+}
+
+.profile__field--email:active + .profile__icon-email,
+.profile__field--phone:active + .profile__icon-phone,
+.profile__field--email:focus + .profile__icon-email,
+.profile__field--phone:focus + .profile__icon-phone {
+  color: $icon-color-active;
+}
+
 @media (min-width: $tablet-width) {
   .profile {
     padding-bottom: 44px;
@@ -649,23 +666,6 @@
   .profile__field:focus {
     border: 1px solid $input-border-color-active;
     outline: 1px solid $input-border-color-active;
-  }
-
-  .profile__field:invalid:not(:placeholder-shown) {
-    border-color: $input-border-color-invalid;
-    outline: 1px solid $input-border-color-invalid;
-  }
-
-  .profile__field--email:active + .profile__icon-email,
-  .profile__field--phone:active + .profile__icon-phone,
-  .profile__field--email:focus + .profile__icon-email,
-  .profile__field--phone:focus + .profile__icon-phone {
-    color: $icon-color-active;
-  }
-
-  .profile__field--email:invalid:not(:placeholder-shown) + .profile__icon-email,
-  .profile__field--phone:invalid:not(:placeholder-shown) + .profile__icon-phone {
-    color: $icon-color-invalid;
   }
 
   .profile__button-container {
