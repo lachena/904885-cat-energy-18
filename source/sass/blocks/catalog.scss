@@ -52,11 +52,11 @@
   text-transform: $text-transform-upper;
 }
 
-.catalog__line-first {
+.catalog__line-name {
   width: 100%;
 }
 
-.catalog__line-second {
+.catalog__line-range {
   width: 30px;
 }
 
@@ -220,11 +220,11 @@
     line-height: 1;
   }
 
-  .catalog__line-first {
+  .catalog__line-name {
     width: 95px;
   }
 
-  .catalog__line-third {
+  .catalog__line-volume {
     width: 100%;
   }
 
