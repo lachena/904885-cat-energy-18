@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css" type="text/css">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <script src="./js/picturefill.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=00992262-67b4-4181-b1e0-d0aeefbb422c&lang=ru_RU"></script>
   </head>
   <body>
 
@@ -50,16 +52,16 @@
                   <legend class="visually-hidden">Данные кота</legend>
                   <div class="profile__block">
                     <ul class="profile__list">
-                      <li class="profile__item profile__item--data">
-                        <label class="profile__name" for="nickname">Имя:<sup>*</sup></label>
+                      <li class="profile__item">
+                        <label class="profile__name profile__name--nickname" for="nickname">Имя:<sup>*</sup></label>
                         <input class="profile__field" id="nickname" type="text" name="name" placeholder="Барсик" pattern="^[А-Яа-яЁё\s]+$" required>
                       </li>
-                      <li class="profile__item profile__item--data">
-                        <label class="profile__name" for="weight">Вес (кг):<sup>*</sup></label>
+                      <li class="profile__item">
+                        <label class="profile__name profile__name--weight" for="weight">Вес (кг):<sup>*</sup></label>
                         <input class="profile__field" id="weight" type="text" name="weight" placeholder="7" pattern="[0-9]{1,2}" required>
                       </li>
-                      <li class="profile__item profile__item--data">
-                        <label class="profile__name" for="age">Возраст (лет):<sup>*</sup></label>
+                      <li class="profile__item">
+                        <label class="profile__name profile__name--age" for="age">Возраст (лет):<sup>*</sup></label>
                         <input class="profile__field" id="age" type="text" name="age" placeholder="7" pattern="[0-9]{1,2}" required>
                       </li>
                     </ul>
@@ -68,16 +70,16 @@
                 <fieldset class="profile__sector profile__sector--goal">
                   <legend class="visually-hidden">Цель</legend>
                   <div class="profile__block">
-                    <ul class="profile__list profile__list--goal">
-                      <li class="profile__item profile__item--goal">
+                    <ul class="profile__list">
+                      <li class="profile__item">
                         <input class="profile__check profile__check--goal" id="losing" type="radio" name="purpose" checked>
                         <label class="profile__name profile__name--goal" for="losing">Похудение</label>
                       </li>
-                      <li class="profile__item profile__item--goal">
+                      <li class="profile__item">
                         <input class="profile__check profile__check--goal" id="fattening" type="radio" name="purpose">
                         <label class="profile__name profile__name--goal" for="fattening">Набор массы</label>
                       </li>
-                      <li class="profile__item profile__item--goal">
+                      <li class="profile__item">
                         <input class="profile__check profile__check--goal" id="advice" type="radio" name="purpose">
                         <label class="profile__name profile__name--goal" for="advice">Не знаю (Нужен ваш совет)</label>
                       </li>
@@ -87,18 +89,18 @@
               </div>
               <div class="profile__sector-container">
                 <fieldset class="profile__sector profile__sector--info">
-                  <legend class="profile__title profile__title--info">Контактные данные (владельца кота)</legend>
+                  <legend class="profile__title">Контактные данные (владельца кота)</legend>
                   <div class="profile__block">
-                    <ul class="profile__list profile__list--info">
+                    <ul class="profile__list">
                       <li class="profile__item profile__item--email">
-                        <label class="profile__name">E-mail:<sup>*</sup></label>
+                        <label class="profile__name profile__name--email">E-mail:<sup>*</sup></label>
                         <input class="profile__field profile__field--email" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
                         <svg class="profile__icon-email" width="18" height="14" aria-label="Иконка почты">
                           <use xlink:href="./img/sprite.svg#icon-mail"></use>
                         </svg>
                       </li>
                       <li class="profile__item profile__item--phone">
-                        <label class="profile__name">Телефон:<sup>*</sup></label>
+                        <label class="profile__name profile__name--phone">Телефон:<sup>*</sup></label>
                         <input class="profile__field profile__field--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" minlength="11" required>
                         <svg class="profile__icon-phone" width="21" height="21" aria-label="Иконка почты">
                           <use xlink:href="./img/sprite.svg#icon-phone"></use>
@@ -110,32 +112,32 @@
               </div>
               <div class="profile__sector-container">
                 <fieldset class="profile__sector profile__sector--comment">
-                  <legend class="profile__title profile__title--comment">Комментарий</legend>
+                  <legend class="profile__title">Комментарий</legend>
                   <div class="profile__block">
                     <p class="profile__item">
-                      <textarea class="profile__field" name="comment" id="comment" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+                      <textarea class="profile__field" name="comment" id="comment" cols="30" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
                     </p>
                   </div>
                 </fieldset>
               </div>
               <div class="profile__sector-container">
                 <fieldset class="profile__sector profile__sector--narrow">
-                  <legend class="profile__title profile__title--narrow">Дополнительно</legend>
+                  <legend class="profile__title">Дополнительно</legend>
                   <div class="profile__block">
-                    <ul class="profile__list profile__list--narrow">
-                      <li class="profile__item profile__item--narrow">
+                    <ul class="profile__list">
+                      <li class="profile__item">
                         <input class="profile__check profile__check--narrow" type="checkbox" name="sugarfree" checked>
                         <label class="profile__name profile__name--narrow">Сахарозаменитель</label>
                       </li>
-                      <li class="profile__item profile__item--narrow">
+                      <li class="profile__item">
                         <input class="profile__check profile__check--narrow" type="checkbox" name="water">
                         <label class="profile__name profile__name--narrow">Питьевая вода</label>
                       </li>
-                      <li class="profile__item profile__item--narrow">
+                      <li class="profile__item">
                         <input class="profile__check profile__check--narrow" type="checkbox" name="milk">
                         <label class="profile__name profile__name--narrow">Молоко</label>
                       </li>
-                      <li class="profile__item profile__item--narrow">
+                      <li class="profile__item">
                         <input class="profile__check profile__check--narrow" type="checkbox" name="vitamin">
                         <label class="profile__name profile__name--narrow">Витамины</label>
                       </li>
@@ -155,7 +157,7 @@
 
         <section class="main__map map map--form">
           <h2 class="visually-hidden">Карта</h2>
-          <div class="map__inner">
+          <div class="map__inner map__inner--form">
             <div class="map__adress-wrapper">
               <p class="map__title">
                 <span class="map__title-line">Приглашаем</span>
@@ -219,8 +221,6 @@
         </div>
       </footer>
     </div>
-    <script src="./js/picturefill.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=00992262-67b4-4181-b1e0-d0aeefbb422c&lang=ru_RU"></script>
     <script src="./js/map.js"></script>
     <script src="./js/menu.js"></script>
 

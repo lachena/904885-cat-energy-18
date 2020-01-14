@@ -24,8 +24,9 @@
   font-family: $font-family-secondary;
   font-size: $font-size-s;
   font-weight: $font-weight-regular;
-  color: $accent-color;
   line-height: $line-height-s;
+  letter-spacing: $mobile-letter-spacing;
+  color: $accent-color;
   text-align: $text-align-left;
 }
 
@@ -43,7 +44,7 @@
   }
 
   &:nth-child(2) .example__result {
-    padding: 8px 23px 10px 18px;
+    padding: 8px 21px 10px 20px;
   }
 }
 
@@ -62,7 +63,7 @@
   background-color: $secondary-bg-color;
   width: 87px;
   margin: 0 auto;
-  padding: 9px 7px 0 7px;
+  padding: 9px 7px 0 5px;
   font-family: $font-family-secondary;
   font-size: $font-size-xs;
   color: $accent-color;
@@ -78,6 +79,7 @@
   font-size: $font-size-s;
   font-weight: $font-weight-regular;
   line-height: $line-height-l;
+  letter-spacing: $mobile-letter-spacing;
   text-align: $text-align-center;
   text-transform: $text-transform-upper;
 }
@@ -88,7 +90,7 @@
 }
 
 .example__picture--skinny-container {
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 
 .example__picture--fat {
@@ -146,7 +148,7 @@
   &::after {
     content: "";
     position: absolute;
-    left: 104px;
+    left: 105px;
     width: 34px;
     height: 6px;
     border-radius: 6px;
@@ -242,6 +244,7 @@
     padding-right: 10px;
     font-size: $font-size-m;
     line-height: $line-height-xl-l;
+    letter-spacing: $tablet-letter-spacing;
   }
 
   .example__list-wrapper {
@@ -284,6 +287,7 @@
     max-width: 195px;
     padding: 10px 0 31px 0;
     font-size: $font-size-xl;
+    letter-spacing: $tablet-letter-spacing;
     text-align: $text-align-right;
   }
 

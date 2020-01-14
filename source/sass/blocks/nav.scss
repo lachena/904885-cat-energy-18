@@ -65,10 +65,6 @@
     font-weight: $font-weight-regular;
     padding-bottom: 12px;
   }
-
-  /* .header__toggle {
-    display: none;
-  } */
 }
 
 @media (min-width: $desktop-width) {
@@ -125,8 +121,4 @@
       color: $addition-color-active;
     }
   }
-
-  /* .header__toggle {
-    display: none;
-  } */
 }
