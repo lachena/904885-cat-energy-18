@@ -207,7 +207,6 @@
     height: 14px;
     cursor: pointer;
     background-color: $main-bg-color;
-    background: transparent;
     border-color: transparent;
     color: transparent;
   }
@@ -397,6 +396,7 @@
     }
 
     &::-ms-thumb {
+      position: relative;
       width: 9px;
       height: 9px;
       border-radius: 50%;
