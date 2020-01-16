@@ -301,10 +301,6 @@
   opacity: 1;
 }
 
-.profile__button-wrapper {
-  padding-bottom: 18px;
-}
-
 .profile__button {
   padding: 10px 76px 8px 80px;
   font-family: inherit;
@@ -551,8 +547,8 @@
   .profile__button-container {
     display: flex;
     justify-content: flex-start;
-    align-items: baseline;
-    padding-bottom: 22px;
+    align-items: center;
+    padding-bottom: 38px;
   }
 
   .profile__button {
@@ -735,7 +731,7 @@
   }
 
   .profile__button-container {
-    padding-bottom: 23px;
+    padding-bottom: 42px;
   }
 
   .profile__button {
