@@ -258,7 +258,7 @@
     flex-direction: column;
     width: 324px;
     padding-bottom: 0;
-    border: 1px solid $secondary-bg-color;
+    border: $border-catalog-item;
 
     &::before {
       top: 52px;
