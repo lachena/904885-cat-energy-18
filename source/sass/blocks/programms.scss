@@ -77,11 +77,10 @@
 .programms__description {
   margin: 0;
   padding-bottom: 23px;
-  border-bottom: 1px solid $input-border-color;
+  border-bottom: 1px solid $border-color;
   font-family: $font-family-secondary;
   font-size: $font-size-s;
   line-height: $line-height-s;
-  letter-spacing: $mobile-letter-spacing;
   color: $accent-color;
 }
 
@@ -96,7 +95,6 @@
   max-width: 100px;
   font-size: $font-size-m;
   line-height: $line-height-xxs;
-  letter-spacing: $mobile-letter-spacing;
   color: $main-color;
   text-transform: $text-transform-upper;
   fill: currentColor;
