@@ -1,5 +1,5 @@
 .programms {
-  margin-bottom: 32px;
+  margin-bottom: -2px;
   background-color: $main-bg-color;
 }
 
@@ -15,17 +15,16 @@
 
 .programms__item {
   position: relative;
-  padding: 22px 20px;
-  margin-bottom: 20px;
-  min-height: 266px;
+  padding: 7px 20px 20px 20px;
+  margin-bottom: 21px;
   background-color: $secondary-bg-color;
 
   &::before {
     content: "";
     position: absolute;
     z-index: 2;
-    top: 40px;
-    left: 25px;
+    top: 24px;
+    left: 22px;
     width: 50px;
     height: 51px;
     background-color: $main-button-bg-color;
@@ -36,8 +35,8 @@
     content: "";
     position: absolute;
     z-index: 3;
-    top: 40px;
-    left: 33px;
+    top: 22px;
+    left: 30px;
     width: 35px;
     height: 49px;
     background-image: url("../img/icon-cat-slim.svg");
@@ -49,8 +48,8 @@
     content: "";
     position: absolute;
     z-index: 3;
-    top: 50px;
-    left: 15px;
+    top: 36px;
+    left: 12px;
     width: 67px;
     height: 28px;
     background-image: url("../img/icon-cat-pro.svg");
@@ -67,8 +66,8 @@
 }
 
 .programms__title {
-  padding-left: 82px;
-  margin-bottom: 36px;
+  padding-left: 71px;
+  margin-bottom: 29px;
   font-size: $font-size-l;
   line-height: $line-height-xl;
   color: $main-color;
@@ -78,41 +77,38 @@
 .programms__description {
   margin: 0;
   padding-bottom: 23px;
-  border-bottom: 1px solid $input-border-color;
+  border-bottom: 1px solid $border-color;
   font-family: $font-family-secondary;
   font-size: $font-size-s;
   line-height: $line-height-s;
   color: $accent-color;
 }
 
+.programms__link-wrapper {
+  position: relative;
+  width: 121px;
+}
+
 .programms__link {
   display: block;
-  position: relative;
-  padding-top: 20px;
+  padding-top: 19px;
   max-width: 100px;
   font-size: $font-size-m;
   line-height: $line-height-xxs;
   color: $main-color;
   text-transform: $text-transform-upper;
+  fill: currentColor;
 
   &::after {
     content: "";
     position: absolute;
     bottom: 2px;
-    left: 100px;
+    right: 0;
     width: 25px;
     height: 12px;
     background-image: url("../img/icon-right-arrow-long.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
-  }
-
-  &:hover {
-    color: $main-color;
-  }
-
-  &:focus {
-    color: $main-color-active;
   }
 }
 
@@ -133,7 +129,7 @@
 
   .programms__item {
     margin-bottom: 30px;
-    padding: 81px 0 62px 53px;
+    padding: 77px 0 62px 53px;
 
     &::before {
       top: 92px;
@@ -159,32 +155,43 @@
     }
   }
 
-
   .programms__title {
-    margin: 0 0 26px 0;
+    margin: 0 0 24px 0;
     padding: 0;
     font-size: $font-size-xxl;
     line-height: $line-height-xs-xxs;
   }
 
   .programms__description {
-    margin: 0 0 61px 0;
-    padding-right: 335px;
+    margin: 0 0 14px 0;
     font-size: $font-size-m;
     line-height: $line-height-xl-l;
+    letter-spacing: $tablet-letter-spacing;
     border-bottom: none;
+
+    &--sit {
+      padding-right: 281px;
+    }
+
+    &--walk {
+      padding-right: 311px;
+    }
+  }
+
+  .programms__link-wrapper {
+    width: 153px;
+
+    &::after {
+      bottom: 2px;
+      width: 24px;
+      height: 11px;
+    }
   }
 
   .programms__link {
     max-width: 123px;
     font-size: $font-size-xl;
-
-    &::after {
-      bottom: 2px;
-      left: 131px;
-      width: 24px;
-      height: 11px;
-    }
+    letter-spacing: $tablet-letter-spacing;
   }
 }
 
@@ -205,43 +212,50 @@
   }
 
   .programms__item {
-    max-width: 40%;
+    max-width: 38%;
     margin-bottom: 0;
-    padding: 81px 56px 62px 52px;
+    padding: 79px 56px 61px 52px;
 
     &::before {
-      top: 47px;
-      left: 52px;
+      top: 50px;
+      left: 53px;
       width: 100px;
       height: 100px;
     }
 
     &--sit::after {
       top: 41px;
-      left: 65px;
+      left: 66px;
       width: 71px;
       height: 97px;
     }
 
     &--walk::after {
-      top: 69px;
-      left: 34px;
+      top: 72px;
+      left: 37px;
       width: 134px;
       height: 57px;
     }
   }
 
   .programms__title {
-    padding-bottom: 75px;
+    padding-bottom: 73px;
     padding-left: 164px;
     margin: 0;
   }
 
   .programms__description {
     padding: 0;
-    padding-bottom: 36px;
-    padding-right: 25px;
+    padding-bottom: 11px;
     margin: 0;
+  }
+
+  .programms__link-wrapper {
+    width: 156px;
+  }
+
+  .programms__link:active::after {
+    color: $main-color-active;
   }
 
   .programms__link {
@@ -252,6 +266,18 @@
       left: 131px;
       width: 24px;
       height: 11px;
+    }
+
+    &[href]:hover {
+      color: $main-color;
+    }
+
+    &:active {
+      opacity: $link-opacity-active;
+    }
+
+    &:focus {
+      opacity: $link-opacity-active;
     }
   }
 }

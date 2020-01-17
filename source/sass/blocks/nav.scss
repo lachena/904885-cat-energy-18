@@ -14,29 +14,17 @@
   z-index: 1;
   width: 100%;
   border-bottom: 1px solid $check-border-color;
-
-  &--active:hover .nav__link {
-    color: $main-color;
-  }
 }
 
 .nav__link {
   display: block;
-  padding: 24px 0;
+  padding: 22px 0 23px 0;
   font-size: $font-size-xl;
   font-weight: $font-weight-medium;
   line-height: $line-height-xxs;
   text-align: $text-align-center;
   color: $main-color;
   text-transform: $text-transform-upper;
-
-  &:hover {
-    color: $main-color-hvr;
-  }
-
-  &:active {
-    color: $main-color-active;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -49,6 +37,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    margin-left: 9px;
   }
 
   .nav__item {
@@ -62,7 +51,7 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: -12px;
+        bottom: 5px;
         left: 0;
         height: 2px;
         background-color: $main-button-bg-color;
@@ -76,47 +65,60 @@
     font-weight: $font-weight-regular;
     padding-bottom: 12px;
   }
-
-  .header__toggle {
-    display: none;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .nav {
-    max-width: 610px;
+    width: 512px;
     background-color: transparent;
   }
 
   .nav__list {
+    margin-left: 32px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
   .nav__item {
+    &--active::after {
+      bottom: 3px;
+    }
+
     &--active-desktop::after {
       background-color: $addition-color;
     }
+  }
 
-    &--active-desktop:hover .nav__link--desktop {
-      color: $addition-color;
+  .nav__link {
+    letter-spacing: 1px;
+
+    &--active:hover {
+      color: $main-color;
+    }
+
+    &[href]:hover {
+      color: $main-color-hvr;
+    }
+
+    &[href]:active {
+      color: $main-color-active;
     }
   }
 
   .nav__link--desktop {
     color: $addition-color;
 
-    &:hover {
+    &-active:hover {
+      color: $addition-color;
+    }
+
+    &[href]:hover {
       color: $addition-color-hvr;
     }
 
-    &:active {
+    &[href]:active {
       color: $addition-color-active;
     }
-  }
-
-  .header__toggle {
-    display: none;
   }
 }

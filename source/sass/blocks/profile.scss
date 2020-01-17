@@ -1,9 +1,750 @@
 .profile {
   background-color: $main-bg-color;
+  padding-bottom: 41px;
 }
 
 .profile__inner {
   @include inner;
   padding: 0 $mobile-padding;
   box-sizing: border-box;
+}
+
+.profile__header {
+  @include indent-reset;
+  padding: 15px 0 25px 0;
+  font-size: $font-size-xxl;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-xxl;
+  text-align: $text-align-left;
+}
+
+.profile__text {
+  @include indent-reset;
+  padding: 0 13px 38px 0;
+  font-size: $font-size-s;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-s;
+  text-align: $text-align-left;
+  text-transform: $text-transform-upper;
+}
+
+.profile__sector-container {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 100vw;
+    height: 3px;
+    background-color: $additional-bg-color;
+  }
+}
+
+.profile__sector {
+  @include indent-reset;
+  border: none;
+}
+
+.profile__sector--data {
+  padding-bottom: 21px;
+  fill: currentColor;
+
+  & .profile__name--weight {
+    padding-right: 18px;
+  }
+
+  & .profile__name--age {
+    padding-right: 10px;
+  }
+}
+
+.profile__sector--goal {
+  margin: 0 -20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 19px;
+  padding-bottom: 17px;
+  border: 1px solid $border-color;
+
+  & .profile__list {
+    padding-top: 5px;
+    padding-bottom: 7px;
+  }
+
+  & .profile__item {
+    padding-bottom: 23px;
+  }
+
+  & .profile__check {
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    width: 30%;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+
+.profile__sector--info {
+  & .profile__name {
+    padding-right: 12px;
+  }
+
+  & .profile__title {
+    width: 182px;
+    padding-bottom: 31px;
+  }
+
+  & .profile__item--email {
+    position: relative;
+  }
+
+  & .profile__item--phone {
+    position: relative;
+  }
+
+  & .profile__field {
+    position: relative;
+    padding-left: 14px;
+  }
+
+  & .profile__name--phone {
+    padding-right: 10px;
+  }
+
+  & .profile__icon-email {
+    position: absolute;
+    top: 19px;
+    right: 15px;
+    width: 18px;
+    height: 14px;
+    fill: currentColor;
+    color: $icon-color;
+  }
+
+  & .profile__icon-phone {
+    position: absolute;
+    top: 15px;
+    right: 13px;
+    width: 21px;
+    height: 21px;
+    fill: currentColor;
+    color: $icon-color;
+  }
+}
+
+.profile__sector--comment {
+  & .profile__title {
+    padding-top: 26px;
+    padding-bottom: 33px;
+  }
+
+  & .profile__field {
+    padding-bottom: 19px;
+  }
+}
+
+.profile__sector--narrow {
+  padding-bottom: 32px;
+
+  & .profile__title {
+    padding-top: 26px;
+    padding-bottom: 39px;
+  }
+
+  & .profile__list {
+    padding-bottom: 8px;
+  }
+
+  & .profile__item {
+    padding-bottom: 22px;
+  }
+
+  & .profile__check {
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    width: 30%;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+
+.profile__title {
+  position: relative;
+  z-index: 1;
+  padding: 29px 21px 29px 20px;
+  margin-left: -20px;
+  font-size: $font-size-l;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-xxs;
+  text-align: $text-align-left;
+  text-transform: inherit;
+  background-color: $main-bg-color;
+}
+
+.profile__list {
+  @include list-reset;
+}
+
+.profile__item {
+  @include indent-reset;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding-bottom: 12px;
+  padding-top: 2px;
+
+  &:last-child {
+    padding-bottom: 2px;
+  }
+}
+
+.profile__name {
+  padding-right: 15px;
+  font-size: $font-size-m;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-xss;
+  text-align: $text-align-left;
+  text-transform: $text-transform-upper;
+  color: $secondary-color;
+}
+
+.profile__field {
+  flex-grow: 1;
+  padding: 9px 12px 10px 13px;
+  font-family: inherit;
+  font-size: $font-size-m;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-normal;
+  text-align: $text-align-left;
+  text-transform: $text-transform-upper;
+  color: $accent-color;
+  border: 1px solid $input-border-color;
+  background-color: $main-bg-color;
+  fill: currentColor;
+}
+
+.profile__check {
+  padding: 12px 16px 12px 12px;
+}
+
+.profile__check--goal + .profile__name--goal {
+  position: relative;
+  padding: 0 0 0 46px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 1px $check-border-color;
+    background-color: $main-bg-color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 9px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $additional-bg-color;
+    opacity: 0;
+  }
+}
+
+.profile__check--goal:checked + .profile__name--goal::after {
+  opacity: 1;
+}
+
+.profile__check--narrow + .profile__name--narrow {
+  position: relative;
+  padding: 0 0 0 46px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -6px;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    border: solid 1px $check-border-color;
+    background-color: $main-bg-color;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 6px;
+    width: 22px;
+    height: 17px;
+    background-image: url("../img/icon-tick.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+  }
+}
+
+.profile__check--narrow:checked + .profile__name--narrow::after {
+  opacity: 1;
+}
+
+.profile__button {
+  padding: 10px 76px 8px 80px;
+  font-family: inherit;
+  font-size: $font-size-m;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-xs;
+  text-align: $text-align-center;
+  text-transform: $text-transform-upper;
+  color: $addition-color;
+  background-color: $additional-bg-color;
+  border: none;
+  cursor: pointer;
+}
+
+.profile__note {
+  @include indent-reset;
+  font-family: $font-family-secondary;
+  font-size: $font-size-s;
+  line-height: $line-height-xss;
+  text-align: $text-align-center;
+  color: $accent-color;
+}
+
+.profile__field:invalid:not(:placeholder-shown) {
+  border-color: $input-border-color-invalid;
+  outline: 1px solid $input-border-color-invalid;
+}
+
+.profile__field--email:invalid:not(:placeholder-shown) + .profile__icon-email,
+.profile__field--phone:invalid:not(:placeholder-shown) + .profile__icon-phone {
+  color: $icon-color-invalid;
+}
+
+.profile__field--email:active + .profile__icon-email,
+.profile__field--phone:active + .profile__icon-phone,
+.profile__field--email:focus + .profile__icon-email,
+.profile__field--phone:focus + .profile__icon-phone {
+  color: $icon-color-active;
+}
+
+@media (min-width: $tablet-width) {
+  .profile {
+    padding-bottom: 44px;
+  }
+
+  .profile__inner {
+    max-width: $tablet-width;
+    padding: 0 $tablet-padding;
+  }
+
+  .profile__header {
+    padding-top: 34px;
+    padding-bottom: 34px;
+    font-size: $font-size-xxxl;
+  }
+
+  .profile__form {
+    padding-left: 40px;
+    padding-right: 38px;
+  }
+
+  .profile__text {
+    width: 54%;
+    padding-bottom: 62px;
+    padding-left: 39px;
+    font-size: $font-size-xl;
+    line-height: $line-height-xl-l;
+  }
+
+  .profile__title {
+    padding-left: 40px;
+    margin-left: -40px;
+    font-size: $font-size-xxl;
+    line-height: $line-height-xxs;
+  }
+
+  .profile__sector-wrapper {
+    padding-bottom: 48px;
+  }
+
+  .profile__sector-container::after {
+    top: 50px;
+  }
+
+  .profile__sector-container::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100vw;
+    height: 3px;
+    background-color: $additional-bg-color;
+  }
+
+  .profile__sector--data {
+    padding-bottom: 54px;
+
+    & .profile__item {
+      padding-bottom: 17px;
+    }
+
+    & .profile__name {
+      padding-right: 17px;
+    }
+
+    & .profile__name--weight {
+      padding-right: 19px;
+    }
+
+    & .profile__name--age {
+      padding-right: 10px;
+    }
+  }
+
+  .profile__sector--goal {
+    margin: 0;
+    padding: 26px 20px 27px 40px;
+
+    & .profile__item {
+      padding-bottom: 31px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .profile__sector--info {
+    padding-bottom: 38px;
+
+    & .profile__name {
+      padding-right: 17px;
+    }
+
+    & .profile__field {
+      padding-bottom: 10px;
+      padding-left: 19px;
+    }
+
+    & .profile__title {
+      width: 530px;
+      padding-top: 28px;
+      padding-bottom: 73px;
+    }
+
+    & .profile__item--email {
+      padding-bottom: 18px;
+    }
+
+    & .profile__name--email {
+      padding-right: 22px;
+    }
+
+    & .profile__icon-email {
+      top: 22px;
+      right: 17px;
+    }
+
+    & .profile__name--phone {
+      padding-right: 15px;
+    }
+
+    & .profile__icon-phone {
+      top: 18px;
+      right: 15px;
+    }
+  }
+
+  .profile__sector--comment {
+    padding-bottom: 30px;
+
+    & .profile__field {
+      padding-top: 8px;
+      padding-left: 18px;
+    }
+
+    & .profile__title {
+      padding-right: 38px;
+      padding-bottom: 75px;
+    }
+  }
+
+  .profile__sector--narrow {
+    padding-bottom: 3px;
+
+    & .profile__title {
+      padding-right: 40px;
+      padding-bottom: 65px;
+    }
+
+    & .profile__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding-bottom: 12px;
+    }
+
+    & .profile__item {
+      width: 286px;
+      padding-bottom: 49px;
+    }
+  }
+
+  .profile__name,
+  .profile__field {
+    font-size: $font-size-xl;
+    line-height: $line-height-xxs;
+  }
+
+  .profile__field {
+    padding: 10px 12px 12px 20px;
+    line-height: $line-height-normal;
+  }
+
+  .profile__check--narrow + .profile__name--narrow::before {
+    top: -9px;
+    width: 37px;
+    height: 37px;
+  }
+
+  .profile__check--narrow + .profile__name--narrow::after {
+    left: 9px;
+  }
+
+  .profile__check--goal + .profile__name--goal::before {
+    top: -11px;
+    left: -13px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .profile__check--goal + .profile__name--goal::after {
+    top: 2px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+  }
+
+  .profile__check--narrow + .profile__name--narrow {
+    padding-left: 58px;
+  }
+
+  .profile__button-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 38px;
+  }
+
+  .profile__button {
+    margin-right: 61px;
+    padding: 14px 68px 12px 61px;
+    font-size: $font-size-xl;
+  }
+
+  .profile__note {
+    font-size: $font-size-m;
+  }
+
+  .profile__field--email:not(:placeholder-shown) + .profile__error--email,
+  .profile__field--phone:not(:placeholder-shown) + .profile__error--phone {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .profile {
+    padding-bottom: 50px;
+  }
+
+  .profile__inner {
+    max-width: $desktop-width;
+    padding: 0 $desktop-padding;
+  }
+
+  .profile__header {
+    padding-top: 53px;
+  }
+
+  .profile__form {
+    padding: 0;
+  }
+
+  .profile__text {
+    width: 30%;
+    padding-bottom: 63px;
+    padding-left: 0;
+  }
+
+  .profile__sector-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 24px;
+  }
+
+  .profile__sector--data {
+    width: 568px;
+    padding-bottom: 0;
+
+    & .profile__item {
+      padding-bottom: 16px;
+    }
+  }
+
+  .profile__sector--goal {
+    width: 541px;
+    padding: 28px 0 27px 28px;
+
+    & .profile__list {
+      padding-top: 6px;
+    }
+
+    & .profile__item {
+      padding-bottom: 31px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .profile__sector--info {
+    padding-bottom: 20px;
+
+    &::before {
+      top: 87px;
+    }
+
+    &::after {
+      top: 87px;
+    }
+
+    & .profile__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    & .profile__field {
+      padding-left: 20px;
+    }
+
+    & .profile__item {
+      width: 46%;
+    }
+
+    & .profile__item--email {
+      width: 47%;
+    }
+
+    & .profile__item--phone {
+      width: 47%;
+    }
+
+    & .profile__icon-email {
+      right: 23px;
+    }
+
+    & .profile__icon-phone {
+      top: 17px;
+      right: 21px;
+    }
+  }
+
+  .profile__sector--comment {
+    padding-bottom: 38px;
+
+    .profile__title {
+      padding-top: 29px;
+    }
+
+    .profile__field {
+      padding-top: 10px;
+      padding-bottom: 12px;
+    }
+  }
+
+  .profile__sector--narrow {
+    padding-bottom: 24px;
+
+    & .profile__list {
+      padding-bottom: 0;
+    }
+
+    & .profile__item {
+      width: 245px;
+    }
+  }
+
+  .profile__check--goal + .profile__name--goal {
+    padding-left: 57px;
+
+    &::before {
+      top: -10px;
+      left: -4px;
+    }
+
+    &::after {
+      top: 3px;
+      left: 8px;
+    }
+  }
+
+  .profile__check--goal:hover + .profile__name--goal::before,
+  .profile__check--narrow:hover + .profile__name--narrow::before {
+    border-color: $check-border-color-hvr;
+  }
+
+  .profile__check--goal:active + .profile__name--goal,
+  .profile__check--narrow:active + .profile__name--narrow {
+    opacity: 0.3;
+  }
+
+  .profile__field:hover {
+    border-color: $input-border-color-hvr;
+  }
+
+  .profile__field:active {
+    border: 1px solid $input-border-color-active;
+    outline: 1px solid $input-border-color-active;
+  }
+
+  .profile__field:focus {
+    border: 1px solid $input-border-color-active;
+    outline: 1px solid $input-border-color-active;
+  }
+
+  .profile__button-container {
+    padding-bottom: 42px;
+  }
+
+  .profile__button {
+    padding: 12px 207px 12px 207px;
+    margin-right: 82px;
+
+    &:hover {
+      background-color: $main-button-bg-color-hvr;
+    }
+
+    &:active {
+      background-color: $main-button-bg-color-hvr;
+      color: $main-button-color-active;
+    }
+  }
 }

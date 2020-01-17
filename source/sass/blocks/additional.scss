@@ -5,7 +5,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 45px;
+    top: 42px;
     right: 0;
     width: 50%;
     height: 3px;
@@ -24,13 +24,12 @@
   position: relative;
   z-index: 2;
   width: 226px;
-  padding: 30px 20px 30px 0;
+  padding: 29px 20px 33px 0;
   font-size: $font-size-l;
   font-weight: $font-weight-regular;
   line-height: $line-height-xxs;
   text-align: $text-align-left;
   background-color: $main-bg-color;
-  border-bottom: $border-catalog-item;
 }
 
 .additional__list {
@@ -40,8 +39,12 @@
 .additional__item {
   display: flex;
   flex-direction: column;
-  padding: 13px 0 17px 0;
+  padding: 13px 0 19px 0;
   border-bottom: $border-catalog-item;
+
+  &:first-child {
+    border-top: $border-catalog-item;
+  }
 }
 
 .additional__name {
@@ -50,14 +53,14 @@
   line-height: $line-height-xxs;
   text-align: $text-align-left;
   text-transform: $text-transform-upper;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
 }
 
 .additional__content-wrapper {
   @include indent-reset;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 14px;
+  padding-bottom: 15px;
 }
 
 .additional__content,
@@ -79,31 +82,46 @@
   text-transform: $text-transform-upper;
   color: $addition-color;
   background-color: $additional-bg-color;
-  padding: 13px 109px;
+  padding: 9px 109px;
+  border: none;
+  cursor: pointer;
 }
 
 .additional__present {
   width: 280px;
   height: 289px;
-  margin: 39px 0 35px 0;
-  background-image: url("../img/gift-photo-mobile@1x.jpg"), url("../img/gift-photo-mobile@1x.webp");
+  margin: 39px 0 36px 0;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
   fill: currentColor;
+  color: $main-bg-color;
+
+  @supports (background-image: url("../img/gift-photo-mobile@1x.webp")) {
+    .additional__present {
+      background-image: url("../img/gift-photo-mobile@1x.webp");
+    }
+  }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/gift-photo-mobile@2x.jpg"), url("../img/gift-photo-mobile@2x.webp");
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+
+    @supports (background-image: url("../img/gift-photo-mobile@2x.webp")) {
+      .additional__present {
+        background-image: url("../img/gift-photo-mobile@2x.webp");
+      }
+    }
   }
 }
 
 .additional__image {
-  padding: 65px 111px;
+  padding: 65px 103px 60px 113px;
   color: $main-bg-color;
 }
 
 .additional__present-text {
   @include indent-reset;
-  padding: 0 60px;
+  padding: 0 49px 0 46px;
   font-family: $font-family-secondary;
   font-size: $font-size-m;
   font-weight: $font-weight-regular;
@@ -112,12 +130,17 @@
   color: $addition-color;
 }
 
+.additional__line {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .additional {
     position: relative;
+    margin-top: -104px;
 
     &::before {
-      top: 50px;
+      top: 53px;
       width: 100%;
       height: 3px;
     }
@@ -125,19 +148,26 @@
 
   .additional__header {
     width: 338px;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 35px;
+    padding-left: 47px;
+    padding-bottom: 81px;
     font-size: $font-size-xxl;
     border: none;
   }
 
   .additional__item {
-    padding: 28px 37px;
-    border: 1px solid $input-border-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    padding: 25px 37px 30px 37px;
+    border: 1px solid $border-color;
     border-bottom: none;
 
     &:last-child {
-      border-bottom: 1px solid $input-border-color;
+      border-bottom: 1px solid $border-color;
     }
   }
 
@@ -146,29 +176,64 @@
     line-height: $line-height-xxs;
   }
 
+  .additional__content-wrapper {
+    justify-content: flex-end;
+    align-items: center;
+    width: 227px;
+    padding-right: 9px;
+    padding-bottom: 23px;
+  }
+
   .additional__content,
   .additional__price {
     font-size: $font-size-m;
     line-height: $line-height-xs;
   }
 
+  .additional__price {
+    margin-left: 51px;
+  }
+
+  .additional__button {
+    width: 100%;
+    margin-right: 8px;
+    padding: 8px 115px 8px 111px;
+  }
+
   .additional__present {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 708px;
     height: 200px;
-    margin: 69px 0 76px 0;
-    background-image: url("../img/gift-photo-tablet@1x.jpg"), url("../img/gift-photo-tablet@1x.webp");
+    margin: 69px 0 76px 8px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-size: cover;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/gift-photo-tablet@2x.jpg"), url("../img/gift-photo-tablet@2x.webp");
+    @supports (background-image: url("../img/gift-photo-tablet@1x.webp")) {
+      .additional__present {
+        background-image: url("../img/gift-photo-tablet@1x.webp");
+      }
     }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+
+      @supports (background-image: url("../img/gift-photo-tablet@2x.webp")) {
+        .additional__present {
+          background-image: url("../img/gift-photo-tablet@2x.webp");
+        }
+      }
+    }
+  }
+
+  .additional__image {
+    padding: 51px 103px 60px 93px;
   }
 
   .additional__present-text {
     width: 25%;
+    padding: 4px 107px 0 70px;
     text-align: $text-align-left;
   }
 }
@@ -176,6 +241,10 @@
 @media (min-width: $desktop-width) {
   .additional {
     margin-bottom: 86px;
+
+    &::before {
+      top: 58px;
+    }
   }
 
   .additional__inner {
@@ -184,7 +253,10 @@
   }
 
   .additional__header {
-    padding-bottom: 75px;
+    padding-bottom: 81px;
+    margin-left: -40px;
+    padding-left: 41px;
+    padding-top: 36px;
   }
 
   .additional__present-wrapper {
@@ -193,14 +265,12 @@
   }
 
   .additional__list {
-    width: 73%;
+    width: 74%;
   }
 
   .additional__item {
-    padding: 11px 0;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    margin-left: 0;
+    padding: 13px 0;
     border-right: none;
     border-left: none;
   }
@@ -211,15 +281,27 @@
   }
 
   .additional__name {
-    width: 200px;
+    width: 184px;
   }
 
   .additional__content-wrapper {
-    width: 285px;
+    width: 287px;
+    justify-content: space-between;
+    margin-right: -117px;
   }
 
   .additional__button {
-    padding: 13px 92px;
+    width: auto;
+    padding: 13px 90px 12px 90px;
+
+    &:hover {
+      background-color: $main-button-bg-color-hvr;
+    }
+
+    &:active {
+      background-color: $main-button-bg-color-hvr;
+      color: $main-button-color-active;
+    }
   }
 
   .additional__present {
@@ -227,15 +309,27 @@
     width: 245px;
     height: 289px;
     margin: 0;
-    background-image: url("../img/gift-photo-desktop@1x.jpg"), url("../img/gift-photo-desktop@1x.webp");
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    @supports (background-image: url("../img/gift-photo-desktop@1x.webp")) {
+      .additional__present {
+        background-image: url("../img/gift-photo-desktop@1x.webp");
+      }
+    }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/gift-photo-desktop@2x.jpg"), url("../img/gift-photo-desktop@2x.webp");
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+
+      @supports (background-image: url("../img/gift-photo-desktop@2x.webp")) {
+        .additional__present {
+          background-image: url("../img/gift-photo-desktop@2x.webp");
+        }
+      }
     }
   }
 
   .additional__image {
-    padding: 65px 0;
+    padding: 67px 0 65px 4px;
   }
 
   .additional__present-text {

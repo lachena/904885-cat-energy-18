@@ -10,7 +10,11 @@ body {
   background-color: $main-bg-color;
 }
 
-.visually-hidden {
+.body__wrapper {
+  overflow: hidden;
+}
+
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;

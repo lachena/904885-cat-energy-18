@@ -2,20 +2,32 @@
   background-color: $main-bg-color;
 }
 
-.map__inner {
-  @include inner;
-  padding: 0 $mobile-padding;
-  box-sizing: border-box;
+.map--form {
+  margin-top: -8px;
+  background-color: $secondary-bg-color;
 }
 
-.map__inner-catalog {
+.map__inner {
+  @include inner;
+  position: relative;
+  z-index: 1;
+  padding: 0 $mobile-padding;
+  box-sizing: border-box;
+  background-color: $main-bg-color;
+}
+
+.map__inner--catalog {
+  background-color: $secondary-bg-color;
+}
+
+.map__inner--form {
   background-color: $secondary-bg-color;
 }
 
 .map__adress-wrapper {
   display: flex;
   margin: 0 auto;
-  padding: 33px 0 28px 0;
+  padding: 27px 0 25px 0;
 }
 
 .map__title {
@@ -26,6 +38,10 @@
   line-height: $line-height-xs;
   text-align: $text-align-left;
   text-transform: $text-transform-upper;
+
+  &-line {
+    display: block;
+  }
 }
 
 .map__adress {
@@ -47,18 +63,24 @@
   position: relative;
   width: 100%;
   height: 400px;
+  margin-top: -40px;
+  background-image: url("../img/map.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    width: 55px;
-    height: 53px;
-    background-image: url("../img/map-pin.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
+  @supports (background-image: url("../img/map.webp")) {
+    background-image: url("../img/map.webp");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/map@2x.jpg");
+
+    @supports (background-image: url("../img/map@2x.webp")) {
+      .map__frame-wrapper {
+        background-image: url("../img/map@2x.webp");
+      }
+    }
   }
 }
 
@@ -70,7 +92,7 @@
 
   .map__adress-wrapper {
     justify-content: space-between;
-    padding: 69px 0 62px 0;
+    padding: 63px 42px 58px 42px;
   }
 
   .map__title {
@@ -86,7 +108,11 @@
   }
 
   .map__line-town {
-    padding-top: 13px;
+    padding-top: 19px;
+  }
+
+  .map__frame-wrapper {
+    margin-top: 0;
   }
 
   .map__frame-wrapper::after {
@@ -111,12 +137,16 @@
     position: absolute;
     z-index: 1;
     top: 95px;
-    left: 110px;
+    left: 44px;
     width: 570px;
     margin: 0;
-    padding: 69px 90px 59px 76px;
+    padding: 64px 95px 59px 73px;
     background-color: $main-bg-color;
     box-sizing: border-box;
+  }
+
+  .map__adress {
+    align-items: baseline;
   }
 
   .map__title {

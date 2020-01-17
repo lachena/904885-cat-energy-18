@@ -10,8 +10,8 @@
 
 .header__toggle {
   position: absolute;
-  top: 24px;
-  right: 20px;
+  top: 23px;
+  right: 26px;
   z-index: 2;
   display: block;
   width: 19px;
@@ -33,14 +33,49 @@
   width: 191px;
   height: 39px;
   margin-left: 20px;
+  cursor: pointer;
 }
 
-.header__logo-image:hover {
-  opacity: $logo-hvr-opacity;
+.header--closed .header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 19px;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
-.header__logo-image:active {
-  opacity: $logo-down-opacity;
+.header--opened .header__toggle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icon-close.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: $mobile-width-only) {
+  .header--closed .nav {
+    display: none;
+  }
+
+  .header--opened .nav {
+    display: block;
+  }
+
+  .header--nojs .header__toggle {
+    display: none;
+  }
+
+  .header--nojs .nav {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -48,20 +83,24 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 24px;
-    margin-bottom: 68px;
+    margin-top: 22px;
     background-color: transparent;
   }
 
   .header__inner {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     max-width: $tablet-width;
     padding: 0 $tablet-padding;
   }
 
   .header__wrapper {
     border-bottom: none;
+  }
+
+  .header__toggle {
+    display: none;
   }
 
   .header__link {
@@ -75,7 +114,24 @@
 @media (min-width: $desktop-width) {
   .header {
     z-index: 2;
-    margin-bottom: 0;
+    margin-top: 51px;
+  }
+
+  .header__link {
+    width: 203px;
+  }
+
+  .header__link[href]:hover {
+    opacity: $logo-hvr-opacity;
+  }
+
+  .header__link:active {
+    opacity: $logo-down-opacity;
+  }
+
+  .header__logo-image {
+    width: 203px;
+    height: 60px;
   }
 
   .header__inner {

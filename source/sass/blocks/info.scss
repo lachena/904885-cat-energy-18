@@ -1,15 +1,30 @@
 .info {
-  width: 100%;
-  min-height: 305px;
+  position: relative;
   background-color: $main-bg-color;
+}
+
+.info__background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 305px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: auto 305px;
-  background-clip: content-box;
+  background-size: cover;
+
+  @supports (background-image: url("../img/index-background-mobile@1x.webp")) {
+    background-image: url("../img/index-background-mobile@1x.webp");
+  }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
+
+    @supports (background-image: url("../img/index-background-mobile@2x.webp")) {
+      .info__background {
+        background-image: url("../img/index-background-mobile@2x.webp");
+      }
+    }
   }
 }
 
@@ -25,7 +40,7 @@
 
 .info__image {
   position: absolute;
-  bottom: 40px;
+  bottom: 43px;
 }
 
 .info__header,
@@ -38,44 +53,43 @@
 
 .info__header {
   margin: 0;
-  padding: 29px 0 19px 0;
+  padding: 28px 0 24px 0;
   font-size: $font-size-xxl;
   line-height: $line-height-xxs;
 }
 
 .info__intro {
-  margin: 0;
+  margin: 0 0 -6px 0;
   padding-bottom: 302px;
   font-size: $font-size-s;
   line-height: $line-height-xxs;
   text-transform: $text-transform-upper;
 }
 
+.info__button-wrapper {
+  position: relative;
+  padding-top: 5px;
+}
+
 .info__button {
   display: $display-block-button;
   vertical-align: middle;
   align-self: center;
-  padding: 14px 74px 11px 71px;
+  padding: 12px 74px 11px 71px;
   font-size: $font-size-s;
   line-height: $line-height-s;
   background-color: $main-button-bg-color;
   text-transform: $text-transform-upper;
-
-  &:hover {
-    background-color: $main-button-bg-color-hvr;
-    color: $main-button-color;
-  }
-
-  &:active {
-    background-color: $main-button-bg-color-hvr;
-    color: $addition-color-active;
-  }
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
   .info {
-    background-image: none;
     padding-bottom: 529px;
+  }
+
+  .info__background {
+    background-image: none;
   }
 
   .info__inner {
@@ -86,22 +100,27 @@
   }
 
   .info__image {
-    width: 709px;
-    top: 200px;
-    left: 55px;
+    width: 668px;
+    height: 609px;
+    top: 254px;
+    left: 72px;
   }
 
   .info__header {
-    padding: 0 45px 33px 68px;
+    padding: 54px 45px 40px 86px;
     color: $main-color;
     font-size: $font-size-xxxl;
     text-align: start;
   }
 
   .info__intro {
-    padding: 0 0 48px 68px;
+    padding: 0 0 48px 88px;
     color: $main-color;
     font-size: $font-size-xl;
+  }
+
+  .info__button-wrapper {
+    padding-left: 20px;
   }
 
   .info__button {
@@ -116,7 +135,7 @@
 
 @media (min-width: $desktop-width) {
   .info {
-    margin-top: -90px;
+    margin-top: -118px;
     margin-bottom: 80px;
     min-height: 696px;
     padding-bottom: 0;
@@ -124,11 +143,21 @@
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-position: top right;
     background-repeat: no-repeat;
-    background-size: 50% auto;
+    background-size: 50% 100%;
     background-clip: content-box;
+
+    @supports (background-image: url("../img/index-background-desktop@1x.webp")) {
+      background-image: url("../img/index-background-desktop@1x.webp");
+    }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
+
+      @supports (background-image: url("../img/index-background-desktop@2x.webp")) {
+        .info {
+          background-image: url("../img/index-background-desktop@2x.webp");
+        }
+      }
     }
   }
 
@@ -141,20 +170,40 @@
 
   .info__image {
     width: 552px;
-    top: 142px;
-    left: 532px;
+    height: 499px;
+    top: 145px;
+    left: 490px;
   }
 
   .info__header {
     text-align: start;
-    margin-top: 226px;
-    margin-bottom: 33px;
-    padding-right: 660px;
+    margin-top: 170px;
+    padding-right: 586px;
+    padding-left: 80px;
   }
 
   .info__intro {
     text-align: start;
-    margin-bottom: 53px;
+    margin-bottom: 48px;
     padding-bottom: 0;
+    padding-left: 80px;
+  }
+
+  .info__button-wrapper {
+    padding-left: 80px;
+  }
+
+  .info__button {
+    margin-left: 0;
+
+    &[href]:hover {
+      background-color: $main-button-bg-color-hvr;
+      color: $main-button-color;
+    }
+
+    &:active {
+      background-color: $main-button-bg-color-hvr;
+      color: $addition-color-active;
+    }
   }
 }
