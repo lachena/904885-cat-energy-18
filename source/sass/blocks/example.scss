@@ -253,7 +253,6 @@
     padding-right: 10px;
     font-size: $font-size-m;
     line-height: $line-height-xl-l;
-    letter-spacing: $tablet-letter-spacing;
   }
 
   .example__list-wrapper {
@@ -296,7 +295,7 @@
     max-width: 195px;
     padding: 10px 0 31px 0;
     font-size: $font-size-xl;
-    letter-spacing: $tablet-letter-spacing;
+    line-height: $line-height-xxs;
     text-align: $text-align-right;
   }
 

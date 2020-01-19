@@ -91,7 +91,8 @@
   }
 
   .nav__link {
-    letter-spacing: 1px;
+    font-size: $font-size-xl;
+    line-height: $line-height-xs;
 
     &--active:hover {
       color: $main-color;
