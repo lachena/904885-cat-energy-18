@@ -87,11 +87,11 @@
   margin-bottom: 33px;
 }
 
-.example__picture--skinny-container {
+.example__skinny-container {
   margin-bottom: 33px;
 }
 
-.example__picture--fat {
+.example__fat {
   width: 100%;
   height: 232px;
   background-image: url("../img/before-mobile@1x.png");
@@ -107,14 +107,14 @@
     background-image: url("../img/before-mobile@2x.png");
 
     @supports (background-image: url("../img/before-mobile@2x.webp")) {
-      .example__picture--fat {
+      .example__fat {
         background-image: url("../img/before-mobile@2x.webp");
       }
     }
   }
 }
 
-.example__picture--skinny {
+.example__skinny {
   display: none;
   width: 100%;
   height: 232px;
@@ -131,7 +131,7 @@
     background-image: url("../img/after-mobile@2x.png");
 
     @supports (background-image: url("../img/after-mobile@2x.webp")) {
-      .example__picture--skinny {
+      .example__skinny {
         background-image: url("../img/after-mobile@2x.webp");
       }
     }
@@ -300,14 +300,14 @@
     text-align: $text-align-right;
   }
 
-  .example__picture--fat-container {
+  .example__fat-container {
     position: relative;
     width: 100%;
     height: 600px;
     background: linear-gradient(to top, rgb(242, 242, 242) 71.5%, rgb(255, 255, 255) 28.5%);
   }
 
-  .example__picture--fat {
+  .example__fat {
     height: 517px;
     background-image: url("../img/before-tablet@1x.png");
     background-position: 18px bottom;
@@ -321,14 +321,14 @@
       background-image: url("../img/before-tablet@2x.png");
 
       @supports (background-image: url("../img/before-tablet@2x.webp")) {
-        .example__picture--fat {
+        .example__fat {
           background-image: url("../img/before-tablet@2x.webp");
         }
       }
     }
   }
 
-  .example__picture--skinny-container {
+  .example__skinny-container {
     width: 50%;
     height: 600px;
     position: absolute;
@@ -338,7 +338,7 @@
     overflow: hidden;
   }
 
-  .example__picture--skinny {
+  .example__skinny {
     display: block;
     height: 517px;
     background-image: url("../img/after-tablet@1x.png");
@@ -353,7 +353,7 @@
       background-image: url("../img/after-tablet@2x.png");
 
       @supports (background-image: url("../img/after-tablet@2x.webp")) {
-        .example__picture--skinny {
+        .example__skinny {
           background-image: url("../img/after-tablet@2x.webp");
         }
       }
@@ -506,20 +506,20 @@
     margin-bottom: 0;
   }
 
-  .example__picture--fat-container {
+  .example__fat-container {
     width: 95%;
     height: 652px;
     background: linear-gradient(to top, rgb(242, 242, 242) 71%, rgb(255, 255, 255) 29%);
   }
 
-  .example__picture--skinny-container {
+  .example__skinny-container {
     top: -3px;
     width: 50%;
     height: 652px;
     background: linear-gradient(to top, rgb(234, 234, 234) 70.5%, rgb(255, 255, 255) 29.5%);
   }
 
-  .example__picture--fat {
+  .example__fat {
     background-image: url("../img/before-desktop@1x.png");
     background-size: 690px 517px;
     background-position: 3px bottom;
@@ -532,14 +532,14 @@
       background-image: url("../img/before-desktop@2x.png");
 
       @supports (background-image: url("../img/before-desktop@2x.webp")) {
-        .example__picture--fat {
+        .example__fat {
           background-image: url("../img/before-desktop@2x.webp");
         }
       }
     }
   }
 
-  .example__picture--skinny {
+  .example__skinny {
     position: absolute;
     top: 0;
     left: -35px;
@@ -554,7 +554,7 @@
       background-image: url("../img/after-desktop@2x.png");
 
       @supports (background-image: url("../img/after-desktop@2x.webp")) {
-        .example__picture--skinny {
+        .example__skinny {
           background-image: url("../img/after-desktop@2x.webp");
         }
       }
