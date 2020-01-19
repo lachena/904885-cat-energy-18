@@ -354,6 +354,11 @@
   color: $icon-color-active;
 }
 
+.profile__check--goal:focus + .profile__name--goal::before,
+.profile__check--narrow:focus + .profile__name--narrow::before {
+  box-shadow: 0 0 3px 3px orange;
+}
+
 @media (min-width: $tablet-width) {
   .profile {
     padding-bottom: 44px;
