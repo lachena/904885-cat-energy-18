@@ -417,7 +417,7 @@
       height: 34px;
       border-radius: 50%;
       border: solid 13px $main-bg-color;
-      box-shadow: 0 0 0 1px $border-light-color, 0px 2px 5px 0 $range-thumb-shadow;
+      box-shadow: 0 0 0 1px $border-light-color, 0 2px 5px 0 $range-thumb-shadow;
       background-color: $additional-bg-color;
       margin-top: -13px;
       cursor: pointer;
@@ -428,7 +428,7 @@
       height: 9px;
       border-radius: 50%;
       border: solid 13px $main-bg-color;
-      box-shadow: 0 0 0 1px $border-light-color, 0px 2px 5px 0 $range-thumb-shadow;
+      box-shadow: 0 0 0 1px $border-light-color, 0 2px 5px 0 $range-thumb-shadow;
       background-color: $additional-bg-color;
       cursor: pointer;
     }
@@ -438,7 +438,7 @@
       height: 9px;
       border-radius: 50%;
       border: solid 13px $main-bg-color;
-      box-shadow: 0 0 0 1px $border-light-color, 0px 2px 5px 0 $range-thumb-shadow;
+      box-shadow: 0 0 0 1px $border-light-color, 0 2px 5px 0 $range-thumb-shadow;
       background-color: $additional-bg-color;
       cursor: pointer;
     }
@@ -581,27 +581,27 @@
 
   .example__range {
     &::-webkit-slider-thumb:hover {
-      box-shadow: 0px 3px 5px 0 $range-thumb-shadow-hvr;
+      box-shadow: 0 3px 5px 0 $range-thumb-shadow-hvr;
     }
 
     &::-webkit-slider-thumb:active {
-      box-shadow: 0 0 0 2px $additional-bg-color, 0px 4px 5px 0 $range-thumb-shadow-active;
+      box-shadow: 0 0 0 2px $additional-bg-color, 0 4px 5px 0 $range-thumb-shadow-active;
     }
 
     &::-moz-range-thumb:hover {
-      box-shadow: 0px 3px 5px 0 $range-thumb-shadow-hvr;
+      box-shadow: 0 3px 5px 0 $range-thumb-shadow-hvr;
     }
 
     &::-moz-range-thumb:active {
-      box-shadow: 0 0 0 2px $additional-bg-color, 0px 4px 5px 0 $range-thumb-shadow-active;
+      box-shadow: 0 0 0 2px $additional-bg-color, 0 4px 5px 0 $range-thumb-shadow-active;
     }
 
     &::-ms-thumb:hover {
-      box-shadow: 0px 3px 5px 0 $range-thumb-shadow-hvr;
+      box-shadow: 0 3px 5px 0 $range-thumb-shadow-hvr;
     }
 
     &::-ms-thumb:active {
-      box-shadow: 0 0 0 2px $additional-bg-color, 0px 4px 5px 0 $range-thumb-shadow-active;
+      box-shadow: 0 0 0 2px $additional-bg-color, 0 4px 5px 0 $range-thumb-shadow-active;
     }
   }
 }
