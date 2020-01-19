@@ -48,7 +48,7 @@
 }
 
 .example__result {
-  border: 1px solid $border-color;
+  border: 1px solid $border-light-color;
   border-radius: 3px;
   font-size: $font-size-l;
   font-weight: $font-weight-regular;
@@ -207,7 +207,7 @@
     cursor: pointer;
     background-color: $main-bg-color;
     border-radius: 6px;
-    border: 1px solid $border-color;
+    border: 1px solid $border-light-color;
   }
 
   &::-moz-range-track {
@@ -217,7 +217,7 @@
     cursor: pointer;
     background-color: $main-bg-color;
     border-radius: 6px;
-    border: 1px solid $border-color;
+    border: 1px solid $border-light-color;
   }
 
   &::-ms-track {
@@ -379,7 +379,7 @@
     padding: 0 0 6px 0;
     font-size: $font-size-xl;
     line-height: $line-height-xxs;
-    border-bottom: 1px dotted $border-color;
+    border-bottom: 1px dotted $border-dark-color;
   }
 
   .example__range {
@@ -417,7 +417,7 @@
       height: 34px;
       border-radius: 50%;
       border: solid 13px $main-bg-color;
-      box-shadow: 0 0 0 1px $border-color;
+      box-shadow: 0 0 0 1px $border-light-color, 0px 2px 5px 0 $range-thumb-shadow;
       background-color: $additional-bg-color;
       margin-top: -13px;
       cursor: pointer;
@@ -428,7 +428,7 @@
       height: 9px;
       border-radius: 50%;
       border: solid 13px $main-bg-color;
-      box-shadow: 0 0 0 1px $border-color;
+      box-shadow: 0 0 0 1px $border-light-color, 0px 2px 5px 0 $range-thumb-shadow;
       background-color: $additional-bg-color;
       cursor: pointer;
     }
@@ -438,7 +438,7 @@
       height: 9px;
       border-radius: 50%;
       border: solid 13px $main-bg-color;
-      box-shadow: 0 0 0 1px $border-color;
+      box-shadow: 0 0 0 1px $border-light-color, 0px 2px 5px 0 $range-thumb-shadow;
       background-color: $additional-bg-color;
       cursor: pointer;
     }
@@ -576,20 +576,32 @@
   }
 
   .example__button:hover {
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $border-dark-color;
   }
 
   .example__range {
+    &::-webkit-slider-thumb:hover {
+      box-shadow: 0px 3px 5px 0 $range-thumb-shadow-hvr;
+    }
+
     &::-webkit-slider-thumb:active {
-      box-shadow: 0 0 0 2px $additional-bg-color;
+      box-shadow: 0 0 0 2px $additional-bg-color, 0px 4px 5px 0 $range-thumb-shadow-active;
+    }
+
+    &::-moz-range-thumb:hover {
+      box-shadow: 0px 3px 5px 0 $range-thumb-shadow-hvr;
     }
 
     &::-moz-range-thumb:active {
-      box-shadow: 0 0 0 2px $additional-bg-color;
+      box-shadow: 0 0 0 2px $additional-bg-color, 0px 4px 5px 0 $range-thumb-shadow-active;
+    }
+
+    &::-ms-thumb:hover {
+      box-shadow: 0px 3px 5px 0 $range-thumb-shadow-hvr;
     }
 
     &::-ms-thumb:active {
-      box-shadow: 0 0 0 2px $additional-bg-color;
+      box-shadow: 0 0 0 2px $additional-bg-color, 0px 4px 5px 0 $range-thumb-shadow-active;
     }
   }
 }

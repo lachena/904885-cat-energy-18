@@ -63,11 +63,14 @@ $error-color: #ff8282;
 
 $range-bg-color: #dcdcdc;
 $range-thumb-shadow: rgba(0, 0, 0, 0.15);
+$range-thumb-shadow-hvr: rgba(0, 0, 0, 0.25);
+$range-thumb-shadow-active: rgba(0, 0, 0, 0.3);
 $input-border-color: #ededed;
 $input-border-color-hvr: #cdcdcd;
 $input-border-color-active:  #444444;
 $input-border-color-invalid: #ff8282;
-$border-color: #ededed;
+$border-light-color: #ededed;
+$border-dark-color: #cdcdcd;
 $border-catalog-item: solid 1px #cdcdcd;
 $icon-color: #222222;
 $icon-color-active: #68b738;
