@@ -4,10 +4,12 @@ ymaps.ready(init);
           center: [59.938631, 30.323055],
           zoom: 17
       });
-      pointer = new ymaps.Placemark([55.938631, 25.323055], {
-      iconLayout: "default#image",
-      iconImageHref: "./img/map-pin.png",
-      iconImageSize: [19, 19]
+      var myGeoObject = new ymaps.GeoObject({
+        geometry: {
+            type: "Point",
+            coordinates: [59.938631, 30.323055]
+        }
       });
-      myMap.geoObjects.add(pointer);
+      myMap.geoObjects
+      .add(myGeoObject);
   }

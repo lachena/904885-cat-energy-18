@@ -101,7 +101,7 @@
                       </li>
                       <li class="profile__item profile__item--phone">
                         <label class="profile__name profile__name--phone">Телефон:<sup>*</sup></label>
-                        <input class="profile__field profile__field--phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" minlength="11" required>
+                        <input class="profile__field profile__field--phone" type="tel" name="phone" placeholder="+7 (960) 900-60-90" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" required>
                         <svg class="profile__icon-phone" width="21" height="21" aria-label="Иконка почты">
                           <use xlink:href="./img/sprite.svg#icon-phone"></use>
                         </svg>
