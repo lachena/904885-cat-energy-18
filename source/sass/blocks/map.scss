@@ -48,9 +48,6 @@
   @include indent-reset;
   display: flex;
   flex-direction: column;
-}
-
-.map__line {
   font-family: $font-family-secondary;
   font-size: $font-size-s;
   font-weight: $font-weight-regular;
@@ -101,14 +98,15 @@
     line-height: $line-height-xs;
   }
 
-  .map__line {
+  .map__adress {
     font-size: $font-size-m;
     line-height: $line-height-xs;
     text-align: $text-align-right;
   }
 
-  .map__line-town {
+  .map__line {
     padding-top: 19px;
+    text-align: $text-align-right;
   }
 
   .map__frame-wrapper {
@@ -147,6 +145,10 @@
 
   .map__adress {
     align-items: baseline;
+  }
+
+  .map__line {
+    width: 100%;
   }
 
   .map__title {
