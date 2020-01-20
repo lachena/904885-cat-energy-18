@@ -358,7 +358,7 @@
 
 .profile__check--goal:focus + .profile__name--goal::before,
 .profile__check--narrow:focus + .profile__name--narrow::before {
-  box-shadow: 0 0 3px 3px orange;
+  box-shadow: 0 0 3px 3px $check-focus-color-mobile;
 }
 
 @media (min-width: $tablet-width) {
@@ -590,6 +590,11 @@
   .profile__field--phone:not(:placeholder-shown) + .profile__error--phone {
     display: block;
   }
+
+  .profile__check--goal:focus + .profile__name--goal::before,
+  .profile__check--narrow:focus + .profile__name--narrow::before {
+    box-shadow: 0 0 3px 3px $check-focus-color-tablet;
+}
 }
 
 @media (min-width: $desktop-width) {
