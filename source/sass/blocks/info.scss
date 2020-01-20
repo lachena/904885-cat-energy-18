@@ -176,7 +176,8 @@
   }
 
   .info__header {
-    text-align: start;
+    text-align: $text-align-left;
+    widows: 450px;
     margin-top: 170px;
     padding-right: 586px;
     padding-left: 80px;

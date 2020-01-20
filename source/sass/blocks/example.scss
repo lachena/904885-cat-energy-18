@@ -249,7 +249,7 @@
   }
 
   .example__description {
-    margin-bottom: 49px;
+    margin-bottom: 52px;
     padding-right: 10px;
     font-size: $font-size-m;
     line-height: $line-height-xl-l;
@@ -285,7 +285,7 @@
 
   .example__name {
     width: 139px;
-    padding: 9px 6px 0 6px;
+    padding: 11px 6px 0 6px;
     font-size: $font-size-s;
     line-height: $line-height-xxs;
     background-color: $main-bg-color;
@@ -293,9 +293,9 @@
 
   .example__title {
     max-width: 195px;
-    padding: 10px 0 31px 0;
+    padding: 6px 0 31px 0;
     font-size: $font-size-xl;
-    line-height: $line-height-xxs;
+    line-height: $line-height-l;
     text-align: $text-align-right;
   }
 
@@ -411,6 +411,14 @@
       border: none;
     }
 
+    &::-ms-fill-lower {
+      background: transparent;
+    }
+
+    &::-ms-fill-upper {
+      background: transparent;
+    }
+
     &::-webkit-slider-thumb {
       position: relative;
       width: 34px;
@@ -494,7 +502,7 @@
   }
 
   .example__line-text {
-    padding-right: 64px;
+    padding-right: 59px;
   }
 
   .example__picture-wrapper {

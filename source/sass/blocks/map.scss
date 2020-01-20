@@ -16,6 +16,7 @@
   background-color: $main-bg-color;
 }
 
+.map--catalog,
 .map__inner--catalog {
   background-color: $secondary-bg-color;
 }
@@ -145,10 +146,12 @@
 
   .map__adress {
     align-items: baseline;
+    text-align: $text-align-left;
   }
 
   .map__line {
     width: 100%;
+    text-align: $text-align-left;
   }
 
   .map__title {
