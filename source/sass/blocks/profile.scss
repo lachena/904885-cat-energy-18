@@ -611,7 +611,7 @@
   .profile__check--goal:focus + .profile__name--goal::before,
   .profile__check--narrow:focus + .profile__name--narrow::before {
     box-shadow: 0 0 3px 3px $check-focus-color-tablet;
-}
+  }
 }
 
 @media (min-width: $desktop-width) {

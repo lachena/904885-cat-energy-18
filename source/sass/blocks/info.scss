@@ -139,30 +139,42 @@
     margin-bottom: 80px;
     height: 696px;
     padding-bottom: 0;
-    background: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, $main-bg-color 50%, $additional-bg-color 50%);
-    background-position: top right, top right;
-    background-repeat: no-repeat, no-repeat;
-    background-size: 50% auto, 100% 100%;
+    background: linear-gradient(to right, $main-bg-color 50%, $extra-bg-color 50%);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
 
-    @supports (background: url("../img/index-background-desktop@1x.webp"), linear-gradient(to right, $main-bg-color 50%, $additional-bg-color 50%)) {
-      background: url("../img/index-background-desktop@1x.webp"), linear-gradient(to right, $main-bg-color 50%, $additional-bg-color 50%);
-      background-position: top right, top right;
-      background-repeat: no-repeat, no-repeat;
-      background-size: 50% auto, 100% 100%;
+  .info__background {
+    position: absolute;
+    top: 0;
+    right: -33px;
+    width: 50%;
+    height: 696px;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @supports (background-image: url("../img/index-background-desktop@1x.webp")) {
+      background-image: url("../img/index-background-desktop@1x.webp");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/index-background-desktop@2x.jpg"), linear-gradient(to right, $main-bg-color 50%, $additional-bg-color 50%);
-      background-position: top right, top right;
-      background-repeat: no-repeat, no-repeat;
-      background-size: 50% auto, 100% 100%;
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
 
-      @supports (background: url("../img/index-background-desktop@2x.webp"), linear-gradient(to right, $main-bg-color 50%, $additional-bg-color 50%)) {
-        .info {
-          background: url("../img/index-background-desktop@2x.webp"), linear-gradient(to right, $main-bg-color 50%, $additional-bg-color 50%);
-          background-position: top right, top right;
-          background-repeat: no-repeat, no-repeat;
-          background-size: 50% auto, 100% 100%;
+      @supports (background-image: url("../img/index-background-desktop@2x.webp")) {
+        .info__background {
+          background-image: url("../img/index-background-desktop@2x.webp"), linear-gradient(to right, $main-bg-color 50%, $additional-bg-color 50%);
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
         }
       }
     }
