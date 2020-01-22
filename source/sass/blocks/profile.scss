@@ -47,6 +47,10 @@
   border: none;
 }
 
+.profile__sector-wrapper {
+  min-height: 347px;
+}
+
 .profile__sector--data {
   padding-bottom: 21px;
   fill: currentColor;
@@ -88,6 +92,8 @@
 }
 
 .profile__sector--info {
+  min-height: 215px;
+
   & .profile__name {
     padding-right: 12px;
   }
@@ -136,18 +142,22 @@
 }
 
 .profile__sector--comment {
+  min-height: 235px;
+
   & .profile__title {
     padding-top: 26px;
     padding-bottom: 33px;
   }
 
   & .profile__field {
+    height: 88px;
     padding-bottom: 46px;
     padding-top: 12px;
   }
 }
 
 .profile__sector--narrow {
+  min-height: 247px;
   padding-bottom: 32px;
 
   & .profile__title {
@@ -215,7 +225,9 @@
 
 .profile__field {
   flex-grow: 1;
-  padding: 11px 12px 14px 13px;
+  width: 157px;
+  height: 41px;
+  padding-left: 13px;
   font-family: inherit;
   font-size: $font-size-m;
   font-weight: $font-weight-regular;
@@ -399,7 +411,8 @@
   }
 
   .profile__sector-wrapper {
-    padding-bottom: 48px;
+    min-height: 467px;
+    padding-bottom: 47px;
   }
 
   .profile__sector-container::after {
@@ -450,21 +463,21 @@
   }
 
   .profile__sector--info {
-    padding-bottom: 38px;
+    min-height: 266px;
+    padding-bottom: 36px;
 
     & .profile__name {
       padding-right: 17px;
     }
 
     & .profile__field {
-      padding-bottom: 10px;
       padding-left: 19px;
     }
 
     & .profile__title {
       width: 530px;
       padding-top: 28px;
-      padding-bottom: 73px;
+      padding-bottom: 71px;
     }
 
     & .profile__item--email {
@@ -491,9 +504,11 @@
   }
 
   .profile__sector--comment {
-    padding-bottom: 34px;
+    min-height: 317px;
+    padding-bottom: 32px;
 
     & .profile__field {
+      height: 153px;
       padding-top: 8px;
       padding-bottom: 13px;
       padding-left: 18px;
@@ -507,7 +522,8 @@
   }
 
   .profile__sector--narrow {
-    padding-bottom: 3px;
+    min-height: 282px;
+    padding-bottom: 5px;
 
     & .profile__title {
       padding-right: 40px;
@@ -535,7 +551,8 @@
   }
 
   .profile__field {
-    padding: 10px 12px 12px 20px;
+    height: 49px;
+    padding-left: 20px;
   }
 
   .profile__check--narrow + .profile__name--narrow::before {
@@ -625,6 +642,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    min-height: 214px;
     padding-bottom: 24px;
   }
 
@@ -655,6 +673,7 @@
   }
 
   .profile__sector--info {
+    min-height: 213px;
     padding-bottom: 20px;
 
     &::before {
@@ -698,6 +717,7 @@
   }
 
   .profile__sector--comment {
+    min-height: 316px;
     padding-bottom: 38px;
 
     .profile__title {
@@ -711,7 +731,8 @@
   }
 
   .profile__sector--narrow {
-    padding-bottom: 24px;
+    min-height: 199px;
+    padding-bottom: 22px;
 
     & .profile__list {
       padding-bottom: 0;
@@ -765,7 +786,7 @@
   }
 
   .profile__button {
-    padding: 12px 207px 15px 207px;
+    padding: 14px 207px 16px 207px;
     margin-right: 82px;
 
     &:hover {

@@ -94,6 +94,7 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: 280px 289px;
   background-color: $additional-bg-color;
   fill: currentColor;
   color: $main-bg-color;
@@ -311,19 +312,23 @@
     height: 289px;
     margin: 0;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-size: cover;
 
     @supports (background-image: url("../img/gift-photo-desktop@1x.webp")) {
       .additional__present {
         background-image: url("../img/gift-photo-desktop@1x.webp");
+        background-size: cover;
       }
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: cover;
 
       @supports (background-image: url("../img/gift-photo-desktop@2x.webp")) {
         .additional__present {
           background-image: url("../img/gift-photo-desktop@2x.webp");
+          background-size: cover;
         }
       }
     }

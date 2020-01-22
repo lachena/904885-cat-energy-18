@@ -1,6 +1,6 @@
 .advantages {
   background-color: $main-bg-color;
-  margin-bottom: 46px;
+  min-height: 428px;
 }
 
 .advantages__inner {
@@ -141,6 +141,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
+    min-height: auto;
     margin-bottom: 26px;
   }
 
