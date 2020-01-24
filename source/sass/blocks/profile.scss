@@ -504,7 +504,7 @@
   }
 
   .profile__sector--comment {
-    min-height: 317px;
+    min-height: 319px;
     padding-bottom: 32px;
 
     & .profile__field {
@@ -592,7 +592,7 @@
 
   .profile__button {
     margin-right: 61px;
-    padding: 14px 68px 20px 61px;
+    padding: 17px 68px 18px 61px;
     font-size: $font-size-xl;
     line-height: $line-height-xxs;
   }
@@ -616,7 +616,7 @@
 
 @media (min-width: $desktop-width) {
   .profile {
-    padding-bottom: 50px;
+    padding-bottom: 47px;
   }
 
   .profile__inner {
@@ -786,7 +786,7 @@
   }
 
   .profile__button {
-    padding: 14px 207px 16px 207px;
+    padding: 17px 207px 17px 207px;
     margin-right: 82px;
 
     &:hover {
